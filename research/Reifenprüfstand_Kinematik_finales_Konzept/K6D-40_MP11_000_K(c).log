@@ -1,0 +1,137 @@
+﻿STEP to UG
+! INFO-     NX STEP AP203 - V12.0
+! INFO-      
+! INFO-     Start of Translation: 7-OCT-2023  11:13:44 PM
+! INFO-      
+! STATUS-   Converting Part: C:\Users\Nicole\Desktop\CAD SA\K6D-40_MP11_000_K(c).stp
+! SUMMARY-   
+! SUMMARY-    STEP Header Information
+! SUMMARY-   
+! SUMMARY-  Description      Alibre Inc.
+! SUMMARY-  Imp_Level        2;1
+! SUMMARY-  File_Name        export-9231B62C-E8AC-4888-AFDF-053362449EBE
+! SUMMARY-  Date             2020-08-06T09:27:12+02:00
+! SUMMARY-  Author           Unknown
+! SUMMARY-  Organization     Unknown
+! SUMMARY-  Pre_Version      ST-DEVELOPER v17
+! SUMMARY-  Orig_System      Alibre
+! SUMMARY-  Authorization    Unknown
+! SUMMARY-  Schema_ID        ap203_configuration_controlled_3d_design_of_mechanical_parts_and_assemblies_mim_lf
+! SUMMARY-   
+! SUMMARY-    Summary of STEP Entities
+! SUMMARY-   
+! SUMMARY-  Entity Type                                                   Count
+! SUMMARY-  -----------                                                   ------
+! SUMMARY-  advanced_face ..............................................:   4524
+! SUMMARY-  application_context ........................................:      1
+! SUMMARY-  approval ...................................................:     69
+! SUMMARY-  approval_date_time .........................................:     69
+! SUMMARY-  approval_person_organization ...............................:     69
+! SUMMARY-  approval_role ..............................................:     69
+! SUMMARY-  approval_status ............................................:     69
+! SUMMARY-  axis2_placement_3d .........................................:   6728
+! SUMMARY-  b_spline_curve_with_knots ..................................:   1738
+! SUMMARY-  b_spline_surface_with_knots ................................:    306
+! SUMMARY-  b_spline_surface_with_knots_and_rational_b_spline_surface ..:     76
+! SUMMARY-  calendar_date ..............................................:    123
+! SUMMARY-  cartesian_point ............................................:  60062
+! SUMMARY-  cc_design_approval .........................................:     71
+! SUMMARY-  cc_design_date_and_time_assignment .........................:     56
+! SUMMARY-  cc_design_person_and_organization_assignment ...............:    101
+! SUMMARY-  cc_design_security_classification ..........................:     41
+! SUMMARY-  circle .....................................................:   2543
+! SUMMARY-  closed_shell ...............................................:     11
+! SUMMARY-  conical_surface ............................................:    205
+! SUMMARY-  context_dependent_shape_representation .....................:     26
+! SUMMARY-  coordinated_universal_time_offset ..........................:    123
+! SUMMARY-  cylindrical_surface ........................................:   1226
+! SUMMARY-  date_and_time ..............................................:    123
+! SUMMARY-  date_time_role .............................................:     56
+! SUMMARY-  design_context .............................................:      1
+! SUMMARY-  direction ..................................................:  18162
+! SUMMARY-  edge_curve .................................................:  11635
+! SUMMARY-  edge_loop ..................................................:   4949
+! SUMMARY-  ellipse ....................................................:     10
+! SUMMARY-  face_bound .................................................:   4949
+! SUMMARY-  geometric_representation_context_and_global_uncertainty_a ..:     15
+! SUMMARY-  item_defined_transformation ................................:     26
+! SUMMARY-  length_unit_and_si_unit ....................................:     15
+! SUMMARY-  line .......................................................:   7336
+! SUMMARY-  local_time .................................................:    123
+! SUMMARY-  manifold_solid_brep ........................................:     11
+! SUMMARY-  mechanical_context .........................................:      1
+! SUMMARY-  next_assembly_usage_occurrence .............................:     26
+! SUMMARY-  organization ...............................................:     13
+! SUMMARY-  oriented_edge ..............................................:  23270
+! SUMMARY-  person .....................................................:     13
+! SUMMARY-  person_and_organization ....................................:    165
+! SUMMARY-  person_and_organization_role ...............................:    100
+! SUMMARY-  plane ......................................................:   2369
+! SUMMARY-  plane_angle_unit_and_si_unit ...............................:     15
+! SUMMARY-  product ....................................................:     15
+! SUMMARY-  product_category ...........................................:      1
+! SUMMARY-  product_category_relationship ..............................:      1
+! SUMMARY-  product_definition .........................................:     15
+! SUMMARY-  product_definition_formation_with_specified_source .........:     15
+! SUMMARY-  product_definition_shape ...................................:     41
+! SUMMARY-  product_related_product_category ...........................:     15
+! SUMMARY-  representation_relationship_with_transformation_and_shape ..:     26
+! SUMMARY-  security_classification ....................................:     41
+! SUMMARY-  security_classification_level ..............................:     41
+! SUMMARY-  shape_representation .......................................:     15
+! SUMMARY-  si_unit_and_solid_angle_unit ...............................:     15
+! SUMMARY-  spherical_surface ..........................................:     60
+! SUMMARY-  toroidal_surface ...........................................:    261
+! SUMMARY-  uncertainty_measure_with_unit ..............................:     15
+! SUMMARY-  vector .....................................................:   7336
+! SUMMARY-  vertex_point ...............................................:   7486
+! SUMMARY-                                                               -------
+! SUMMARY-  Total                                                         167088
+! STATUS-    
+! STATUS-   Converting to Output Form (Phase 2 of 3): 7-OCT-2023 11:13:45 PM
+! STATUS-    
+! STATUS-    
+! STATUS-   Generating UG geometry and placing them in parts
+! STATUS-    
+! STATUS-   Creating the UG part (Phase 3 of 3): 7-OCT-2023  11:13:45 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 167114
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: C:\Users\Nicole\Desktop\CAD SA\ID12428
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 7-OCT-2023  11:13:46 PM
+! INFO-     Filing Part ..: C:\Users\Nicole\Desktop\CAD SA\K6D-40_MP11_000_K_c__stp.prt
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     5
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              5
+! INFO-      
+! INFO-     Total number of solids input for this translation       :         1
+! INFO-      
+! INFO-     Number of solids created without body validation faults :         1
+! INFO-      
+! INFO-     Number of solids created with body validation fault(s)  :         0
+! INFO-      
+! INFO-     Number of solids ending up as sheet bodies              :         0
+! INFO-      
+! INFO-     End of Translation: 7-OCT-2023  11:13:46 PM
+! INFO-      
