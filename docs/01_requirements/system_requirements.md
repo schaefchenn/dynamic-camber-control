@@ -38,12 +38,8 @@ Bsp.:
 
 | ID      | Kategorie        | Priorität | Stakeholder | Status        | Link                |
 |---------|------------------|-----------|-------------|---------------|---------------------|
-| SYS-001 | Funktional       | Muss      | Kunde       | nicht erfüllt | [mehr](##-SYS-001)  |
+| SYS-001 | Funktional       | Muss      | Kunde       | nicht erfüllt | [mehr](SYS-001.md)  |
 | SYS-002 | Nicht-funktional | Soll      | Kunde       | nicht erfüllt |
 | SYS-003 | Nicht-funktional | Soll      | Kunde       | nicht erfüllt |
 | SYS-004 | Nicht-funktional | Soll      | Kunde       | nicht erfüllt |
 | SYS-004 | Nicht-funktional | Kann      | Kunde       | nicht erfüllt |
-
-<br><br>
-
-## SYS-001
