@@ -55,7 +55,7 @@ $F_{Fi}$
 
 <div style="flex: 1; text-align: center;">
 
-<img src="docs/99_appendices/vertikal_nicken.png" alt="System als Block" width="100%">
+<img src="docs/99_appendices/vertikal_nicken.png" alt="System als Block" width="auto">
 
 </div>
 
