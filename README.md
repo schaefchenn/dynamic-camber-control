@@ -9,3 +9,5 @@
 | SYS-003 | Nicht-funktional | Soll      | Kunde       | nicht erfüllt |
 | SYS-004 | Nicht-funktional | Soll      | Kunde       | nicht erfüllt |
 | SYS-004 | Nicht-funktional | Kann      | Kunde       | nicht erfüllt |
+
+$$V_{sphere} = \frac{4}{3}\pi r^3$$
