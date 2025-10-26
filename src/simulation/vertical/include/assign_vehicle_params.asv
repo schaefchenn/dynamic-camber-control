@@ -1,0 +1,13 @@
+function assign_vehicle_params(simConfig.model, vehicleData)
+    sv   = vehicleData.dimensions.track_width_front_mm;
+    sh   = vehicleData.dimensions.track_width_rear_mm;
+    l    = vehicleData.dimensions.wheelbase_mm;
+    lnzv = vehicleData.vertical_parameters.distance_to_pitch_center_front_mm;
+    
+
+    mw = get_param(simConfig.model,'ModelWorkspace');
+    
+    mw.assignin('sv', sv);
+    mw.assignin('sh', sh);
+    mw.assignin('l', l);
+    mw.assignin('lnzv', lnzv);

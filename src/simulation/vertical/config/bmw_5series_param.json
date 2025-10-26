@@ -1,0 +1,21 @@
+{
+    "make": "BMW",
+    "model": "5 Series",
+    "year": 2021,
+    "weight_kg": 1845,
+
+    "dimensions": {
+        "length_mm": 4936,
+        "width_mm": 1868,
+        "height_mm": 1466,
+        "wheelbase_mm": 2975,
+        "track_width_front_mm": 1587,
+        "track_width_rear_mm": 1587
+    },
+
+    "vertical_parameters": {
+        "center_of_gravity_height_mm": 550,
+        "distance_to_pitch_center_front_mm": 1487,
+        "distance_to_pitch_center_rear_mm": 1488
+    }
+}

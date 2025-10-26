@@ -20,7 +20,7 @@ Kücükay S.960
 
 ### Herangehensweise
  Vertikalmodell liefert unter anderem Hubweg z oder Federwege zi woraus sich die Raderhebungskurve und damit ein Sturzwinkel ergibt. Dieser Sturzwinkel muss dann noch in einem Kennfeld korrigiert werden sodass sich der Sturzwinkel mit dem höchsten Kraftschlusspotential bei aktueller Fahrsituation ergibt
-<br>
+<br><br>
 
  <div style="text-align: center;">
    <img src="docs/99_appendices/dcc_regelkreis.svg" alt="System als Block" width="90%" height="100%">
@@ -45,11 +45,14 @@ aus Kücükay <br><br>
 
 <div style="flex: 1;">
 
-$z_1 = z - \sin(\kappa) \cdot (s_V/2) + \sin(\phi) \cdot l_{NZ,V}$<br>
-$z_1 = z + \sin(\kappa) \cdot (s_V/2) + \sin(\phi) \cdot l_{NZ,V}$<br>
-$z_1 = z - \sin(\kappa) \cdot (s_V/2) + \sin(\phi) \cdot (l - l_{NZ,V})$<br> 
-$z_1 = z + \sin(\kappa) \cdot (s_V/2) + \sin(\phi) \cdot (l - l_{NZ,V})$<br><br>
-$F_{Fi}$
+$z_1 =~ z - \sin(\kappa) \cdot (s_V/2) + \sin(\phi) \cdot l_{NZ,V}$<br>
+$z_2 =~ z + \sin(\kappa) \cdot (s_V/2) + \sin(\phi) \cdot l_{NZ,V}$<br>
+$z_3 =~ z - \sin(\kappa) \cdot (s_V/2) + \sin(\phi) \cdot (l - l_{NZ,V})$<br> 
+$z_4 =~ z + \sin(\kappa) \cdot (s_V/2) + \sin(\phi) \cdot (l - l_{NZ,V})$<br><br>
+$F_{Fi} =~ c_{Ai} \cdot z_i$<br>
+$F_{Di} =~ d_{Ai} \cdot \dot{z_i}$<br><br>
+$F_{D,V} =~ F_{D1} + F_{D2}$<br>
+$F_{D,H} =~ F_{D3} + F_{D4}$
 
 </div>
 
@@ -60,6 +63,3 @@ $F_{Fi}$
 </div>
 
 </div>
-
-
-$$V_{sphere} = \frac{4}{3}\pi r^3$$
