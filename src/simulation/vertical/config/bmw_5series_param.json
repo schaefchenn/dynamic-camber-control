@@ -1,21 +1,34 @@
 {
-    "make": "BMW",
-    "model": "5 Series",
-    "year": 2021,
-    "weight_kg": 1845,
+    "make": { "value": "BMW", "data_type": "string" },
+    "model": { "value": "5 Series", "data_type": "string" },
+    "year": { "value": 2021, "data_type": "int32" },
+    "weight": { "value": 1845, "unit": "kg", "data_type": "double" },
 
     "dimensions": {
-        "length_mm": 4936,
-        "width_mm": 1868,
-        "height_mm": 1466,
-        "wheelbase_mm": 2975,
-        "track_width_front_mm": 1587,
-        "track_width_rear_mm": 1587
+        "is_section": true,
+        "section_name": "dimensions",
+        "length": { "value": 4936, "unit": "mm", "data_type": "double" },
+        "width": { "value": 1868, "unit": "mm", "data_type": "double" },
+        "height": { "value": 1466, "unit": "mm", "data_type": "double" },
+        "wheelbase": { "value": 2975, "unit": "mm", "data_type": "double" },
+        "track_width_front": { "value": 1587, "unit": "mm", "data_type": "double" },
+        "track_width_rear": { "value": 1587, "unit": "mm", "data_type": "double" }
     },
 
     "vertical_parameters": {
-        "center_of_gravity_height_mm": 550,
-        "distance_to_pitch_center_front_mm": 1487,
-        "distance_to_pitch_center_rear_mm": 1488
+        "is_section": true,
+        "section_name": "vertical parameters",
+        "center_of_gravity_height": { "value": 550, "unit": "mm", "data_type": "double" },
+        "distance_to_pitch_center_front": { "value": 1487, "unit": "mm", "data_type": "double" },
+        "distance_to_pitch_center_rear": { "value": 1488, "unit": "mm", "data_type": "double" }
+    },
+
+    "spring_deflection": {
+        "isBus": true,
+        "bus_name": "springDeflection",
+        "front_left": { "value": 0, "unit": "mm", "data_type": "double" },
+        "front_right": { "value": 0, "unit": "mm", "data_type": "double" },
+        "rear_left": { "value": 0, "unit": "mm", "data_type": "double" },
+        "rear_right": { "value": 0, "unit": "mm", "data_type": "double" }
     }
 }

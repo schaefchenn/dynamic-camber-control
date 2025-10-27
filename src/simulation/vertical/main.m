@@ -1,9 +1,10 @@
 clc; clear;
 
-addpath(fullfile("cache\"))
-addpath(fullfile("model\"))
-addpath(fullfile("include\"))
-addpath(fullfile("config\"))
+addpath(fullfile("cache"))
+addpath(fullfile("model"))
+addpath(fullfile("include"))
+addpath(fullfile("config"))
+addpath(fullfile("dictionaries"))
 
 Simulink.fileGenControl('set', ...
     'CacheFolder', 'cache', ...
