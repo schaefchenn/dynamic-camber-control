@@ -6,7 +6,6 @@
 
     "dimensions": {
         "is_section": true,
-        "section_name": "dimensions",
         "length": { "value": 4936, "unit": "mm", "data_type": "double" },
         "width": { "value": 1868, "unit": "mm", "data_type": "double" },
         "height": { "value": 1466, "unit": "mm", "data_type": "double" },
@@ -17,14 +16,13 @@
 
     "vertical_parameters": {
         "is_section": true,
-        "section_name": "vertical parameters",
         "center_of_gravity_height": { "value": 550, "unit": "mm", "data_type": "double" },
         "distance_to_pitch_center_front": { "value": 1487, "unit": "mm", "data_type": "double" },
         "distance_to_pitch_center_rear": { "value": 1488, "unit": "mm", "data_type": "double" }
     },
 
     "spring_deflection": {
-        "isBus": true,
+        "is_bus": true,
         "bus_name": "springDeflection",
         "front_left": { "value": 0, "unit": "mm", "data_type": "double" },
         "front_right": { "value": 0, "unit": "mm", "data_type": "double" },
