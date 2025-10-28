@@ -23,7 +23,7 @@ Kücükay S.960
 <br><br>
 
  <div style="text-align: center;">
-   <img src="docs/99_appendices/dcc_regelkreis.svg" alt="System als Block" width="90%" height="100%">
+   <img src="docs/99_appendices/dcc_regelkreis.svg" alt="System als Block" width="auto" height="100%">
  </div><br>
 
 Vorteil von inklusion des Vertikalmodells ist das der aktuell eingestellte Sturzwinkel keine Rolle spielt, es wird lediglich das optimum bei in abhöngigkeit der Fahrsituation evaluiert.
@@ -63,3 +63,8 @@ $F_{D,H} =~ F_{D3} + F_{D4}$
 </div>
 
 </div>
+
+
+<br>
+
+### Bestimmung der Parameter
