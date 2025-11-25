@@ -16,9 +16,9 @@ Description:
         **********************************************************
 
 SuspF.Kin.N =               1                           
-SuspF.Kin.0.Kind =          MapNL                       
-SuspF.Kin.0.ValidSide =     left+right                  
-SuspF.Kin.0.InputSide =     left+right                  
+SuspF.Kin.0.Kind =                            
+SuspF.Kin.0.InputSide =     left+riMapNL                       
+SuspF.Kin.0.ValidSide =     left+rightght                  
 
 SuspF.Kin.0.L.Arg =         comp    steer               
 
