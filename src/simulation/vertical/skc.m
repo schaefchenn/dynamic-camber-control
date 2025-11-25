@@ -41,8 +41,8 @@ camberMapFR = reshape(camberFR, size(steerFR, 2), size(compressionFR , 2));
 clear idx;
 
 f = figure('Name','kinematics');
-tg = uitabgroup(f,'Position',[0.05 0.05 0.9 0.9]);    % Tab-Gruppe
-t1 = uitab(tg,'Title','front left');                        % Tab 1
+tg = uitabgroup(f,'Position',[0.05 0.05 0.9 0.9]);
+t1 = uitab(tg,'Title','front left');                       
 t2 = uitab(tg,'Title','front right');
 
 axes(t1);

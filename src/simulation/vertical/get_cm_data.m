@@ -88,6 +88,30 @@ distance_to_pitch_center_rear.data_type = 'double';
 
 camber_control_bus.is_bus = true;
 camber_control_bus.bus_name = 'camberControlBus';
+camber_control_bus.spring_deflection_FL.value = 0;
+camber_control_bus.spring_deflection_FL.unit = 'm';
+camber_control_bus.spring_deflection_FL.data_type = 'double';
+camber_control_bus.spring_deflection_FR.value = 0;
+camber_control_bus.spring_deflection_FR.unit = 'm';
+camber_control_bus.spring_deflection_FR.data_type = 'double';
+camber_control_bus.spring_deflection_RL.value = 0;
+camber_control_bus.spring_deflection_RL.unit = 'm';
+camber_control_bus.spring_deflection_RL.data_type = 'double';
+camber_control_bus.spring_deflection_RR.value = 0;
+camber_control_bus.spring_deflection_RR.unit = 'm';
+camber_control_bus.spring_deflection_RR.data_type = 'double';
+camber_control_bus.camber_FL.value = 0;
+camber_control_bus.camber_FL.unit = 'rad';
+camber_control_bus.camber_FL.data_type = 'double';
+camber_control_bus.camber_FR.value = 0;
+camber_control_bus.camber_FR.unit = 'rad';
+camber_control_bus.camber_FR.data_type = 'double';
+camber_control_bus.camber_RL.value = 0;
+camber_control_bus.camber_RL.unit = 'rad';
+camber_control_bus.camber_RL.data_type = 'double';
+camber_control_bus.camber_RR.value = 0;
+camber_control_bus.camber_RR.unit = 'rad';
+camber_control_bus.camber_RR.data_type = 'double';
 
 json = struct();
 json.make = make;
@@ -104,6 +128,7 @@ json.compression_FR = compression_FR;
 json.steering_rack_displacement_FR = steering_rack_displacement_FR;
 json.camber_map_FR = camber_map_FR;
 json.camber_control_bus = camber_control_bus;
+
 
 jsonStr = jsonencode(json, 'PrettyPrint',true);
 fid = fopen(outputfile, "w");

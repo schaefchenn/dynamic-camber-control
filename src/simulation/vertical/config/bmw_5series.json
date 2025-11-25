@@ -1360,6 +1360,46 @@
   },
   "camber_control_bus": {
     "is_bus": true,
-    "bus_name": "camberControlBus"
+    "bus_name": "camberControlBus",
+    "spring_deflection_FL": {
+      "value": 0,
+      "unit": "m",
+      "data_type": "double"
+    },
+    "spring_deflection_FR": {
+      "value": 0,
+      "unit": "m",
+      "data_type": "double"
+    },
+    "spring_deflection_RL": {
+      "value": 0,
+      "unit": "m",
+      "data_type": "double"
+    },
+    "spring_deflection_RR": {
+      "value": 0,
+      "unit": "m",
+      "data_type": "double"
+    },
+    "camber_FL": {
+      "value": 0,
+      "unit": "rad",
+      "data_type": "double"
+    },
+    "camber_FR": {
+      "value": 0,
+      "unit": "rad",
+      "data_type": "double"
+    },
+    "camber_RL": {
+      "value": 0,
+      "unit": "rad",
+      "data_type": "double"
+    },
+    "camber_RR": {
+      "value": 0,
+      "unit": "rad",
+      "data_type": "double"
+    }
   }
 }
