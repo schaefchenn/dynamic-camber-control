@@ -59,10 +59,11 @@ function plot_camber(susp)
     [X, Y] = meshgrid(unique(x), unique(y));
     Z = griddata(x, y, z, X, Y); 
 
-    surf(X, Y, Z)
+    surf(X, Y, Z);
     xlabel('compression [mm]')
     ylabel('steering rack [mm]')
     zlabel('camber')
+    %s.EdgeColor = 'none';
     shading interp
-    colorbar
+    colormap("turbo")
 end
