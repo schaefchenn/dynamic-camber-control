@@ -1,4 +1,4 @@
-function [data] = read_suspension_file(filename)
+function [data] = read_cm_file(filename)
     txt = fileread(filename);
     lines = strsplit(txt, '\n')';
 

@@ -4,7 +4,7 @@ addpath(fullfile("include"))
 addpath(fullfile("dictionary"))
 addpath(fullfile("config"))
 
-vehicleConfigFile = fullfile('config/bmw_5series_param.json');
+vehicleConfigFile = fullfile('config/bmw_5series.json');
 vehicleData = read_json(vehicleConfigFile);
 
 dictFileName = fullfile('dictionary','vehicleData.sldd');
