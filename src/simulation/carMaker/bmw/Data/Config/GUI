@@ -1,0 +1,9 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = GUI-Config 12.0
+CM.Exe =
+CM.Args =
+CM.Exe.History:
+	""
+CM.Args.History:
+	""
+GPUParameters.FName =

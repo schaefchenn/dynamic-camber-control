@@ -1,0 +1,293 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-SuspKnC-DoubleWishbone	1
+FileCreator = CarMaker		2017-04-12 09:33:53 TEMPLATE
+Description:
+	Demo Double Wishbone Front Axle
+
+
+## General ###############################################################
+CalcMode = Dyn
+WithSteering = 1
+Mirror = 0
+RefPointInputSystem = -3.35  0.0  -0.3
+
+CarrierL.StaticCamber = -0.2
+CarrierR.StaticCamber = -0.2
+
+CarrierL.StaticToe = 3.0
+CarrierR.StaticToe = 3.0
+
+
+
+## Mass Inertia ##########################################################
+CarrierL.mass = 10.0
+CarrierL.I = 0.08  0.09  0.07
+
+CarrierR.mass = 10.0
+CarrierR.I = 0.08  0.09  0.07
+
+WishLowL.mass = 5.0
+WishLowL.I = 0.08  0.05  0.15
+
+WishLowR.mass = 5.0
+WishLowR.I = 0.08  0.05  0.15
+
+WishUppL.mass = 5.0
+WishUppL.I = 0.08  0.05  0.15
+
+WishUppR.mass = 5.0
+WishUppR.I = 0.08  0.05  0.15
+
+SpringL.mass = 2.0
+SpringL.I = 0.01  0.01  0.003
+
+SpringR.mass = 2.0
+SpringR.I = 0.01  0.01  0.003
+
+DamperL.mass = 2.5
+DamperL.I = 0.05  0.05  0.004
+
+DamperR.mass = 2.5
+DamperR.I = 0.05  0.05  0.004
+
+SteerRack.mass = 3.0
+SteerRack.I = 0.1  0.001  0.1
+
+SteerRodL.mass = 1.0
+SteerRodL.I = 0.01  0.001  0.01
+
+SteerRodR.mass = 1.0
+SteerRodR.I = 0.01  0.001  0.01
+
+StabiBar.mass = 3.0
+StabiBar.I = 0.5  0.05  0.6
+
+StabiLinkL.mass = 0.5
+StabiLinkL.I = 0.01  0.01  0.001
+
+StabiLinkR.mass = 0.5
+StabiLinkR.I = 0.01  0.01  0.001
+
+
+
+## Joints ################################################################
+CarrierL.Joint2WishLow.pos = 0.015  0.73  -0.12
+CarrierR.Joint2WishLow.pos = 0.015  -0.73  -0.12
+
+CarrierL.Joint2WishUpp.pos = 0.01  0.70  0.10
+CarrierR.Joint2WishUpp.pos = 0.01  -0.70  0.10
+
+CarrierL.Joint2StrRod.pos = -0.12  0.7  -0.05
+CarrierR.Joint2StrRod.pos = -0.12  -0.7  -0.05
+
+Vehicle.Joint2StBarL.pos = -0.15  0.25  -0.15
+Vehicle.Joint2StBarR.pos = -0.15  -0.25  -0.15
+
+StabiBarL.Joint2StLink.pos = 0.12  0.5  -0.10
+StabiBarR.Joint2StLink.pos = 0.12  -0.5  -0.10
+
+
+
+## Force Elements ########################################################
+SpringFrcL_Upp.pos = 0.00  0.55  0.30
+SpringFrcR_Upp.pos = 0.00  -0.55  0.30
+
+SpringFrcL_Low.pos = 0.00  0.57  0.10
+SpringFrcR_Low.pos = 0.00  -0.57  0.10
+
+DamperFrcL_Upp.pos = 0.00  0.55  0.30
+DamperFrcR_Upp.pos = 0.00  -0.55  0.30
+
+DamperFrcL_Low.pos = 0.00  0.58  -0.10
+DamperFrcR_Low.pos = 0.00  -0.58  -0.10
+
+Vehicle.SpringFrcOnWC = 1
+Vehicle.DamperFrcOnWC = 1
+StabiLink.BushFrcOnWC = 1
+
+
+## Bushings ##############################################################
+WishLowL.BushF2Vhcl.pos = 0.20  0.35  -0.12
+WishLowL.BushF2Vhcl.pntaxis = 0.60  0.35  -0.12
+WishLowL.BushF2Vhcl.pntplane = 0.20  0.70  -0.12
+WishLowL.BushF2Vhcl.c_x = 1.0e+06
+WishLowL.BushF2Vhcl.c_x.Amplify = 1.0
+WishLowL.BushF2Vhcl.c_y = 1.0e+07
+WishLowL.BushF2Vhcl.c_y.Amplify = 1.0
+WishLowL.BushF2Vhcl.c_z = 1.0e+07
+WishLowL.BushF2Vhcl.c_z.Amplify = 1.0
+WishLowL.BushF2Vhcl.k = 2500.0  10000.0  10000.0
+WishLowL.BushF2Vhcl.cT = 170.0  1000.0  1000.0
+WishLowL.BushF2Vhcl.kT = 0.0  0.0  0.0
+WishLowL.BushF2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+WishLowR.BushF2Vhcl.pos = 0.20  -0.35  -0.12
+WishLowR.BushF2Vhcl.pntaxis = 0.60  -0.35  -0.12
+WishLowR.BushF2Vhcl.pntplane = 0.20  -0.70  -0.12
+WishLowR.BushF2Vhcl.c_x = 1.0e+06
+WishLowR.BushF2Vhcl.c_x.Amplify = 1.0
+WishLowR.BushF2Vhcl.c_y = 1.0e+07
+WishLowR.BushF2Vhcl.c_y.Amplify = 1.0
+WishLowR.BushF2Vhcl.c_z = 1.0e+07
+WishLowR.BushF2Vhcl.c_z.Amplify = 1.0
+WishLowR.BushF2Vhcl.k = 2500.0  10000.0  10000.0
+WishLowR.BushF2Vhcl.cT = 170.0  1000.0  1000.0
+WishLowR.BushF2Vhcl.kT = 0.0  0.0  0.0
+WishLowR.BushF2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+WishLowL.BushR2Vhcl.pos = -0.20  0.35  -0.10
+WishLowL.BushR2Vhcl.pntaxis = -0.00  0.35  -0.10
+WishLowL.BushR2Vhcl.pntplane = -0.20  0.70  -0.10
+WishLowL.BushR2Vhcl.c_x = 2.0e+05
+WishLowL.BushR2Vhcl.c_x.Amplify = 1.0
+WishLowL.BushR2Vhcl.c_y = 1.0e+07
+WishLowL.BushR2Vhcl.c_y.Amplify = 1.0
+WishLowL.BushR2Vhcl.c_z = 1.0e+06
+WishLowL.BushR2Vhcl.c_z.Amplify = 1.0
+WishLowL.BushR2Vhcl.k = 700.0  1000.0  2500.0
+WishLowL.BushR2Vhcl.cT = 100.0  200.0  100.0
+WishLowL.BushR2Vhcl.kT = 0.0  0.0  0.0
+WishLowL.BushR2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+WishLowR.BushR2Vhcl.pos = -0.20  -0.35  -0.10
+WishLowR.BushR2Vhcl.pntaxis = -0.00  -0.35  -0.10
+WishLowR.BushR2Vhcl.pntplane = -0.20  -0.70  -0.10
+WishLowR.BushR2Vhcl.c_x = 2.0e+05
+WishLowR.BushR2Vhcl.c_x.Amplify = 1.0
+WishLowR.BushR2Vhcl.c_y = 1.0e+07
+WishLowR.BushR2Vhcl.c_y.Amplify = 1.0
+WishLowR.BushR2Vhcl.c_z = 1.0e+06
+WishLowR.BushR2Vhcl.c_z.Amplify = 1.0
+WishLowR.BushR2Vhcl.k = 700.0  1000.0  2500.0
+WishLowR.BushR2Vhcl.cT = 100.0  200.0  100.0
+WishLowR.BushR2Vhcl.kT = 0.0  0.0  0.0
+WishLowR.BushR2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+WishUppL.BushF2Vhcl.pos = 0.20  0.35  0.09
+WishUppL.BushF2Vhcl.pntaxis = 0.60  0.35  0.09
+WishUppL.BushF2Vhcl.pntplane = 0.20  0.70  0.09
+WishUppL.BushF2Vhcl.c_x = 1000000.0
+WishUppL.BushF2Vhcl.c_x.Amplify = 1.0
+WishUppL.BushF2Vhcl.c_y = 1000000.0
+WishUppL.BushF2Vhcl.c_y.Amplify = 1.0
+WishUppL.BushF2Vhcl.c_z = 1000000.0
+WishUppL.BushF2Vhcl.c_z.Amplify = 1.0
+WishUppL.BushF2Vhcl.k = 2000.0  5000.0  5000.0
+WishUppL.BushF2Vhcl.cT = 0.0  0.0  0.0
+WishUppL.BushF2Vhcl.kT = 0.0  0.0  0.0
+WishUppL.BushF2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+WishUppR.BushF2Vhcl.pos = 0.20  -0.35  0.09
+WishUppR.BushF2Vhcl.pntaxis = 0.60  -0.35  0.09
+WishUppR.BushF2Vhcl.pntplane = 0.20  -0.70  0.09
+WishUppR.BushF2Vhcl.c_x = 1000000.0
+WishUppR.BushF2Vhcl.c_x.Amplify = 1.0
+WishUppR.BushF2Vhcl.c_y = 1000000.0
+WishUppR.BushF2Vhcl.c_y.Amplify = 1.0
+WishUppR.BushF2Vhcl.c_z = 1000000.0
+WishUppR.BushF2Vhcl.c_z.Amplify = 1.0
+WishUppR.BushF2Vhcl.k = 2000.0  5000.0  5000.0
+WishUppR.BushF2Vhcl.cT = 0.0  0.0  0.0
+WishUppR.BushF2Vhcl.kT = 0.0  0.0  0.0
+WishUppR.BushF2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+WishUppL.BushR2Vhcl.pos = -0.20  0.35  0.09
+WishUppL.BushR2Vhcl.pntaxis = 0.00  0.35  0.09
+WishUppL.BushR2Vhcl.pntplane = -0.20  0.70  0.09
+WishUppL.BushR2Vhcl.c_x = 1000000.0
+WishUppL.BushR2Vhcl.c_x.Amplify = 1.0
+WishUppL.BushR2Vhcl.c_y = 1000000.0
+WishUppL.BushR2Vhcl.c_y.Amplify = 1.0
+WishUppL.BushR2Vhcl.c_z = 1000000.0
+WishUppL.BushR2Vhcl.c_z.Amplify = 1.0
+WishUppL.BushR2Vhcl.k = 2000.0  5000.0  5000.0
+WishUppL.BushR2Vhcl.cT = 0.0  0.0  0.0
+WishUppL.BushR2Vhcl.kT = 0.0  0.0  0.0
+WishUppL.BushR2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+WishUppR.BushR2Vhcl.pos = -0.20  -0.35  0.09
+WishUppR.BushR2Vhcl.pntaxis = 0.00  -0.35  0.09
+WishUppR.BushR2Vhcl.pntplane = -0.20  -0.70  0.09
+WishUppR.BushR2Vhcl.c_x = 1000000.0
+WishUppR.BushR2Vhcl.c_x.Amplify = 1.0
+WishUppR.BushR2Vhcl.c_y = 1000000.0
+WishUppR.BushR2Vhcl.c_y.Amplify = 1.0
+WishUppR.BushR2Vhcl.c_z = 1000000.0
+WishUppR.BushR2Vhcl.c_z.Amplify = 1.0
+WishUppR.BushR2Vhcl.k = 2000.0  5000.0  5000.0
+WishUppR.BushR2Vhcl.cT = 0.0  0.0  0.0
+WishUppR.BushR2Vhcl.kT = 0.0  0.0  0.0
+WishUppR.BushR2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+SteerRodL.Bush2StrRack.pos = -0.15  0.3  -0.05
+SteerRodL.Bush2StrRack.pntaxis = -0.00  0.3  -0.05
+SteerRodL.Bush2StrRack.pntplane = -0.15  0.4  -0.05
+SteerRodL.Bush2StrRack.c_x = 10000000.0
+SteerRodL.Bush2StrRack.c_x.Amplify = 1.0
+SteerRodL.Bush2StrRack.c_y = 10000000.0
+SteerRodL.Bush2StrRack.c_y.Amplify = 1.0
+SteerRodL.Bush2StrRack.c_z = 10000000.0
+SteerRodL.Bush2StrRack.c_z.Amplify = 1.0
+SteerRodL.Bush2StrRack.k = 1000.0  1000.0  1000.0
+SteerRodL.Bush2StrRack.cT = 0.0  0.0  0.0
+SteerRodL.Bush2StrRack.kT = 0.0  0.0  0.0
+SteerRodL.Bush2StrRack.Trq_KO = 0.0  0.0  0.0
+
+SteerRodR.Bush2StrRack.pos = -0.15  -0.3  -0.05
+SteerRodR.Bush2StrRack.pntaxis = -0.00  -0.3  -0.05
+SteerRodR.Bush2StrRack.pntplane = -0.15  -0.4  -0.05
+SteerRodR.Bush2StrRack.c_x = 10000000.0
+SteerRodR.Bush2StrRack.c_x.Amplify = 1.0
+SteerRodR.Bush2StrRack.c_y = 10000000.0
+SteerRodR.Bush2StrRack.c_y.Amplify = 1.0
+SteerRodR.Bush2StrRack.c_z = 10000000.0
+SteerRodR.Bush2StrRack.c_z.Amplify = 1.0
+SteerRodR.Bush2StrRack.k = 1000.0  1000.0  1000.0
+SteerRodR.Bush2StrRack.cT = 0.0  0.0  0.0
+SteerRodR.Bush2StrRack.kT = 0.0  0.0  0.0
+SteerRodR.Bush2StrRack.Trq_KO = 0.0  0.0  0.0
+
+StabiLinkL.Bush2WC.pos = 0.02  0.55  0.1
+StabiLinkL.Bush2WC.pntaxis = 0.02  0.60  0.1
+StabiLinkL.Bush2WC.pntplane = 0.02  0.55  0.3
+StabiLinkL.Bush2WC.c_x = 10000000.0
+StabiLinkL.Bush2WC.c_x.Amplify = 1.0
+StabiLinkL.Bush2WC.c_y = 10000000.0
+StabiLinkL.Bush2WC.c_y.Amplify = 1.0
+StabiLinkL.Bush2WC.c_z = 10000000.0
+StabiLinkL.Bush2WC.c_z.Amplify = 1.0
+StabiLinkL.Bush2WC.k = 1000.0  1000.0  1000.0
+StabiLinkL.Bush2WC.cT = 0.0  0.0  0.0
+StabiLinkL.Bush2WC.kT = 0.0  0.0  0.0
+StabiLinkL.Bush2WC.Trq_KO = 0.0  0.0  0.0
+
+StabiLinkR.Bush2WC.pos = 0.02  -0.55  0.1
+StabiLinkR.Bush2WC.pntaxis = 0.02  -0.60  0.1
+StabiLinkR.Bush2WC.pntplane = 0.02  -0.55  0.3
+StabiLinkR.Bush2WC.c_x = 10000000.0
+StabiLinkR.Bush2WC.c_x.Amplify = 1.0
+StabiLinkR.Bush2WC.c_y = 10000000.0
+StabiLinkR.Bush2WC.c_y.Amplify = 1.0
+StabiLinkR.Bush2WC.c_z = 10000000.0
+StabiLinkR.Bush2WC.c_z.Amplify = 1.0
+StabiLinkR.Bush2WC.k = 1000.0  1000.0  1000.0
+StabiLinkR.Bush2WC.cT = 0.0  0.0  0.0
+StabiLinkR.Bush2WC.kT = 0.0  0.0  0.0
+StabiLinkR.Bush2WC.Trq_KO = 0.0  0.0  0.0
+
+
+
+## Mapping ###############################################################
+Cfg.qComp_max = 0.1
+Cfg.nSteps_qComp = 17
+Cfg.qSteer_max = 0.08
+Cfg.nSteps_qSteer = 17
+Cfg.qCompC_max = 0.1
+Cfg.nSteps_qCompC = 7
+Cfg.Frc_max = 7000.0
+Cfg.Trq_max = 2000.0
+Cfg.nSteps_Frc = 11
+
+
+
+## Additional Parameters #################################################

@@ -1,0 +1,51 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-OutputQuantities 1
+
+DStore.Format = erg
+DStore.dt.fast = 0.001
+DStore.dt.normal = 0.01
+DStore.dt.slow = 0.1
+
+DStore.Quantities.fast:
+
+DStore.Quantities.normal:
+	Time
+	Car.v
+	Car.ax
+	Car.ay
+	Car.az
+	Car.CFL.q0
+	Car.CFL.rx
+	Car.CFR.q0
+	Car.CFR.rx
+	Car.CRL.q0
+	Car.CRL.rx
+	Car.CRR.q0
+	Car.CRR.rx
+	Car.DampFL.Frc
+	Car.DampFR.Frc
+	Car.DampRL.Frc
+	Car.DampRR.Frc
+	Steer.L.q
+	Steer.R.q
+	Steer.RL.q
+	Steer.RR.q
+	Car.Roll
+	Car.RollAcc
+	Car.RollVel
+	Car.Pitch
+	Car.PitchAcc
+	Car.PitchVel
+	Car.KinPitchCenter_L.x
+	Car.KinPitchCenter_L.z
+	Car.KinPitchCenter_R.x
+	Car.KinPitchCenter_R.z
+	Car.KinRollCenter_F.y
+	Car.KinRollCenter_F.x_1
+	Car.KinRollCenter_F.z
+	Car.KinRollCenter_R.x_1
+	Car.KinRollCenter_R.y
+	Car.KinRollCenter_R.z
+
+DStore.Quantities.slow:
+

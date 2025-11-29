@@ -1,0 +1,26 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-Tire-TameTire 1
+FileCreator = CarMaker 2019-12-02 11:00:04 TEMPLATE
+Description:
+
+
+## General ###############################################################
+
+
+## Visualization #########################################################
+FLoadMax = 10000.0
+
+
+## Tame-Tire #############################################################
+PropertyFile = TirePropertyFile/TA_JL_ref_Rear_61_IPG.tir
+InfPress = 2.4
+
+Init.TempInternalAir = 25.0
+Init.TempCore = 25.0
+Init.TempSurf = 25.0
+Init.TempTrack = 25.0
+
+
+## Additional Parameters #################################################
+
+

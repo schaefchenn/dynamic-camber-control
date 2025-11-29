@@ -1,0 +1,28 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-Tire-TASS_MF 1
+FileCreator = CarMaker 10.0 TEMPLATE
+
+Description:
+	MFS 205/60R15
+
+
+## General ###############################################################
+
+
+## Visualization #########################################################
+FLoadMax = 10000.0
+
+
+## Parameter File ########################################################
+AdamsPropertyFile = TirePropertyFile/Siemens_car205_60R15.tir
+
+
+## TASS_MF ###############################################################
+TyreSide = auto
+ContactMethod = smooth_road
+Dynamics = non_linear
+SlipForces = combined
+TemperatureAndVelocityMode = disabled
+
+
+## Additional ############################################################

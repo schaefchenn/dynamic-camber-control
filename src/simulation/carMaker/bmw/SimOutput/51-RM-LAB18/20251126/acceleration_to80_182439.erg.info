@@ -1,0 +1,131 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+
+File.Format = erg
+File.ByteOrder = LittleEndian
+File.DateInSeconds = 1764177886
+File.DateLocal = 2025-11-26 18:24:46 Mitteleuropäische Zeit
+
+File.At.1.Name = Time
+File.At.1.Type = Double
+Quantity.Time.Unit = s
+
+File.At.2.Name = Car.CamberFL
+File.At.2.Type = Float
+Quantity.Car.CamberFL.Unit = rad
+
+File.At.3.Name = Car.ax
+File.At.3.Type = Float
+Quantity.Car.ax.Unit = m/s^2
+
+File.At.4.Name = Car.ay
+File.At.4.Type = Float
+Quantity.Car.ay.Unit = m/s^2
+
+File.At.5.Name = Car.v
+File.At.5.Type = Float
+Quantity.Car.v.Unit = m/s
+
+Anim.Msg.0.Time = 0
+Anim.Msg.0.Class = Anim
+Anim.Msg.0.Id = 18
+Anim.Msg.0.Data:
+	QyvMUrp3bMinV1m5GIMiw/cyOB9DK8zCAAAAYAAAAGAAAAAAABJ3aW42NABPZmZs
+	aW5lADEyLjAuMQBDOi9Vc2Vycy9FL0Rlc2t0b3AvY2FtYmVyX2NvdHJvbABhY2Nl
+	bGVyYXRpb25fdG84MABhY2NlbGVyYXRpb25fdG84MAAAAdTB
+
+Anim.Msg.1.Time = 0
+Anim.Msg.1.Class = Anim
+Anim.Msg.1.Id = 50
+Anim.Msg.1.Data:
+	C99dMOCeij7BhwiyvprdHWPz3Y4L310kAAAAAwAAAAMAAAAAADIA
+
+Anim.Msg.2.Time = 0
+Anim.Msg.2.Class = Anim
+Anim.Msg.2.Id = 51
+Anim.Msg.2.Data:
+	qU6qT6qvrqzj9/D0O0bqo5dHdBWpTqpbAAAAAwAAAAMAAAAAADMA
+
+Anim.Msg.3.Time = 0
+Anim.Msg.3.Class = Anim
+Anim.Msg.3.Id = 21
+Anim.Msg.3.Data:
+	cgE7IrLVZ1+dLfRUA5cMfWz2PXFyATu+AAAAaAAAAGgAAAAAABUAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK
+
+Anim.VehicleClass = Car
+Anim.Vehicle.MovieSkin = 3D/Vehicles/BMW_5_2017_LaneTracking.obj
+
+Anim.Msg.4.Time = 0
+Anim.Msg.4.Class = Anim
+Anim.Msg.4.Id = 11
+Anim.Msg.4.Data:
+	D3CJxWvxyahd4VJJhf4a/XA02E4PcIj1AAAA2AAAANgAAAAAAAsEAAACAAAAAAAA
+	P06XjT6eNT9AnfO2v0zMzT+9T98AAAAAAAAAAAAAAABAJ41QAAAAAD8an75Eq6ma
+	RQhIAL3MzM0AAAAAPszMzUCCsCE/TMzNPp41P0CCsCG/TMzNPp41Pz+N87Y/TpeN
+	Pp41Pz+N87a/TpeNPp41PwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	vczMzQAAAAA+zMzN
+
+Anim.Msg.5.Time = 0
+Anim.Msg.5.Class = Anim
+Anim.Msg.5.Id = 15
+Anim.Msg.5.Data:
+	2CIZkNCEGJh+76FtYUfSU/8ApxvYIhlYAAAAiAAAAIgAAAAAAA8EAAAAAAAAAQAA
+	Pq3S8j5c7ZEAAAAAPmZmZoAAAAAAAAAARc+AAAH/AAA+rdLyPlztkYAAAAA+ZmZm
+	AAAAAAAAAABFz4AAAgEAAD6t0vI+XO2RAAAAAD5mZmaAAAAAAAAAAEXPgAAD/wAA
+	Pq3S8j5c7ZGAAAAAPmZmZgAAAAAAAAAARc+AAAoK
+
+Anim.Msg.6.Time = 0
+Anim.Msg.6.Class = Anim
+Anim.Msg.6.Id = 23
+Anim.Msg.6.Data:
+	dZJnVwsvG/ECyGJiHzI1Qv/Clsp1kmePAAAAlAAAAJQAAAAAABcAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoK
+
+Anim.Msg.7.Time = 0
+Anim.Msg.7.Class = Instr
+Anim.Msg.7.Id = 0
+Anim.Msg.7.Data:
+	PkT33fieCvO2IB1wuwSV7FXlQKE+RPfxAAAAFAAAABQAAAAAAAAAAQAIAAFFuhf/
+	Q57EogAAAAIK
+
+Anim.Msg.8.Time = 0
+Anim.Msg.8.Class = Anim
+Anim.Msg.8.Id = 22
+Anim.Msg.8.Data:
+	3LNEBV1XSGZFQimrLTBT+wLozkLcs0QpAAAAFAAAABQAAAAAABYAAQAIAAFFuhf/
+	Q57EogAAAAIK
+
+Anim.Msg.9.Time = 0
+Anim.Msg.9.Class = Anim
+Anim.Msg.9.Id = 17
+Anim.Msg.9.Data:
+	pGfWDp4l20/nn+qWo2Xwhq7QBdCkZ9aKAAAAVwAAAFcAAAAAABEAAAEAAABDFgAA
+	Po76NT4O+jVAnMzNAAAAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgD8BAAAA
+	AAAAAAAAAAAAAAAAAAAAAAAAAABSYWRhckwA
+
+Testrun = acceleration_to80
+
+SimParam.DeltaT = 0.001
+
+NamedValues.Count = 0
+
+KeyValues.Count = 0
+
+GPUSensors.Count = 0
+
+Comment:
+	For more details see session logfile
+
+CarMaker.NumVersion = 120001
+CarMaker.Version = 12.0.1
+CarMaker.Version.MatSupp = 12.0.1
+CarMaker.Version.Apo = 2.0
+CarMaker.Version.Info = 2.0
+CarMaker.Version.Driver = 12.0.1.2
+CarMaker.Version.Road = 12.0.1
+CarMaker.Version.Tire = 9.1
+

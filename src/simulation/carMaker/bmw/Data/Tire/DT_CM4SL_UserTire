@@ -1,0 +1,14 @@
+FileIdent = CarMaker-Tire-CM4SL 1
+FileCreator = 
+Description:
+	CarMaker for Simulink / sample user defined tire.
+
+Radial.c = 350000
+Radial.k = 1000
+
+KinRollRadius = 0.28
+NomRadius = 0.3232
+NomWidth = 0.195
+AspectRatio = 0.65
+
+FLoadMax = 10000

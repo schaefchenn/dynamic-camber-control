@@ -1,0 +1,274 @@
+
+
+SYSTEM_START	-	51-RM-LAB18	Mi Nov 26 15:12:16 2025
+
+
+SYSTEM_INFO	MovieNX pro 12.0.1 2023-05-24
+WARNING: Invalid configuration file for Creator "MovieNX". Perhaps the file was not yet created? Path: C:/Users/E/MovieNX/data/View/ViewSettings.cfg)
+APO: Successfully connected to: CarMaker 12.0.1 - Car_Generic @ 51-RM-LAB18(127.0.0.1):24832
+Using RenderSettingsProfile: RenderSettings_high.cfg -> template_high.render
+Loading Installed scripts...
+Loading User scripts...
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+WARNING: EgoVehicle: missing 'body_A2B' node!
+WARNING: EgoTrailer: missing 'drawbar_pivot' node!
+node wheel.fl missing in EgoTrailer, using dummy instead
+WARNING: EgoTrailer: wheel carrier  should have only one child node
+node wheel.fr missing in EgoTrailer, using clone instead
+WARNING: EgoTrailer: wheel carrier wheel.fr should have only one child node
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/IPG/carmaker/win64-12.0.1/Data/TestRun/Examples/VehicleDynamics/Braking/Braking
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.0
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/.tmp_51-RM-LAB18_E.1
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/const_vel80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/stat_circle80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/acceleration_to80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/
+Loading TestRun from path C:/Users/E/Desktop/camber_cotrol/Data/TestRun/decceleration_from80
+WARNING: Could not find file 3D/Vehicles/BMW_5_2017_LaneTracking.objinfo. Search paths: C:/Users/E/Desktop/camber_cotrol/MovieNX/data/, C:/IPG/movienx/win64-12.0.1/bin/../data/

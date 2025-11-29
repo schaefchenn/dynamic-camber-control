@@ -1,0 +1,83 @@
+$-----------------------------------------------------------------TAMETIRE_HEADER
+[TAMETIRE_HEADER]  
+FILE_TYPE                =  'tir'               
+FILE_VERSION             =  6.1                 
+FILE_FORMAT              =  'ASCII'             
+(COMMENTS) 
+{comment_string} 
+'MICHELIN JL_ref_Rear_61 295 / 30 19'
+$-----------------------------------------------------------------UNITS
+[UNITS]  
+LENGTH                   =  'meter'             
+FORCE                    =  'newton'            
+ANGLE                    =  'radians'           
+MASS                     =  'kg'                
+TIME                     =  'second'            
+$-----------------------------------------------------------------MODEL
+[MODEL]  
+PROPERTY_FILE_FORMAT     =  'TAMETIRE'          
+USER_ID                  =  'IPG'               
+$-----------------------------------------------------------------INITIAL_CONDITIONS
+[INIT]  
+Time                     =  0                   
+TGI                      =  70                  
+TempSurf                 =  70                  
+TempTrack                =  20                  
+TempCore                 =  70                  
+TempRim                  =  25                  
+InfPress                 =  2.4                
+TAirInterne              =  25                  
+$-----------------------------------------------------------------MODEL_CONDITIONS
+[PARAMETERS]  
+SolverMode               =  2                   
+CalcOpt                  =  1                   
+CalcFrame                =  1                   
+Side                     =  'right'             
+ImposedPressure          =  1                   
+WearAndDegradation       =  0                   
+$-----------------------------------------------------------------LIMIT
+[LIMIT]  
+{IncAng} 
+-0.100000000000000 0.100000000000000
+{Deflec} 
+0.000000000000000 0.040879534585455
+{TempSurf} 
+10.000000000000000 200.000000000000000
+{TCore} 
+10.000000000000000 200.000000000000000
+$-----------------------------------------------------------------DIMENSION
+[DIMENSION]  
+UNLOADED_RADIUS          =  0.32980             $ m
+RIM_RADIUS               =  0.241               $ m
+ASPECT_RATIO             =  0.30                $ -
+WIDTH                    =  0.295               $ m
+RIM_WIDTH                =  0.279               $ m
+$-----------------------------------------------------------------VERTICAL
+[VERTICAL]  
+VERTICAL_DAMPING         =  3500                
+STIFFNESS                =  275605              
+VERTICAL_STIFFNESS       =  132081              $ N/m
+PRESSURE_STIFFNESS       =  89703               
+FLOAD_MAX                =  12000               $ N
+$-----------------------------------------------------------------STANDSTILL
+[STANDSTILL]  
+cLong                    =  0.01                
+cSide                    =  0.20                
+vMax                     =  0.25                
+$-----------------------------------------------------------------SCALE
+[SCALE]  
+LatSlipStiff             =  1                   $ -
+LongSlipStiff            =  1                   $ -
+BeltCompl                =  1                   $ -
+TorsStiff                =  1                   $ -
+GlobalFric               =  1                   $ -
+TreadDepth               =  1                   $ -
+LongStiff                =  1                   $ -
+LatStiff                 =  1                   $ -
+VertStiff                =  1                   $ -
+RR                       =  1                   $ -
+LmuP                     =  1                   $ -
+$-----------------------------------------------------------------DATA
+[DATA]  
+{CData} 
+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
