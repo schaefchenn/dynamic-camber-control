@@ -1,19 +1,20 @@
 clc; clear;
-cd(matlab.desktop.editor.getActive;
 
-addpath(fullfile("cache\"))
-addpath(fullfile("model\"))
-addpath(fullfile("include\"))
+addpath(fullfile("cache"))
+addpath(fullfile("inputs"))
+addpath(fullfile("model"))
+addpath(fullfile("include"))
+addpath(fullfile("config"))
+addpath(fullfile("dictionary"))
+
+simin = load('inputs/stat_circle80.mat');
 
 Simulink.fileGenControl('set', ...
     'CacheFolder', 'cache', ...
     'CodeGenFolder', 'cache');
 
 simConfig = struct( ...
-    'model', 'vertical', ...
-    'vehicleConfigFile', 'bmw_5series_param.json', ...
+    'model', 'camber_control', ...
     'openSystem', true);
 
-jsontxt = textscan(simConfig.vehicleConfigFile);
-vehicleParameter = jsondecode(jsontxt);
 if simConfig.openSystem, open_system(simConfig.model); end
