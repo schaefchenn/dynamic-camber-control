@@ -7,7 +7,7 @@ addpath(fullfile("include"))
 addpath(fullfile("config"))
 addpath(fullfile("dictionary"))
 
-simin = load('stat_circ80.mat');
+simin = load('deccel_from80.mat');
 simin = simin.data;
 
 Simulink.fileGenControl('set', ...
