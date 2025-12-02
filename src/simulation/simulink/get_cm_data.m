@@ -52,6 +52,13 @@ camber_map_FL.value = camberMapFL;
 camber_map_FL.unit = ' ';
 camber_map_FL.data_type = 'double';
 
+springFL = suspFL(:,9);
+springMapFL = reshape(springFL, size(steerFL, 2), size(compressionFL, 2));
+
+spring_map_FL.value = springMapFL;
+spring_map_FL.unit = ' ';
+spring_map_FL.data_type = 'double';
+
 compressionFR = suspData.SuspF_Kin_0_R_Arg0_Fac2SI * suspData.SuspF_Kin_0_R_Arg0;
 steerFR = suspData.SuspF_Kin_0_R_Arg1;
 suspFR = suspData.SuspF_Kin_0_R_Data_Fac2SI .* suspData.SuspF_Kin_0_R_Data;
@@ -73,6 +80,13 @@ steering_rack_displacement_FR.data_type = 'double';
 camber_map_FR.value = camberMapFR;
 camber_map_FR.unit = ' ';
 camber_map_FR.data_type = 'double';
+
+springFR = suspFR(:,9);
+springMapFR = reshape(springFR, size(steerFR, 2), size(compressionFR, 2));
+
+spring_map_FR.value = springMapFR;
+spring_map_FR.unit = ' ';
+spring_map_FR.data_type = 'double';
 
 distance_to_pitch_center_rear.unit = ' ';
 distance_to_pitch_center_front.data_type = 'array';
@@ -124,9 +138,11 @@ json.distance_to_pitch_center_rear = distance_to_pitch_center_rear;
 json.compression_FL = compression_FL;
 json.steering_rack_displacement_FL = steering_rack_displacement_FL;
 json.camber_map_FL = camber_map_FL;
+json.spring_map_FL = spring_map_FL;
 json.compression_FR = compression_FR;
 json.steering_rack_displacement_FR = steering_rack_displacement_FR;
 json.camber_map_FR = camber_map_FR;
+json.spring_map_FR = spring_map_FR;
 json.camber_control_bus = camber_control_bus;
 
 
