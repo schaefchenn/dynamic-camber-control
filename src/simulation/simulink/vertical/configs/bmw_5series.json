@@ -1,0 +1,88 @@
+{
+  "info": {
+    "manufacturer": "BMW",
+    "model": "5 Series",
+    "modelCode": "G30",
+    "year": 2017
+  },
+
+  "parameters": {
+    "sprung_mass": {
+      "value": 1373.3,
+      "unit": "kg",
+      "datatype": "double"
+    },
+
+    "wheelbase": {
+      "value": 2.975,
+      "unit": "m",
+      "datatype": "double"
+    },
+
+    "cog_height": {
+      "value": 0.604,
+      "unit": "m",
+      "datatype": "double"
+    },
+
+    "trackwidth_F": {
+      "value": 1.6,
+      "unit": "m",
+      "datatype": "double"
+    },
+
+    "trackwidth_R": {
+      "value": 1.614,
+      "unit": "m",
+      "datatype": "double"
+    },
+
+    "total_rollStiffness": {
+      "value": 138201.9734,
+      "unit": "Nm/rad",
+      "datatype": "double"
+    },
+
+    "rollStiffness_F": {
+      "value": -66168.4036,
+      "unit": "Nm/rad",
+      "datatype": "double"
+    },
+
+    "rollStiffness_R": {
+      "value": -79058.3706,
+      "unit": "Nm/rad",
+      "datatype": "double"
+    },
+
+    "total_pitchStiffness": {
+      "value": 291158.1055,
+      "unit": "Nm/rad",
+      "datatype": "double"
+    },
+
+    "Fz_stat_FL": {
+      "value": 3921.3656,
+      "unit": "N",
+      "datatype": "double"
+    },
+
+    "Fz_stat_FR": {
+      "value": 3921.3656,
+      "unit": "N",
+      "datatype": "double"
+    },
+
+    "Fz_stat_RL": {
+      "value": 3922.1269,
+      "unit": "N",
+      "datatype": "double"
+    },
+
+    "Fz_stat_RR": {
+      "value": 3922.1267,
+      "unit": "N",
+      "datatype": "double"
+    }
+  }
+}
