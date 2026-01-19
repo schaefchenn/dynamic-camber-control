@@ -1,6 +1,7 @@
 clc; clear; close;
 
 baseDir = fileparts(matlab.desktop.editor.getActiveFilename);
+cd(baseDir)
 
 addpath(baseDir);
 addpath(genpath(fullfile(baseDir, "model")));
