@@ -1,0 +1,50 @@
+#INFOFILE1 - Do not remove this line!
+FileIdent = CarMaker-Tire-RTTire 3
+FileCreator = CarMaker 2012-04-03 14:29:35 TEMPLATE
+Description:
+	Tire parameters based on file 'DT_225_65R16.tdx'
+	""
+	#   Load:      32 points [ 0 N  to  17253.1 N ]
+	#   Slip:     128 points [ -0.38   to  0.38 ]
+	#   Alpha:    128 points [ -14.1455 deg  to  13.9175 deg ]
+
+
+## General ###############################################################
+Side = left
+StandStill.cLong = 0.1
+StandStill.cSide = 0.2
+
+
+## Visualization #########################################################
+FLoadMax = 13802
+NomWidth = 0.335
+AspectRatio = 0.30
+RimRadius = 0.241
+
+
+## RT-Tire ###############################################################
+muRoad = 1
+KinRollRadius = 0.322
+NomRadius = 0.355
+Radial.Stiffness = 450000
+Radial.Damping = 1000
+
+RollResist.Kind = TrqLoad
+RollResist.Factor = 0.01
+
+LongFrc.Length = 0.05
+SideFrc.Length = 0.1
+AlignTrq.Length = 0.1
+LongFrc.Stiffness = 1.0
+SideFrc.Stiffness = 1.0
+AlignTrq.Stiffness = 1.0
+
+InclinAngle2OffsetFy = 0.0
+InclinAngle2OffsetMz = 0.0
+InclinAngle2Alpha = 0.0
+
+TurnSlip.MzMax = 0.0
+TurnSlip.cMz = 0.0
+TurnSlip.Alpha2Mz = 0.0
+
+BinFName = Mapping/RT_225_60R15.bin

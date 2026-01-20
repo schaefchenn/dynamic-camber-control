@@ -1,0 +1,30 @@
+#INFOFILE1 - Do not remove this line!
+FileIdent = CarMaker-Tire-MyModelSTI 1
+
+# General CarMaker Tire Parameters ###
+
+Radial.Stiffness =	450000
+Radial.Damping =	1000
+
+KinRollRadius =		0.297 
+NomRadius =		0.317 
+NomWidth =		0.205
+AspectRatio =		0.55
+
+FLoadMax =             10000
+
+StandStill.cLong = 	0.01
+StandStill.cSide = 	0.2
+
+# Tire Model Specific Parameters ###
+
+MyTire.Fx.c1 =		0.9
+MyTire.Fx.c2 =		33
+MyTire.Fx.c3 =		0.1
+
+MyTire.Fy.c1 =		1.05
+MyTire.Fy.c2 =		35
+MyTire.Fy.c3 =		0.4
+
+MyTire.cMy =		0.01
+MyTire.rlen =		0.2

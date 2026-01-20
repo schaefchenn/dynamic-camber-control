@@ -1,0 +1,130 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-SuspKnC-TwistBeam	1
+FileCreator = CarMaker		2017-04-12 09:34:38 TEMPLATE
+Description:
+	Demo Twist Beam Rear Axle
+
+
+## General ###############################################################
+CalcMode = Dyn
+WithSteering = 0
+Mirror = 0
+RefPointInputSystem = -0.86  0.0  -0.30
+
+CarrierL.StaticCamber = -0.85
+CarrierR.StaticCamber = -0.85
+
+CarrierL.StaticToe = 8.5
+CarrierR.StaticToe = 8.5
+
+
+
+## Mass Inertia ##########################################################
+TorsBeam.mass = 5.0
+TorsBeam.I = 0.05  0.03  0.05
+
+CarrierL.mass = 10.0
+CarrierL.I = 0.03  0.06  0.04
+
+CarrierR.mass = 10.0
+CarrierR.I = 0.03  0.06  0.04
+
+SpringL.mass = 2.0
+SpringL.I = 0.01  0.01  0.003
+
+SpringR.mass = 2.0
+SpringR.I = 0.01  0.01  0.003
+
+DamperL.mass = 2.5
+DamperL.I = 0.05  0.05  0.004
+
+DamperR.mass = 2.5
+DamperR.I = 0.05  0.05  0.004
+
+TrailArmL.mass = 5.0
+TrailArmL.I = 0.04  0.05  0.05
+
+TrailArmR.mass = 5.0
+TrailArmR.I = 0.04  0.05  0.05
+
+
+
+## Joints ################################################################
+CarrierL.Joint2TrailArm.pos = 0.20   0.55  -0.024
+CarrierR.Joint2TrailArm.pos = 0.20  -0.55  -0.024
+
+TrailArmL.Joint2TorsBeam.pos = 0.35   0.55  -0.042
+TrailArmR.Joint2TorsBeam.pos = 0.35  -0.55  -0.042
+
+
+
+## Force Elements ########################################################
+SpringFrcL_Upp.pos =  0.08   0.575  0.20
+SpringFrcR_Upp.pos =  0.08  -0.575  0.20
+
+SpringFrcL_Low.pos =  0.06   0.60  0.00
+SpringFrcR_Low.pos =  0.06  -0.60  0.00
+
+DamperFrcL_Upp.pos = -0.06   0.55  0.40
+DamperFrcR_Upp.pos = -0.06  -0.55  0.40
+
+DamperFrcL_Low.pos = -0.08   0.60  0.00
+DamperFrcR_Low.pos = -0.08  -0.60  0.00
+
+TrailArmL.cT = 50000.0  5000.0  500000.0
+TrailArmL.kT =  2500.0   250.0   25000.0
+TrailArmR.cT = 50000.0  5000.0  500000.0
+TrailArmR.kT =  2500.0   250.0   25000.0
+
+CarrierL.cT = 50000.0  50000.0  500000.0
+CarrierL.kT =  2500.0   2500.0   25000.0
+CarrierR.cT = 50000.0  50000.0  500000.0
+CarrierR.kT =  2500.0   2500.0   25000.0
+
+
+
+## Bushings ##############################################################
+TrailArmL.Bush2Vhcl.pos =	0.50  0.60  -0.06
+TrailArmL.Bush2Vhcl.pntaxis =	0.50  0.90  -0.06
+TrailArmL.Bush2Vhcl.pntplane =	0.80  0.60  -0.06
+TrailArmL.Bush2Vhcl.c_x =	1000000.0
+TrailArmL.Bush2Vhcl.c_x.Amplify = 1.0
+TrailArmL.Bush2Vhcl.c_y =	1000000.0
+TrailArmL.Bush2Vhcl.c_y.Amplify = 1.0
+TrailArmL.Bush2Vhcl.c_z =	1000000.0
+TrailArmL.Bush2Vhcl.c_z.Amplify = 1.0
+TrailArmL.Bush2Vhcl.k =		500.0  500.0  500.0
+TrailArmL.Bush2Vhcl.cT =	0.0  0.0  0.0
+TrailArmL.Bush2Vhcl.kT =	0.0  0.0  0.0
+TrailArmL.Bush2Vhcl.Trq_KO =	0.0  0.0  0.0
+
+TrailArmR.Bush2Vhcl.pos =	0.50  -0.60  -0.06
+TrailArmR.Bush2Vhcl.pntaxis =	0.50  -0.30  -0.06
+TrailArmR.Bush2Vhcl.pntplane =	0.80  -0.60  -0.06
+TrailArmR.Bush2Vhcl.c_x =	1000000.0
+TrailArmR.Bush2Vhcl.c_x.Amplify = 1.0
+TrailArmR.Bush2Vhcl.c_y =	1000000.0
+TrailArmR.Bush2Vhcl.c_y.Amplify = 1.0
+TrailArmR.Bush2Vhcl.c_z =	1000000.0
+TrailArmR.Bush2Vhcl.c_z.Amplify = 1.0
+TrailArmR.Bush2Vhcl.k =		500.0  500.0  500.0
+TrailArmR.Bush2Vhcl.cT =	0.0  0.0  0.0
+TrailArmR.Bush2Vhcl.kT =	0.0  0.0  0.0
+TrailArmR.Bush2Vhcl.Trq_KO =	0.0  0.0  0.0
+
+
+
+## Mapping ###############################################################
+Cfg.qComp_max = 0.1
+Cfg.nSteps_qComp = 17
+Cfg.qSteer_max = 0.08
+Cfg.nSteps_qSteer = 17
+Cfg.qCompC_max = 0.1
+Cfg.nSteps_qCompC = 7
+Cfg.Frc_max = 9000.0
+Cfg.Trq_max = 2000.0
+Cfg.nSteps_Frc = 11
+
+
+
+## Additional Parameters #################################################

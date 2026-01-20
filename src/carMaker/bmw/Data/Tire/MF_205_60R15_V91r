@@ -1,0 +1,11 @@
+# $Id$
+FileIdent =	CarMaker-Tire-MF52 2
+
+Description:
+	MF52 205/60R15 91V, 2.2bar
+	Version 23/07/2010
+
+AdamsPropertyFile =	TirePropertyFile/MF_205_60R15_V91.tir
+
+Side = left
+FLoadMax = 10000

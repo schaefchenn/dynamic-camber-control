@@ -1,0 +1,98 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-OutputQuantities 1
+
+DStore.Format = erg
+DStore.dt.fast = 0.001
+DStore.dt.normal = 0.01
+DStore.dt.slow = 0.1
+
+DStore.Quantities.fast:
+
+DStore.Quantities.normal:
+	Time
+	Car.v
+	Car.ax
+	Car.ay
+	Car.az
+	Car.tx
+	Car.ty
+	Car.tz
+	Car.CFL.q0
+	Car.CFR.q0
+	Car.CRL.q0
+	Car.CRR.q0
+	Car.CFL.q2
+	Car.CFR.q2
+	Car.CRL.q2
+	Car.CRR.q2
+	Steer.L.q
+	Steer.R.q
+	Steer.RL.q
+	Steer.RR.q
+	Car.CFL.rx
+	Car.CFR.rx
+	Car.CRL.rx
+	Car.CRR.rx
+	Car.CFL.rx_kin
+	Car.CFR.rx_kin
+	Car.CRL.rx_kin
+	Car.CRR.rx_kin
+	Car.CamberFL
+	Car.CamberFR
+	Car.CamberRL
+	Car.CamberRR
+	Car.SlipAngleFL
+	Car.SlipAngleFR
+	Car.SlipAngleRL
+	Car.SlipAngleRR
+	Car.DampFL.Frc
+	Car.DampFR.Frc
+	Car.DampRL.Frc
+	Car.DampRR.Frc
+	Car.SpringFL.Frc
+	Car.SpringFR.Frc
+	Car.SpringRL.Frc
+	Car.SpringRR.Frc
+	Car.StabiFL.Frc
+	Car.StabiFR.Frc
+	Car.StabiRL.Frc
+	Car.StabiRR.Frc
+	Car.SteerAngleFL
+	Car.SteerAngleFR
+	Car.SteerAngleRL
+	Car.SteerAngleRR
+	Car.Roll
+	Car.RollAcc
+	Car.RollVel
+	Car.Pitch
+	Car.PitchAcc
+	Car.PitchVel
+	Car.FzFL
+	Car.FzFR
+	Car.FzRL
+	Car.FzRR
+	Car.Virtual.Trq_1.x
+	Car.Virtual.Trq_1.y
+	Car.KinPitchCenter_L.x
+	Car.KinPitchCenter_L.x_1
+	Car.KinPitchCenter_L.z
+	Car.KinPitchCenter_L.z_1
+	Car.KinPitchCenter_L.y_1
+	Car.KinPitchCenter_R.x
+	Car.KinPitchCenter_R.x_1
+	Car.KinPitchCenter_R.z
+	Car.KinPitchCenter_R.z_1
+	Car.KinPitchCenter_R.y_1
+	Car.KinRollCenter_F.y
+	Car.KinRollCenter_F.y_1
+	Car.KinRollCenter_F.z
+	Car.KinRollCenter_F.z_1
+	Car.KinRollCenter_F.x_1
+	Car.KinRollCenter_R.y
+	Car.KinRollCenter_R.y_1
+	Car.KinRollCenter_R.z
+	Car.KinRollCenter_R.z_1
+	Car.KinRollCenter_R.x_1
+
+DStore.Quantities.slow:
+

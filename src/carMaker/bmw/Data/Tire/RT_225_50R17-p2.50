@@ -1,0 +1,40 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-Tire-RTTire 3
+FileCreator = tireutil v5.1.3, 2017-01-19 TEMPLATE
+CreateArgs = -if Data/Tire/Examples/225-50R17-p2.50.tdx -of Data/Tire/Examples/225-50R17-p2.50 
+
+Description:
+	Created with IPG Tire Data Set Generator - Version Date: 2016-04-28
+	Generated - not validated - Tire data
+	Based on '225-50R17-p2.50.tdx'
+	""
+	#   Load:      32 points [ 0 N  to  7700 N ]
+	#   Slip:     128 points [ -0.15   to  0.15 ]
+	#   Alpha:    128 points [ -12 deg  to  12 deg ]
+
+Side = left
+muRoad = 1
+
+Radial.Stiffness = 387382
+Radial.Damping = 4833
+
+KinRollRadius = 0.32
+NomRadius = 0.3285
+NomWidth = 0.225
+AspectRatio = 0.5
+
+FLoadMax = 7700
+
+LongFrc.Length = 0.05
+SideFrc.Length = 0.1
+AlignTrq.Length = 0.1
+
+StandStill.cLong = 0.01
+StandStill.cSide = 0.01
+
+
+RollResist.Kind = TrqLoad
+RollResist.Factor = 0.0201
+
+BinFName = Mapping/RT_225_50R17-p2.50.bin
+

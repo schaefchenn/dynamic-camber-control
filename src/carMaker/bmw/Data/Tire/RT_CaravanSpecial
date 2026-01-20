@@ -1,0 +1,35 @@
+#INFOFILE1 - Do not remove this line!
+FileIdent = CarMaker-Tire-RTTire 3
+FileCreator = CarMaker 3.0 2009-10-07 TEMPLATE
+Description:
+	Tire parameters based on file 'DT_CaravanSpecial.tdx'
+	""
+	#   Load:      32 points [ 0 N  to  10614.3 N ]
+	#   Slip:     128 points [ -0.15   to  0.15 ]
+	#   Alpha:    128 points [ -12.12 deg  to  12.13 deg ]
+
+Side = 			left
+muRoad = 		1
+
+Radial.Stiffness = 	500000
+Radial.Damping = 	1000
+
+KinRollRadius = 	0.28
+NomRadius = 		0.29
+NomWidth = 		0.195
+AspectRatio = 		0.5
+
+FLoadMax = 		14000
+
+LongFrc.Length = 	0.05
+SideFrc.Length = 	0.1
+AlignTrq.Length = 	0.05
+
+StandStill.cLong = 	0.01
+StandStill.cSide = 	0.2
+
+RollResist.Kind = 	TrqLoad
+RollResist.Factor = 	0.01
+
+BinFName = Mapping/RT_CaravanSpecial.bin
+

@@ -1,0 +1,36 @@
+#INFOFILE1 - Do not remove this line!
+FileIdent = CarMaker-Tire-RTTire 3
+Description:
+	Tire parameters based on 'DT_F1_Rear.tdx'
+	Version 13/07/2010
+	""
+	#   Load:      32 points [ 0 N  to  35000 N ]
+	#   Slip:     128 points [ -0.3   to  0.3 ]
+	#   Alpha:    128 points [ -8.59437 deg  to  8.59437 deg ]
+
+Side = left
+muRoad = 0.9
+
+Radial.Stiffness = 500000
+Radial.Damping = 500
+
+KinRollRadius = 0.28535
+NomRadius = 0.3232
+NomWidth = 0.355
+RimRadius = 0.23
+
+FLoadMax = 10000
+
+LongFrc.Length = 0.05
+SideFrc.Length = 0.1
+AlignTrq.Length = 0.05
+
+StandStill.cLong = 0.01
+StandStill.cSide = 0.2
+
+
+RollResist.Kind = TrqLoad
+RollResist.Factor = 0.01
+
+BinFName = Mapping/RT_F1_Rear.bin
+

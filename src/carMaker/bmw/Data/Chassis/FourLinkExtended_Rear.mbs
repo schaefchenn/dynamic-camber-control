@@ -1,0 +1,335 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-SuspKnC-FourLinkExtend	1
+FileCreator = CarMaker		2017-04-12 09:38:45 TEMPLATE
+Description:
+	Demo Four Link Rear Axle - Extended Configuration
+
+
+## General ###############################################################
+CalcMode = Dyn
+WithSteering = 0
+Mirror = 0
+RefPointInputSystem = -0.86  0.0  -0.30
+
+CarrierL.StaticCamber = -1.5
+CarrierR.StaticCamber = -1.5
+
+CarrierL.StaticToe = 10.0
+CarrierR.StaticToe = 10.0
+
+
+
+## Mass Inertia ##########################################################
+Subframe.mass = 10.0
+Subframe.I = 0.1  0.1  0.1
+
+CarrierL.mass = 10.0
+CarrierL.I = 0.03  0.06  0.04
+
+CarrierR.mass = 10.0
+CarrierR.I = 0.03  0.06  0.04
+
+WishLowL.mass = 5.4
+WishLowL.I = 0.2  0.1  0.1
+
+WishLowR.mass = 5.4
+WishLowR.I = 0.2  0.1  0.1
+
+WishUppL.mass = 1.5
+WishUppL.I = 0.02  0.001  0.02
+
+WishUppR.mass = 1.5
+WishUppR.I = 0.02  0.001  0.02
+
+SpringL.mass = 2.0
+SpringL.I = 0.01  0.01  0.003
+
+SpringR.mass = 2.0
+SpringR.I = 0.01  0.01  0.003
+
+DamperL.mass = 2.5
+DamperL.I = 0.05  0.05  0.004
+
+DamperR.mass = 2.5
+DamperR.I = 0.05  0.05  0.004
+
+TrailArmL.mass = 2.5
+TrailArmL.I = 0.004  0.05  0.05
+
+TrailArmR.mass = 2.5
+TrailArmR.I = 0.004  0.05  0.05
+
+SteerRodL.mass = 1.0
+SteerRodL.I = 0.01  2e-4  0.01
+
+SteerRodR.mass = 1.0
+SteerRodR.I = 0.01  2e-4  0.01
+
+StabiBar.mass = 4.0
+StabiBar.I = 0.4  0.014  0.4
+
+StabiLinkL.mass = 0.1
+StabiLinkL.I = 0.004  1e-5  0.004
+
+StabiLinkR.mass = 0.1
+StabiLinkR.I = 0.004  1e-5  0.004
+
+
+
+## Joints ################################################################
+CarrierL.Joint2WishLow.pos = -0.08  0.70  -0.09
+CarrierR.Joint2WishLow.pos = -0.08  -0.70  -0.09
+
+CarrierL.Joint2StrRod.pos = 0.09  0.60  -0.10
+CarrierR.Joint2StrRod.pos = 0.09  -0.60  -0.10
+
+CarrierL.Joint2WishUpp.pos = 0.06  0.70  0.10
+CarrierR.Joint2WishUpp.pos = 0.06  -0.70  0.10
+
+CarrierL.Joint2TrailArm.pos = 0.10  0.60  0.008
+CarrierR.Joint2TrailArm.pos = 0.10  -0.60  0.008
+
+Subframe.Joint2StBarL.pos = 0.02  0.30  -0.05
+Subframe.Joint2StBarR.pos = 0.02  -0.30  -0.05
+
+StabiBarL.Joint2StLink.pos = -0.10  0.35  -0.03
+StabiBarR.Joint2StLink.pos = -0.10  -0.35  -0.03
+
+
+
+## Force Elements ########################################################
+SpringFrcL_Upp.pos = -0.1  0.45  0.03
+SpringFrcR_Upp.pos = -0.1  -0.45  0.03
+
+SpringFrcL_Low.pos = -0.1  0.5  -0.15
+SpringFrcR_Low.pos = -0.1  -0.5  -0.15
+
+DamperFrcL_Upp.pos = -0.08  0.55  0.4
+DamperFrcR_Upp.pos = -0.08  -0.55  0.4
+
+DamperFrcL_Low.pos = -0.1  0.60  -0.1
+DamperFrcR_Low.pos = -0.1  -0.60  -0.1
+
+Vehicle.SpringFrcOnWC = 0
+Vehicle.DamperFrcOnWC = 0
+StabiLink.BushFrcOnWC = 0
+
+TrailArmL.cT = 3000
+TrailArmR.cT = 3000
+TrailArmL.kT = 10
+TrailArmR.kT = 10
+
+
+## Bushings ##############################################################
+Subframe.BushFL2Vhcl.pos = 0.200  0.285  -0.00
+Subframe.BushFL2Vhcl.pntaxis = 0.200  0.285  -0.25
+Subframe.BushFL2Vhcl.pntplane = 0.200  -0.285  -0.00
+Subframe.BushFL2Vhcl.c_x = 1000000.0
+Subframe.BushFL2Vhcl.c_x.Amplify = 1.0
+Subframe.BushFL2Vhcl.c_y = 1000000.0
+Subframe.BushFL2Vhcl.c_y.Amplify = 1.0
+Subframe.BushFL2Vhcl.c_z = 1000000.0
+Subframe.BushFL2Vhcl.c_z.Amplify = 1.0
+Subframe.BushFL2Vhcl.k = 1000.0  1000.0  1000.0
+Subframe.BushFL2Vhcl.cT = 0.0  0.0  0.0
+Subframe.BushFL2Vhcl.kT = 0.0  0.0  0.0
+Subframe.BushFL2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+Subframe.BushFR2Vhcl.pos = 0.200  -0.285  -0.00
+Subframe.BushFR2Vhcl.pntaxis = 0.200  -0.285  -0.25
+Subframe.BushFR2Vhcl.pntplane = 0.200  0.285  -0.00
+Subframe.BushFR2Vhcl.c_x = 1000000.0
+Subframe.BushFR2Vhcl.c_x.Amplify = 1.0
+Subframe.BushFR2Vhcl.c_y = 1000000.0
+Subframe.BushFR2Vhcl.c_y.Amplify = 1.0
+Subframe.BushFR2Vhcl.c_z = 1000000.0
+Subframe.BushFR2Vhcl.c_z.Amplify = 1.0
+Subframe.BushFR2Vhcl.k = 1000.0  1000.0  1000.0
+Subframe.BushFR2Vhcl.cT = 0.0  0.0  0.0
+Subframe.BushFR2Vhcl.kT = 0.0  0.0  0.0
+Subframe.BushFR2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+Subframe.BushRL2Vhcl.pos = -0.200  0.285  -0.00
+Subframe.BushRL2Vhcl.pntaxis = -0.200  0.285  -0.25
+Subframe.BushRL2Vhcl.pntplane = -0.200  -0.285  -0.00
+Subframe.BushRL2Vhcl.c_x = 1000000.0
+Subframe.BushRL2Vhcl.c_x.Amplify = 1.0
+Subframe.BushRL2Vhcl.c_y = 1000000.0
+Subframe.BushRL2Vhcl.c_y.Amplify = 1.0
+Subframe.BushRL2Vhcl.c_z = 1000000.0
+Subframe.BushRL2Vhcl.c_z.Amplify = 1.0
+Subframe.BushRL2Vhcl.k = 1000.0  1000.0  1000.0
+Subframe.BushRL2Vhcl.cT = 0.0  0.0  0.0
+Subframe.BushRL2Vhcl.kT = 0.0  0.0  0.0
+Subframe.BushRL2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+Subframe.BushRR2Vhcl.pos = -0.200  -0.285  -0.00
+Subframe.BushRR2Vhcl.pntaxis = -0.200  -0.285  -0.25
+Subframe.BushRR2Vhcl.pntplane = -0.200  0.285  -0.00
+Subframe.BushRR2Vhcl.c_x = 1000000.0
+Subframe.BushRR2Vhcl.c_x.Amplify = 1.0
+Subframe.BushRR2Vhcl.c_y = 1000000.0
+Subframe.BushRR2Vhcl.c_y.Amplify = 1.0
+Subframe.BushRR2Vhcl.c_z = 1000000.0
+Subframe.BushRR2Vhcl.c_z.Amplify = 1.0
+Subframe.BushRR2Vhcl.k = 1000.0  1000.0  1000.0
+Subframe.BushRR2Vhcl.cT = 0.0  0.0  0.0
+Subframe.BushRR2Vhcl.kT = 0.0  0.0  0.0
+Subframe.BushRR2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+WishLowL.Bush2Vhcl.pos = -0.10  0.19  -0.10
+WishLowL.Bush2Vhcl.pntaxis = 0.19  0.20  -0.07
+WishLowL.Bush2Vhcl.pntplane = -0.10  -0.10  -0.10
+WishLowL.Bush2Vhcl.c_x = 5e+05
+WishLowL.Bush2Vhcl.c_x.Amplify = 1.0
+WishLowL.Bush2Vhcl.c_y = 9e+06
+WishLowL.Bush2Vhcl.c_y.Amplify = 1.0
+WishLowL.Bush2Vhcl.c_z = 9e+06
+WishLowL.Bush2Vhcl.c_z.Amplify = 1.0
+WishLowL.Bush2Vhcl.k = 1000.0  7300.0  7300.0
+WishLowL.Bush2Vhcl.cT = 80.0  800.0  800.0
+WishLowL.Bush2Vhcl.kT = 1.0  1.0  1.0
+WishLowL.Bush2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+WishLowR.Bush2Vhcl.pos = -0.10  -0.19  -0.10
+WishLowR.Bush2Vhcl.pntaxis = 0.19  -0.20  -0.07
+WishLowR.Bush2Vhcl.pntplane = -0.10  0.10  -0.10
+WishLowR.Bush2Vhcl.c_x = 5e+5
+WishLowR.Bush2Vhcl.c_x.Amplify = 1.0
+WishLowR.Bush2Vhcl.c_y = 9e+06
+WishLowR.Bush2Vhcl.c_y.Amplify = 1.0
+WishLowR.Bush2Vhcl.c_z = 9e+06
+WishLowR.Bush2Vhcl.c_z.Amplify = 1.0
+WishLowR.Bush2Vhcl.k = 1000.0  7300.0  7300.0
+WishLowR.Bush2Vhcl.cT = 80.0  800.0  800.0
+WishLowR.Bush2Vhcl.kT = 1.0  1.0  1.0
+WishLowR.Bush2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+WishUppL.Bush2Vhcl.pos = 0.06  0.40  0.07
+WishUppL.Bush2Vhcl.pntaxis = 0.35  0.39  -0.02
+WishUppL.Bush2Vhcl.pntplane = 0.05  0.10  0.08
+WishUppL.Bush2Vhcl.c_x = 1e+06
+WishUppL.Bush2Vhcl.c_x.Amplify = 1.0
+WishUppL.Bush2Vhcl.c_y = 8e+06
+WishUppL.Bush2Vhcl.c_y.Amplify = 1.0
+WishUppL.Bush2Vhcl.c_z = 8e+06
+WishUppL.Bush2Vhcl.c_z.Amplify = 1.0
+WishUppL.Bush2Vhcl.k = 2000.0  5000.0  5000.0
+WishUppL.Bush2Vhcl.cT = 200.0  400.0  400.0
+WishUppL.Bush2Vhcl.kT = 1.0  1.0  1.0
+WishUppL.Bush2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+WishUppR.Bush2Vhcl.pos = 0.06  -0.40  0.07
+WishUppR.Bush2Vhcl.pntaxis = 0.35  -0.39  -0.02
+WishUppR.Bush2Vhcl.pntplane = 0.05  -0.10  0.08
+WishUppR.Bush2Vhcl.c_x = 1e+06
+WishUppR.Bush2Vhcl.c_x.Amplify = 1.0
+WishUppR.Bush2Vhcl.c_y = 8e+06
+WishUppR.Bush2Vhcl.c_y.Amplify = 1.0
+WishUppR.Bush2Vhcl.c_z = 8e+06
+WishUppR.Bush2Vhcl.c_z.Amplify = 1.0
+WishUppR.Bush2Vhcl.k = 2000.0  5000.0  5000.0
+WishUppR.Bush2Vhcl.cT = 200.0  400.0  400.0
+WishUppR.Bush2Vhcl.kT = 1.0  1.0  1.0
+WishUppR.Bush2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+TrailArmL.Bush2Vhcl.pos = 0.50  0.60  -0.06
+TrailArmL.Bush2Vhcl.pntaxis = 0.48  0.90  -0.06
+TrailArmL.Bush2Vhcl.pntplane = 0.80  0.60  -0.06
+TrailArmL.Bush2Vhcl.c_x = 200000.0
+TrailArmL.Bush2Vhcl.c_x.Amplify = 1.0
+TrailArmL.Bush2Vhcl.c_y = 150000.0
+TrailArmL.Bush2Vhcl.c_y.Amplify = 1.0
+TrailArmL.Bush2Vhcl.c_z = 500000.0
+TrailArmL.Bush2Vhcl.c_z.Amplify = 1.0
+TrailArmL.Bush2Vhcl.k = 600.0  800.0  600.0
+TrailArmL.Bush2Vhcl.cT = 100.0  50.0  50.0
+TrailArmL.Bush2Vhcl.kT = 1.0  1.0  1.0
+TrailArmL.Bush2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+TrailArmR.Bush2Vhcl.pos = 0.50  -0.60  -0.06
+TrailArmR.Bush2Vhcl.pntaxis = 0.48  -0.90  -0.06
+TrailArmR.Bush2Vhcl.pntplane = 0.80  -0.60  -0.06
+TrailArmR.Bush2Vhcl.c_x = 200000.0
+TrailArmR.Bush2Vhcl.c_x.Amplify = 1.0
+TrailArmR.Bush2Vhcl.c_y = 150000.0
+TrailArmR.Bush2Vhcl.c_y.Amplify = 1.0
+TrailArmR.Bush2Vhcl.c_z = 500000.0
+TrailArmR.Bush2Vhcl.c_z.Amplify = 1.0
+TrailArmR.Bush2Vhcl.k = 600.0  800.0  600.0
+TrailArmR.Bush2Vhcl.cT = 100.0  50.0  50.0
+TrailArmR.Bush2Vhcl.kT = 1.0  1.0  1.0
+TrailArmR.Bush2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+SteerRodL.Bush2Vhcl.pos = 0.10  0.40  -0.10
+SteerRodL.Bush2Vhcl.pntaxis = 0.40  0.40  -0.07
+SteerRodL.Bush2Vhcl.pntplane = 0.10  0.10  -0.10
+SteerRodL.Bush2Vhcl.c_x = 500000.0
+SteerRodL.Bush2Vhcl.c_x.Amplify = 1.0
+SteerRodL.Bush2Vhcl.c_y = 6e+06
+SteerRodL.Bush2Vhcl.c_y.Amplify = 1.0
+SteerRodL.Bush2Vhcl.c_z = 6e+06
+SteerRodL.Bush2Vhcl.c_z.Amplify = 1.0
+SteerRodL.Bush2Vhcl.k = 600.0  6000.0  6000.0
+SteerRodL.Bush2Vhcl.cT = 100.0  200.0  200.0
+SteerRodL.Bush2Vhcl.kT = 1.0  1.0  1.0
+SteerRodL.Bush2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+SteerRodR.Bush2Vhcl.pos = 0.10  -0.40  -0.10
+SteerRodR.Bush2Vhcl.pntaxis = 0.40  -0.40  -0.07
+SteerRodR.Bush2Vhcl.pntplane = 0.10  -0.10  -0.10
+SteerRodR.Bush2Vhcl.c_x = 500000.0
+SteerRodR.Bush2Vhcl.c_x.Amplify = 1.0
+SteerRodR.Bush2Vhcl.c_y = 6e+06
+SteerRodR.Bush2Vhcl.c_y.Amplify = 1.0
+SteerRodR.Bush2Vhcl.c_z = 6e+06
+SteerRodR.Bush2Vhcl.c_z.Amplify = 1.0
+SteerRodR.Bush2Vhcl.k = 600.0  6000.0  6000.0
+SteerRodR.Bush2Vhcl.cT = 100.0  200.0  200.0
+SteerRodR.Bush2Vhcl.kT = 1.0  1.0  1.0
+SteerRodR.Bush2Vhcl.Trq_KO = 0.0  0.0  0.0
+
+StabiLinkL.Bush.pos = -0.10  0.35  -0.10
+StabiLinkL.Bush.pntaxis = -0.20  0.35  -0.10
+StabiLinkL.Bush.pntplane = -0.10  0.45  -0.10
+StabiLinkL.Bush.c_x = 1e+07
+StabiLinkL.Bush.c_x.Amplify = 1.0
+StabiLinkL.Bush.c_y = 1e+07
+StabiLinkL.Bush.c_y.Amplify = 1.0
+StabiLinkL.Bush.c_z = 1e+07
+StabiLinkL.Bush.c_z.Amplify = 1.0
+StabiLinkL.Bush.k = 1000.0  1000.0  1000.0
+StabiLinkL.Bush.cT = 0.0  0.0  0.0
+StabiLinkL.Bush.kT = 0.0  0.0  0.0
+StabiLinkL.Bush.Trq_KO = 0.0  0.0  0.0
+
+StabiLinkR.Bush.pos = -0.10  -0.35  -0.10
+StabiLinkR.Bush.pntaxis = -0.20  -0.35  -0.10
+StabiLinkR.Bush.pntplane = -0.10  -0.45  -0.10
+StabiLinkR.Bush.c_x = 1e+07
+StabiLinkR.Bush.c_x.Amplify = 1.0
+StabiLinkR.Bush.c_y = 1e+07
+StabiLinkR.Bush.c_y.Amplify = 1.0
+StabiLinkR.Bush.c_z = 1e+07
+StabiLinkR.Bush.c_z.Amplify = 1.0
+StabiLinkR.Bush.k = 1000.0  1000.0  1000.0
+StabiLinkR.Bush.cT = 0.0  0.0  0.0
+StabiLinkR.Bush.kT = 0.0  0.0  0.0
+StabiLinkR.Bush.Trq_KO = 0.0  0.0  0.0
+
+
+
+## Mapping ###############################################################
+Cfg.qComp_max = 0.1
+Cfg.nSteps_qComp = 17
+Cfg.qSteer_max = 0.08
+Cfg.nSteps_qSteer = 17
+Cfg.qCompC_max = 0.1
+Cfg.nSteps_qCompC = 7
+Cfg.Frc_max = 7000.0
+Cfg.Trq_max = 2000.0
+Cfg.nSteps_Frc = 11
+
+
+
+## Additional Parameters #################################################
