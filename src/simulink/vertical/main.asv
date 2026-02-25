@@ -11,10 +11,7 @@ addpath(genpath(fullfile(baseDir, "include")));
 addpath(genpath(fullfile(baseDir, "ref_vehicle")));
 
 vehicleConfigFile = "bmw_5series.json";
-vehicle = jsondecode(fileread(fullfile(vehicleConfigFile))); 
-
-tireConfigFile = "mf52_205_60r15_91v.json";
-tire = jsondecode(fileread(fullfile(tireConfigFile)));  
+vehicle = jsondecode(fileread(fullfile(vehicleConfigFile)));   
 
 startDir = fullfile(baseDir, "ref_vehicle");
 [file, path] = uigetfile( ...
@@ -28,7 +25,7 @@ end
 
 simin = load(file); simin = simin.data;
 
-model = "tyre";
+model = "sys";
 closeSystem = false;
 
 Simulink.fileGenControl('set', ...
@@ -37,5 +34,5 @@ Simulink.fileGenControl('set', ...
 
 if bdIsLoaded(model) && closeSystem, close_system(model); end
 load_system(model)
-get_sim_parameter(model, vehicle, tire)
+get_sim_parameter(model, vehicle)
 open_system(model)

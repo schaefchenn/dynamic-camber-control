@@ -1,0 +1,45 @@
+{
+    "info": {
+        "tyre": "205 60 R15 91V",
+        "model": "MF52",
+        "fittyp": 5
+    },
+
+    "parameters": {
+        "r_0": {
+            "value": 0.3185,
+            "unit": "m",
+            "datatype": "double"
+        },
+
+        "c_z": {
+            "value": 236700,
+            "unit": "N/m",
+            "datatype": "double"
+        },
+
+        "b_reff": {
+            "value": 5.0,
+            "unit": "N/m",
+            "datatype": "double"
+        },
+
+        "d_reff": {
+            "value": 0.3,
+            "unit": "m",
+            "datatype": "double"
+        },
+
+        "f_reff": {
+            "value": 0.1,
+            "unit": "N/m",
+            "datatype": "double"
+        },
+
+        "F_z0": {
+            "value": 6500,
+            "unit": "N",
+            "datatype": "double"
+        }
+    }
+}
