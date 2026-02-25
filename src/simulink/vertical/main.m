@@ -1,4 +1,4 @@
- clc; clear; close;
+clc; clear; close;
 
 baseDir = fileparts(matlab.desktop.editor.getActiveFilename);
 cd(baseDir)
@@ -13,8 +13,8 @@ addpath(genpath(fullfile(baseDir, "ref_vehicle")));
 vehicleConfigFile = "bmw_5series.json";
 vehicle = jsondecode(fileread(fullfile(vehicleConfigFile))); 
 
-tireConfigFile = "mf52_205_60r15_91v.json";
-tire = jsondecode(fileread(fullfile(tireConfigFile)));  
+tir_file = "MF_205_60R15_V91";
+tire = read_tir(tir_file);
 
 startDir = fullfile(baseDir, "ref_vehicle");
 [file, path] = uigetfile( ...
@@ -37,5 +37,12 @@ Simulink.fileGenControl('set', ...
 
 if bdIsLoaded(model) && closeSystem, close_system(model); end
 load_system(model)
-get_sim_parameter(model, vehicle, tire)
+get_sim_parameter(model, vehicle)
+
+mdlWks = get_param(model,"ModelWorkspace");
+param = Simulink.Parameter;
+param.Value = tire;
+param.CoderInfo.StorageClass = 'Auto';
+assignin(mdlWks,"tire",param);
+
 open_system(model)

@@ -15,7 +15,7 @@ tire = read_tir(tir_file);
 
 Fz = 6500;
 kappa = -1:0.001:1;
-alpha = 0.3;%-1:0.001:1;
+alpha = 0;%-1:0.001:1;
 gamma = 0.4;%-0.34:0.001:0.34;
 
 %% parameter
@@ -144,14 +144,7 @@ Fy0 = Dy .* sin(Cy .* atan(By .* alpha_y - Ey .* (By .* alpha_y - atan(By .* alp
 S_Hxa = r_Hx1;
 alpha_s = alpha + S_Hxa;
 
-Bxa = r_Bx1 .* cos(atan(r_Bx2 .* kappa));
-Cxa = r_Cx1;
-Exa = r_Ex1 + r_Ex2 .* dfz;
-
-Gxa = (cos(Cxa .* atan(Bxa .* alpha_s - Exa .* (Bxa .* alpha_s - atan(Bxa .*alpha_s))))) ./ ...
-    (cos(Cxa .* atan(Bxa .* S_Hxa - Exa .* (Bxa .* S_Hxa - atan(Bxa .* S_Hxa)))));
-
-Fx = Fx0 .* Gxa;
+Bxa = r_Bx1 .* cos(atan(r_Bx2 .* kappa))
 
 % lateral (combined slip)
 S_Hyk = r_Hy1 + r_Hy2 .* dfz;
@@ -167,7 +160,7 @@ S_Vyk = D_Vyk .* sin(r_Vy5 .* atan(r_Vy6 .* kappa));
 Gyk = (cos(Cyk .* atan(Byk .* kappa_s - Eyk .* (Byk .* kappa_s - atan(Byk .* kappa_s))))) ./ ...
     (cos(Cyk .* atan(Byk .* S_Hyk - Eyk .* (Byk .* S_Hyk - atan(Byk .* S_Hyk)))));
 
-Fy = Fy0 .* Gyk + S_Vyk;
+Fy = Fy0 .* Gyk + S_Hyk;
 
 %% plots
 
@@ -177,16 +170,11 @@ xlabel('alpha in rad')
 ylabel('Fy (pure slip) in N')
 
 figure(2)
-plot(alpha, Fy); hold on; grid on;
-xlabel('alpha in rad')
-ylabel('Fy (combined slip) in N')
-
-figure(3)
 plot(kappa, Fx0); hold on; grid on;
 xlabel('kappa in 1')
 ylabel('Fx (pure slip) in N')
 
-figure(5)
-plot(kappa, Fx); hold on; grid on;
-xlabel('kappa in 1')
-ylabel('Fx (pure slip) in N')
+figure(3)
+plot(alpha, Fy); hold on; grid on;
+xlabel('alpha in rad')
+ylabel('Fy (combined slip) in N')
