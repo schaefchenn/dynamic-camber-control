@@ -54,7 +54,23 @@ function []= create_vehicle_states_bus()
 
     elem(14) = Simulink.BusElement;
     elem(14).Name = 'is_transient';
-    elem(14).DataType = 'bool';
+    elem(14).DataType = 'boolean';
+
+    elem(15) = Simulink.BusElement;
+    elem(15).Name = 'camber_FL';
+    elem(15).DataType = 'double';
+
+    elem(16) = Simulink.BusElement;
+    elem(16).Name = 'camber_FR';
+    elem(16).DataType = 'double';
+
+    elem(17) = Simulink.BusElement;
+    elem(17).Name = 'camber_RL';
+    elem(17).DataType = 'double';
+
+    elem(18) = Simulink.BusElement;
+    elem(18).Name = 'camber_RR';
+    elem(18).DataType = 'double';
     
     vehicleStates = Simulink.Bus;
     vehicleStates.Elements = elem;
