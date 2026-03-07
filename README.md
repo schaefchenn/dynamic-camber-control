@@ -1,6 +1,5 @@
 # dynamic-camber-control
 
-## Abstract
 This repository contains the implementation of a **camber control algorithm** developed within the university module **Active Suspension Systems** at HAW Hamburg.
 
 The project aims to introduce students to the **automotive V-Model development process** by guiding them through the design and validation of an **active suspension control function**.
