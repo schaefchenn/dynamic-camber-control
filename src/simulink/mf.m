@@ -13,13 +13,12 @@ tire = read_tir(tir_file);
 
 %% inputs
 
-Fz = 3895;
-kappa = 0;%-1:0.001:1;
-alpha = -1:0.001:1;
-gamma = 0;%-0.1047:2.94e-4:0.1047;%-0.34:0.001:0.34;
+Fz = 5300;
+kappa = 0; %-1:0.01:1;
+alpha = -0.2:0.01:0.2;
+gamma = -0.1047:(0.1047/2):0.1047;
 
 %% parameter
-
 % general
 Fz0 = tire.Vertical.FNOMIN;
 
@@ -102,84 +101,108 @@ r_Vy5 = tire.Lat.RVY5;
 r_Vy6 = tire.Lat.RVY6;
 
 %% calculations
+for i = 1:length(gamma)
+    % general
+    dfz = ((Fz-Fz0)/Fz0);
 
-% general
-dfz = ((Fz-Fz0)/Fz0);
+    % longitudinal (pure slip)
+    Cx = p_Cx1;
 
-% longitudinal (pure slip)
-Cx = p_Cx1;
+    mu_x = (p_Dx1 + p_Dx2 .* dfz) .* (1 - p_Dx3 .* gamma(i).^2);
+    Dx = mu_x .* Fz;
 
-mu_x = (p_Dx1 + p_Dx2 .* dfz) .* (1 - p_Dx3 .* gamma.^2);
-Dx = mu_x .* Fz;
+    S_Hx = (p_Hx1 + p_Hx2 .* dfz);
+    S_Vx = Fz .* (p_Vx1 + p_Vx2 .* dfz);
 
-S_Hx = (p_Hx1 + p_Hx2 .* dfz);
-S_Vx = Fz .* (p_Vx1 + p_Vx2 .* dfz);
+    kappa_x = kappa + S_Hx;
 
-kappa_x = kappa + S_Hx;
+    Ex = (p_Ex1 + p_Ex2 .* dfz + p_Ex3 .* dfz.^2) .* (1 - p_Ex4 .* sign(kappa_x));
+    Kx = Fz .* (p_Kx1 + p_Kx2 .* dfz) .* exp(p_Kx3 .* dfz);
+    Bx = Kx ./ (Cx .* Dx);
 
-Ex = (p_Ex1 + p_Ex2 .* dfz + p_Ex3 .* dfz.^2) .* (1 - p_Ex4 .* sign(kappa_x));
-Kx = Fz .* (p_Kx1 + p_Kx2 .* dfz) .* exp(p_Kx3 .* dfz);
-Bx = Kx ./ (Cx .* Dx);
+    Fx0 = Dx .* sin(Cx .* atan(Bx .* kappa_x - Ex .* (Bx .* kappa_x - atan(Bx .* kappa_x)))) + S_Vx;
 
-Fx0 = Dx .* sin(Cx .* atan(Bx .* kappa_x - Ex .* (Bx .* kappa_x - atan(Bx .* kappa_x)))) + S_Vx;
+    % lateral (pure slip)
+    Cy = p_Cy1;
 
-% lateral (pure slip)
-Cy = p_Cy1;
+    mu_y = (p_Dy1 + p_Dy2 .* dfz) .* (1-p_Dy3 .* gamma(i).^2);
+    Dy = mu_y .* Fz;
 
-mu_y = (p_Dy1 + p_Dy2 .* dfz) .* (1-p_Dy3 .* gamma.^2);
-Dy = mu_y .* Fz;
+    S_Hy = p_Hy1 + p_Hy2 + p_Hy3 .* gamma(i);
+    S_Vy = Fz .* (p_Vy1 + p_Vy2 .* dfz + (p_Vy3 + p_Vy4 .* dfz) .* gamma(i));
 
-S_Hy = p_Hy1 + p_Hy2 + p_Hy3 .* gamma;
-S_Vy = Fz .* (p_Vy1 + p_Vy2 .* dfz + (p_Vy3 + p_Vy4 .* dfz) .* gamma);
+    alpha_y = alpha + S_Hy;
 
-alpha_y = alpha + S_Hy;
+    Ey = (p_Ey1 + p_Ey2 .* dfz) .* (1 - (p_Ey3 + p_Ey4 .* gamma(i)) .* sign(alpha_y));
+    Ky = p_Ky1 .* Fz0 .* sin(2 .* atan(Fz / (p_Ky2 .* Fz0))) .* (1 - p_Ky3 .* abs(gamma(i)));
+    By = Ky / (Cy .* Dy);
 
-Ey = (p_Ey1 + p_Ey2 .* dfz) .* (1 - (p_Ey3 + p_Ey4 .* gamma) .* sign(alpha_y));
-Ky = p_Ky1 .* Fz0 .* sin(2 .* atan(Fz / (p_Ky2 .* Fz0))) .* (1 - p_Ky3 .* abs(gamma));
-By = Ky / (Cy .* Dy);
+    Fy0 = Dy .* sin(Cy .* atan(By .* alpha_y - Ey .* (By .* alpha_y - atan(By .* alpha_y)))) + S_Vy;
 
-Fy0 = Dy .* sin(Cy .* atan(By .* alpha_y - Ey .* (By .* alpha_y - atan(By .* alpha_y)))) + S_Vy;
+    % longitudinal (combined slip)
+    S_Hxa = r_Hx1;
+    alpha_s = alpha + S_Hxa;
 
-% longitudinal (combined slip)
-S_Hxa = r_Hx1;
-alpha_s = alpha + S_Hxa;
+    Bxa = r_Bx1 .* cos(atan(r_Bx2 .* kappa));
+    Cxa = r_Cx1;
+    Exa = r_Ex1 + r_Ex2 .* dfz;
 
-Bxa = r_Bx1 .* cos(atan(r_Bx2 .* kappa));
-Cxa = r_Cx1;
-Exa = r_Ex1 + r_Ex2 .* dfz;
+    Gxa = (cos(Cxa .* atan(Bxa .* alpha_s - Exa .* (Bxa .* alpha_s - atan(Bxa .*alpha_s))))) ./ ...
+        (cos(Cxa .* atan(Bxa .* S_Hxa - Exa .* (Bxa .* S_Hxa - atan(Bxa .* S_Hxa)))));
 
-Gxa = (cos(Cxa .* atan(Bxa .* alpha_s - Exa .* (Bxa .* alpha_s - atan(Bxa .*alpha_s))))) ./ ...
-    (cos(Cxa .* atan(Bxa .* S_Hxa - Exa .* (Bxa .* S_Hxa - atan(Bxa .* S_Hxa)))));
+    Fx = Fx0 .* Gxa;
+    % figure(1)
+    % plot(kappa, Fx); hold on;
+    % legendStrings1{i} = sprintf('\\gamma = %.4f', gamma(i));
 
-Fx = Fx0 .* Gxa;
+    % lateral (combined slip)
+    S_Hyk = r_Hy1 + r_Hy2 .* dfz;
+    kappa_s = kappa + S_Hyk;
 
-% lateral (combined slip)
-S_Hyk = r_Hy1 + r_Hy2 .* dfz;
-kappa_s = kappa + S_Hyk;
+    Byk = r_By1 .* cos(atan(r_By2 .* (alpha-r_By3)));
+    Cyk = r_Cy1;
+    Eyk = r_Ey1 + r_Ey2 .* dfz;
 
-Byk = r_By1 .* cos(atan(r_By2 .* (alpha-r_By3)));
-Cyk = r_Cy1;
-Eyk = r_Ey1 + r_Ey2 .* dfz;
+    D_Vyk = mu_y .* Fz .* (r_Vy1 + r_Vy2 .* dfz + r_Vy3 .* gamma(i)) .* cos(atan(r_Vy4 .* alpha));
+    S_Vyk = D_Vyk .* sin(r_Vy5 .* atan(r_Vy6 .* kappa));
 
-D_Vyk = mu_y .* Fz .* (r_Vy1 + r_Vy2 .* dfz + r_Vy3 .* gamma) .* cos(atan(r_Vy4 .* alpha));
-S_Vyk = D_Vyk .* sin(r_Vy5 .* atan(r_Vy6 .* kappa));
+    Gyk = (cos(Cyk .* atan(Byk .* kappa_s - Eyk .* (Byk .* kappa_s - atan(Byk .* kappa_s))))) ./ ...
+        (cos(Cyk .* atan(Byk .* S_Hyk - Eyk .* (Byk .* S_Hyk - atan(Byk .* S_Hyk)))));
 
-Gyk = (cos(Cyk .* atan(Byk .* kappa_s - Eyk .* (Byk .* kappa_s - atan(Byk .* kappa_s))))) ./ ...
-    (cos(Cyk .* atan(Byk .* S_Hyk - Eyk .* (Byk .* S_Hyk - atan(Byk .* S_Hyk)))));
+    Fy = Fy0 .* Gyk + S_Vyk;
+    
+    figure(2)
+    plot(alpha, Fy); hold on;
+    legendStrings2{i} = sprintf('\\gamma = %.4f', gamma(i));
+    Fy_store(i, :) = Fy;
 
-Fy = Fy0 .* Gyk + S_Vyk;
+end
 
 %% plots
+% figure(1) 
+% grid on;
+% xlabel('Slip \kappa [1]');
+% ylabel('Longitudinal force F_x [N]');
+% title('MF52 Combined Slip Tire Model');
+% legend(legendStrings1, 'Location', 'best');
+
+figure(2) 
+grid on;
+xlabel('Slip angle \alpha [rad]');
+ylabel('Lateral force F_y [N]');
+title('MF52 Combined Slip Tire Model');
+legend(legendStrings2, 'Location', 'best');
 
 % figure(1)
 % plot(alpha, Fy0); hold on; grid on;
 % xlabel('alpha in rad')
 % ylabel('Fy (pure slip) in N')
-% 
-figure(2)
-plot(alpha, Fy); hold on; grid on;
-xlabel('alpha in rad')
-ylabel('Fy (combined slip) in N')
+%
+% figure(2)
+% plot(alpha, Fy_store(1,:)); hold on; grid on;
+% plot(alpha, Fy_store(2,:));
+% xlabel('alpha in rad')
+% ylabel('Fy (combined slip) in N')
 % 
 % figure(3)
 % plot(kappa, Fx0); hold on; grid on;
@@ -190,3 +213,4 @@ ylabel('Fy (combined slip) in N')
 % plot(kappa, Fx); hold on; grid on;
 % xlabel('kappa in 1')
 % ylabel('Fx (combined slip) in N')
+
