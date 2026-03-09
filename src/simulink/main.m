@@ -54,6 +54,17 @@ param.Value = tire;
 param.CoderInfo.StorageClass = 'Auto';
 assignin(mdlWks,"tire",param);
 
-create_vehicle_states_bus();
+% pid parameter
+kp = 10;
+ki = 0;
+kd = 0;
 
+% actuator pt1 parameter
+k = 0.6;
+T1 = 0.01;
+
+% ratio for actuator angle into camber angle
+ic = 1;
+
+create_vehicle_states_bus();
 open_system(extractBefore(model,'.'))

@@ -1,0 +1,3 @@
+*.slx binary merge=mlAutoMerge
+git difftool -t mlDiff <revisionID1> <revisionID2> myModel.slx
+git mergetool -t mlMerge myModel.slx
