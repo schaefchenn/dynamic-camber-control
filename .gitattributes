@@ -1,3 +1,10 @@
+# Git configuration for MATLAB/Simulink
+# To view changes in Simulink models, use the following terminal command:
+# git difftool -t mlDiff -- <file_path.slx>
+
+# Mark Simulink models as binary and enable merge/diff tools
 *.slx binary merge=mlAutoMerge
-git difftool -t mlDiff controller.slx
-git mergetool -t mlMerge controller.slx
+*.mdl binary merge=mlAutoMerge
+
+# Mark test data files as binary
+*.mldatx binary
