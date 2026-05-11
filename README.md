@@ -7,8 +7,7 @@ The project aims to introduce students to the **automotive V-Model development p
 The controller determines an **optimal wheel camber angle** based on vehicle dynamics data. The development process follows a **simulation-based workflow** using **CarMaker** and **MATLAB/Simulink**.
 
 The final controller is exported as a **Functional Mock-up Unit (FMU)** and integrated into the **CarMaker simulation environment**.
-
----
+<br>
 
 ## Development Workflow & Git Setup
 
