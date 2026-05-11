@@ -1,4 +1,6 @@
 {
     "vehicle_parameter_file": "configs/data/bmw_5series.json",
-    "tire_parameter_file": "configs/data/MF_205_60R15_V91.tir"
+    "tire_parameter_file": "configs/data/MF_205_60R15_V91.tir",
+    "carmaker_vehicle_file": "bmw_5series",
+    "carMaker_tire_file": "MF_205_60R15_V91"
 }

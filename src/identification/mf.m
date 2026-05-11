@@ -8,15 +8,15 @@ cd(baseDir)
 addpath(genpath(fullfile(baseDir, "configs")));
 addpath(genpath(fullfile(baseDir, "include")));
 
-tir_file = "MF_205_60R15_V91";
+tir_file = "MF_205_60R15_V91.tir";
 tire = read_tir(tir_file);
 
 %% inputs
 
-Fz = 5300;
+Fz = 8500;
 kappa = 0; %-1:0.01:1;
 alpha = -0.2:0.01:0.2;
-gamma = -0.1047:(0.1047/2):0.1047;
+gamma = 0;%-0.1047:(0.1047/2):0.1047;
 
 %% parameter
 % general

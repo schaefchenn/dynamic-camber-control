@@ -1,6 +1,6 @@
 #INFOFILE1.1 (UTF-8) - Do not remove this line!
 FileIdent = CarMaker-Car 12
-FileCreator = CarMaker 12.0.2
+FileCreator = CarMaker for Simulink 12.0.1
 
 
 ## Assembly ##############################################################
@@ -9,7 +9,7 @@ RefPointInputSystem = 0.0 0.0 0.0
 Description:
 	Typical, unvalidated data for passenger car
 	with ACC Sensor and engine fuel consumption map
-	Tire: RT 225/55 R17
+	Tire: MF 205/60 R15 V91
 
 Eng.Kind = Rigid
 Eng.Joint.pos = 0.0 0.0 0.0
@@ -331,10 +331,10 @@ Steering.Rack2StWhl = 86.911
 
 
 ## Tires #################################################################
-Tire.0 = Examples/RT_225_55R17_p2.50
-Tire.1 = Examples/RT_225_55R17_p2.50
-Tire.2 = Examples/RT_225_55R17_p2.50
-Tire.3 = Examples/RT_225_55R17_p2.50
+Tire.0 = MF_205_60R15_V91
+Tire.1 = MF_205_60R15_V91
+Tire.2 = MF_205_60R15_V91
+Tire.3 = MF_205_60R15_V91
 AxleR.TwinTiresOn = 0
 Tires.Comment:
 

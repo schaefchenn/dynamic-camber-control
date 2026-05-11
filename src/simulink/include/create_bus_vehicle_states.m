@@ -1,4 +1,4 @@
-function []= create_vehicle_states_bus()
+function []= create_bus_vehicle_states()
 
     elem(1) = Simulink.BusElement;
     elem(1).Name = 'ax';
