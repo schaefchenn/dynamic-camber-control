@@ -1,5 +1,5 @@
 %% clean up (house keeping)
-clc; clear;
+clc; clear; restoredefaultpath;
 
 %% params && settings
 parameter = struct();
