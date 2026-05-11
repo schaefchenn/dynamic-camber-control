@@ -74,6 +74,8 @@ function cmenv (varargin)		% -*- Mode: Fundamental -*-
 	end
     end
 
+    % cmenv.m needs only to be used once matlab was startet
+    setappdata(0, 'cmenv_initialized', true);
 
 function bestreldir = match_matlab_release (cminstdir)
 % Search cminstdir for the directory best matching the current Matlab version.
