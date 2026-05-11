@@ -1,82 +1,93 @@
-clc; clear; close;
-%% params
+%% clean up (house keeping)
+clc; clear;
+
+%% params && settings
+parameter = struct();
+
 % pid parameter
-kp = 10;
-ki = 0;
-kd = 0;
+parameter.pid = struct( ...
+    'kp', 10, ...
+    'ki', 0, ...
+    'kd', 0 ...
+);
 
 % actuator pt1 parameter
-k = 0.6;
-T1 = 0.01;
+parameter.actuator = struct( ...
+    'k', 0.6, ...
+    'T1', 0.01, ...
+    'ic', 1 ... % ratio for actuator angle into camber angle
+);
 
-% ratio for actuator angle into camber angle
-ic = 1;
+settings.close_system = false;
 
-%% house keeping
-baseDir = fileparts(matlab.desktop.editor.getActiveFilename);
-cd(baseDir)
+%% add paths (house keeping)
+config.base.dir = fileparts(matlab.desktop.editor.getActiveFilename);
+cd(config.base.dir)
 
-addpath(baseDir);
-addpath(genpath(fullfile(baseDir, "model")));
-addpath(genpath(fullfile(baseDir, "cache")));
-addpath(genpath(fullfile(baseDir, "configs")));
-addpath(genpath(fullfile(baseDir, "include")));
-addpath(genpath(fullfile(baseDir, "inputs")));
+addpath(config.base.dir);
+addpath(genpath(fullfile(config.base.dir, "model")));
+addpath(genpath(fullfile(config.base.dir, "cache")));
+addpath(genpath(fullfile(config.base.dir, "configs")));
+addpath(genpath(fullfile(config.base.dir, "include")));
+addpath(genpath(fullfile(config.base.dir, "inputs")));
 
 %% user selections
 % vehicle selection
-startDir = fullfile(baseDir, "configs");
-[config_file, config_path] = uigetfile( ...
-    fullfile(startDir, '*.json'), ...
-    'Choose your .mat file');
+filter = fullfile(config.base.dir, "configs", "*.json");
+[file, path] = uigetfile(filter, 'select a vehicle.json');
+if isequal(file, 0); disp('No file selected.'); return; end
+config.meta.file = file;
+config.meta.path = path;
 
-if isequal(config_file, 0)
-    disp('No file selected.');
-    return;
-end
+temp = jsondecode(fileread(strcat(config.meta.path, config.meta.file)));
+config.meta.vehicle_parameter_file = temp.vehicle_parameter_file;
+config.meta.tire_parameter_file = temp.tire_parameter_file;
 
+% measurement selection
+filter = fullfile(config.base.dir, "inputs", "*.mat");
+[file, path] = uigetfile(filter, 'select a measurement.mat');
+if isequal(file, 0); disp('No file selected.'); return; end
+config.meta.measurement_file = file;
 
-config_meta = jsondecode(fileread(strcat(config_path, config_file)));
-vehicle = jsondecode(fileread(config_meta.vehicle_parameter_file)); 
-tire = read_tir(config_meta.tire_parameter_file);
+% simulink model selection
+filter = fullfile(config.base.dir, "model", "*.slx");
+[file, path] = uigetfile(filter, 'select a simulink.slx');
+if isequal(file, 0); disp('No file selected.'); return; end
+config.model = file;
 
-startDir = fullfile(baseDir, "inputs/");
-[file, path] = uigetfile( ...
-    fullfile(startDir, '*.mat'), ...
-    'Choose your .mat file');
-
-if isequal(file, 0)
-    disp('No file selected.');
-    return;
-end
-
-simin = load(file); simin = simin.data;
-clear startDir; clear file; clear path;
-
-closeSystem = false;
-
+%% set cache folder && load data && create bus
 Simulink.fileGenControl('set', ...
-    'CacheFolder', fullfile(baseDir, "cache"));
+    'CacheFolder', fullfile(config.base.dir, "cache"));
 
-startDir = fullfile(baseDir, "model");
-[model, path] = uigetfile( ...
-    fullfile(startDir, '*.slx'), ...
-    'Choose your simulink model');
+simin = load(config.meta.measurement_file); simin = simin.data;
+clear filter; clear file; clear path; clear temp;
 
-if isequal(extractBefore(model,'.'), 0)
-    disp('No file selected.');
-    return;
+parameter.vehicle = jsondecode(fileread(config.meta.vehicle_parameter_file)); 
+parameter.tire = read_tir(config.meta.tire_parameter_file);
+
+% fmi and carMaker dont like paramter structs
+kp = parameter.pid.kp;
+ki = parameter.pid.ki;
+kd = parameter.pid.kd;
+k = parameter.actuator.k;
+T1 = parameter.actuator.T1;
+ic = parameter.actuator.ic;
+
+create_bus_vehicle_states();
+create_bus_controls();
+
+%% load simulink && add params to simulink && open simulink
+if bdIsLoaded(extractBefore(config.model,'.')) && settings.close_system
+    close_system(extractBefore(config.model,'.'))
 end
 
-if bdIsLoaded(extractBefore(model,'.')) && closeSystem, close_system(extractBefore(model,'.')); end
-load_system(extractBefore(model,'.'))
-get_sim_parameter(extractBefore(model,'.'), vehicle)
+load_system(extractBefore(config.model,'.'))
+get_sim_parameter(extractBefore(config.model,'.'), parameter.vehicle)
 
-mdlWks = get_param(extractBefore(model,'.'),"ModelWorkspace");
+mdlWks = get_param(extractBefore(config.model,'.'),"ModelWorkspace");
 param = Simulink.Parameter;
-param.Value = tire;
+param.Value = parameter.tire;
 param.CoderInfo.StorageClass = 'Auto';
 assignin(mdlWks,"tire",param);
 
-create_vehicle_states_bus();
-open_system(extractBefore(model,'.'))
+open_system(extractBefore(config.model,'.'))
