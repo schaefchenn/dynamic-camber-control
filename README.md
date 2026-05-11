@@ -8,6 +8,7 @@ The controller determines an **optimal wheel camber angle** based on vehicle dyn
 
 The final controller is exported as a **Functional Mock-up Unit (FMU)** and integrated into the **CarMaker simulation environment**.
 <br>
+<br>
 
 ## Development Workflow & Git Setup
 
