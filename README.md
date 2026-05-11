@@ -17,8 +17,8 @@ Since this project uses **MATLAB/Simulink** models (`.slx`), we use native MathW
 ### 1. Prerequisites
 To work on this project, ensure you have the following software installed:
 * **Operating System:** Windows 11 (64-bit)
-* **Simulation Software:** IPG Automotive CarMaker 12.x
-* **Mathematical Software:** MATLAB (R2025b or newer)
+* **Simulation Software:** IPG Automotive CarMaker 12.0.1
+* **Mathematical Software:** MATLAB (R2022b)
 
 ### 2. Configure Git for Simulink
 To enable visual comparisons and conflict resolution for Simulink files within Git, execute the following command in your **MATLAB Command Window**:
