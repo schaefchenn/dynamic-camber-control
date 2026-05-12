@@ -30,7 +30,8 @@ addpath(genpath(fullfile(config.base.dir, "cache")));
 addpath(genpath(fullfile(config.base.dir, "configs")));
 addpath(genpath(fullfile(config.base.dir, "include")));
 
-config.carmaker.dir = fullfile(extractBefore(config.base.dir,'/simulink'),"carmaker");
+config.base.root = fileparts(config.base.dir);
+config.carmaker.dir = fullfile(config.base.root, "carmaker");
 addpath(genpath(fullfile(config.carmaker.dir, "bmw/src_cm4sl")))
 
 %% initialise carMaker environment
