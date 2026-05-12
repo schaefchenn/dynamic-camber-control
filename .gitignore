@@ -1,7 +1,8 @@
 **/cache/
 **/doc/
 
-*.DS_Store
+**/.DS_Store
+.temp*
 *.asv
 
 !.gitkeep
