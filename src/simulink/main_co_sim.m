@@ -35,38 +35,36 @@ config.carmaker.dir = fullfile(config.base.root, "carmaker");
 addpath(genpath(fullfile(config.carmaker.dir, "bmw/src_cm4sl")))
 
 %% initialise carMaker environment
-if ~isappdata(0, 'cmenv_initialized')
-    try 
-        run('cmenv.m')
-    catch me
-        warning(me.message)
-        return
-    end
-
-end
+% if ~isappdata(0, 'cmenv_initialized')
+%     try 
+%         run('cmenv.m')
+%     catch me
+%         warning(me.message)
+%         return
+%     end
+% 
+% end
 
 %% user selection
-filter = fullfile(config.base.dir, "configs", "*.json");
-[file, path] = uigetfile(filter, 'select a vehicle.json');
+filter = fullfile(config.base.dir, "configs", "*.m");
+[file, path] = uigetfile(filter, 'select a vehicle.m function');
 if isequal(file, 0); disp('No file selected.'); return; end
-config.meta.file = file;
-config.meta.path = path;
 
-temp = jsondecode(fileread(strcat(config.meta.path, config.meta.file)));
-config.meta.vehicle_parameter_file = temp.vehicle_parameter_file;
-config.meta.tire_parameter_file = temp.tire_parameter_file;
-config.carmaker.vehicle_file = temp.carmaker_vehicle_file;
-config.carmaker.tire_file = temp.carMaker_tire_file;
-clear temp
+[~, temp.func_name, ~] = fileparts(file);
+temp.data = feval(temp.func_name);
+
+config.carmaker = temp.data.config.carmaker;
+config.meta = temp.data.config.meta;
+parameter.vehicle = temp.data.parameters;
+parameter.tire = read_tir(config.meta.tire_file);
+
+clear filter; clear file; clear path; clear temp;
 
 %% set cache folder && load data && create bus
 Simulink.fileGenControl('set', ...
     'CacheFolder', fullfile(config.base.dir, "cache"));
 
-parameter.vehicle = jsondecode(fileread(config.meta.vehicle_parameter_file)); 
-parameter.tire = read_tir(config.meta.tire_parameter_file);
-
-% fmi and carMaker dont like paramter structs
+%% fmi and carMaker dont like paramter structs for tunable params
 kp = parameter.pid.kp;
 ki = parameter.pid.ki;
 kd = parameter.pid.kd;
@@ -74,11 +72,12 @@ k = parameter.actuator.k;
 T1 = parameter.actuator.T1;
 ic = parameter.actuator.ic;
 
+%% create busses (needed for carMaker)
 create_bus_vehicle_states;
 create_bus_controls;
 
 %% load simulink && add params to simulink && open simulink
-load_system('sys')
+load_system('sys'); load_system('controller');
 get_sim_parameter('controller', parameter.vehicle)
 
 mdlWks = get_param('controller',"ModelWorkspace");
