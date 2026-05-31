@@ -35,15 +35,15 @@ config.carmaker.dir = fullfile(config.base.root, "carmaker");
 addpath(genpath(fullfile(config.carmaker.dir, "bmw/src_cm4sl")))
 
 %% initialise carMaker environment
-% if ~isappdata(0, 'cmenv_initialized')
-%     try 
-%         run('cmenv.m')
-%     catch me
-%         warning(me.message)
-%         return
-%     end
-% 
-% end
+if ~isappdata(0, 'cmenv_initialized')
+    try 
+        run('cmenv.m')
+    catch me
+        warning(me.message)
+        return
+    end
+
+end
 
 %% user selection
 filter = fullfile(config.base.dir, "configs", "*.m");
@@ -53,8 +53,10 @@ if isequal(file, 0); disp('No file selected.'); return; end
 [~, temp.func_name, ~] = fileparts(file);
 temp.data = feval(temp.func_name);
 
-config.carmaker = temp.data.config.carmaker;
+config.carmaker.vehicle_file = temp.data.config.carmaker.vehicle_file;
+config.carmaker.tire_file = temp.data.config.carmaker.tire_file;
 config.meta = temp.data.config.meta;
+
 parameter.vehicle = temp.data.parameters;
 parameter.tire = read_tir(config.meta.tire_file);
 
