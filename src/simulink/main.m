@@ -1,7 +1,7 @@
 %% clean up (house keeping)
 clc; clear; restoredefaultpath;
 
-%% params && settings
+%% pid params && settings
 parameter = struct();
 
 % pid parameter
@@ -33,15 +33,12 @@ addpath(genpath(fullfile(config.base.dir, "inputs")));
 
 %% user selections
 % vehicle selection
-filter = fullfile(config.base.dir, "configs", "*.json");
-[file, path] = uigetfile(filter, 'select a vehicle.json');
+filter = fullfile(config.base.dir, "configs", "*.m");
+[file, path] = uigetfile(filter, 'select a vehicle.m function');
 if isequal(file, 0); disp('No file selected.'); return; end
-config.meta.file = file;
-config.meta.path = path;
 
-temp = jsondecode(fileread(strcat(config.meta.path, config.meta.file)));
-config.meta.vehicle_parameter_file = temp.vehicle_parameter_file;
-config.meta.tire_parameter_file = temp.tire_parameter_file;
+[~, temp.func_name, ~] = fileparts(file);
+temp.data = feval(temp.func_name);
 
 % measurement selection
 filter = fullfile(config.base.dir, "inputs", "*.mat");
@@ -59,13 +56,18 @@ config.model = file;
 Simulink.fileGenControl('set', ...
     'CacheFolder', fullfile(config.base.dir, "cache"));
 
+%% write paramter into structs
 simin = load(config.meta.measurement_file); simin = simin.data;
+
+config.carmaker = temp.data.config.carmaker;
+config.meta = temp.data.config.meta;
+
+parameter.vehicle = temp.data.parameters;
+parameter.tire = read_tir(config.meta.tire_file);
+
 clear filter; clear file; clear path; clear temp;
 
-parameter.vehicle = jsondecode(fileread(config.meta.vehicle_parameter_file)); 
-parameter.tire = read_tir(config.meta.tire_parameter_file);
-
-% fmi and carMaker dont like paramter structs
+%% fmi and carMaker dont like paramter structs for tunable params
 kp = parameter.pid.kp;
 ki = parameter.pid.ki;
 kd = parameter.pid.kd;
@@ -73,6 +75,7 @@ k = parameter.actuator.k;
 T1 = parameter.actuator.T1;
 ic = parameter.actuator.ic;
 
+%% create busses (needed for carMaker)
 create_bus_vehicle_states();
 create_bus_controls();
 

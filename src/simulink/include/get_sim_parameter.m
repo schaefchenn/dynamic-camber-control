@@ -1,10 +1,10 @@
 function [] = get_sim_parameter(model, vehicle)
     mdlWks = get_param(model, "ModelWorkspace");
-    entries = fieldnames(vehicle.parameters);
+    entries = fieldnames(vehicle);
 
     for i = 1:numel(entries)
         entryName = entries{i};
-        entry = vehicle.parameters.(entryName);
+        entry = vehicle.(entryName);
 
         % Simulink.Parameter erzeugen
         p = Simulink.Parameter;
