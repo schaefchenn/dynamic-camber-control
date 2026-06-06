@@ -2,292 +2,314 @@ APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 14:38:16
+SIM_START	init	2026-06-06 16:17:03
 TIME	0.000
 SIMULATE	init
 
-TIME	10.003
-SIM_END		init	10s	87.9875m
+TIME	9.092
+SIM_END		init	9.089s	65.8063m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 14:41:48
+SIM_START	init	2026-06-06 16:18:43
 TIME	0.000
 SIMULATE	init
 
-TIME	10.003
-SIM_END		init	10s	87.9875m
+TIME	16.506
+SIM_END		init	16.503s	133.77m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 14:46:39
+SIM_START	init	2026-06-06 16:19:41
 TIME	0.000
 SIMULATE	init
 
-ERROR		CarMaker blocks executed in the wrong order or more than once per cycle (possible reasons: duplicate block or algebraic loop in model).
-SIM_ABORT	init	0s	0m
+TIME	14.582
+SIM_END		init	14.579s	109.049m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 14:48:10
+SIM_START	init	2026-06-06 16:20:24
 TIME	0.000
 SIMULATE	init
 
-TIME	10.003
-SIM_END		init	10s	87.9875m
+TIME	13.134
+SIM_END		init	13.131s	97.9716m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 14:50:50
+SIM_START	init	2026-06-06 16:27:55
 TIME	0.000
 SIMULATE	init
 
-TIME	10.003
-SIM_END		init	10s	87.9875m
+TIME	23.887
+ERROR		Vehicle leaves road at about x=-0.00650847, y=-188.311 TireNo=1
+SIM_ABORT	init	23.89s	328.664m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 14:51:28
+SIM_START	init	2026-06-06 16:29:42
 TIME	0.000
 SIMULATE	init
 
-TIME	10.003
-SIM_END		init	10s	87.9875m
+TIME	7.065
+SIM_END		init	7.062s	30.0197m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 14:52:59
+SIM_START	init	2026-06-06 16:30:00
 TIME	0.000
 SIMULATE	init
 
-TIME	6.315
-WARNING		IPGDriver: Problems for driver: I'm stopping my activities (time = 6.315000, ErrInd = 102). (id=200)
-TIME	10.003
-SIM_END		init	10s	23.7845m
+TIME	15.357
+SIM_END		init	15.354s	117.744m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 14:53:46
+SIM_START	init	2026-06-06 16:30:20
 TIME	0.000
 SIMULATE	init
 
-TIME	9.332
-SIM_END		init	9.329s	6.15674m
+TIME	17.303
+SIM_END		init	17.3s	147.439m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 14:57:12
+SIM_START	init	2026-06-06 16:30:42
 TIME	0.000
 SIMULATE	init
 
-TIME	10.003
-SIM_END		init	10s	87.9875m
+TIME	18.912
+SIM_END		init	18.909s	180.535m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 14:58:26
+SIM_START	init	2026-06-06 16:32:23
 TIME	0.000
 SIMULATE	init
 
-TIME	8.537
-SIM_END		init	8.534s	58.0443m
+TIME	13.298
+SIM_END		init	13.295s	99.1967m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 14:59:09
+SIM_START	init	2026-06-06 16:32:49
 TIME	0.000
 SIMULATE	init
 
-TIME	71.397
-SIM_END		init	71.394s	5.90981m
+TIME	15.904
+SIM_END		init	15.901s	126.087m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:01:15
+SIM_START	init	2026-06-06 16:33:44
 TIME	0.000
 SIMULATE	init
 
-TIME	10.822
-SIM_END		init	10.819s	1.2559m
+TIME	17.769
+SIM_END		init	17.766s	157.912m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:01:58
+SIM_START	init	2026-06-06 16:35:24
 TIME	0.000
 SIMULATE	init
 
-TIME	8.603
-SIM_END		init	8.6s	1.19488m
+TIME	16.052
+SIM_END		init	16.049s	128.234m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:02:15
+SIM_START	init	2026-06-06 16:36:48
 TIME	0.000
 SIMULATE	init
 
-TIME	16.817
-SIM_END		init	16.814s	1.39333m
+TIME	15.472
+SIM_END		init	15.469s	117.719m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:03:13
+SIM_START	init	2026-06-06 16:37:08
 TIME	0.000
 SIMULATE	init
 
-TIME	14.748
-SIM_END		init	14.745s	1.34972m
+TIME	17.070
+SIM_END		init	17.067s	142.188m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:05:58
+SIM_START	init	2026-06-06 16:37:29
 TIME	0.000
 SIMULATE	init
 
-TIME	24.191
-SIM_END		init	24.188s	1.52364m
+TIME	20.913
+SIM_END		init	20.91s	232.037m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:07:39
+SIM_START	init	2026-06-06 16:39:24
 TIME	0.000
 SIMULATE	init
 
-TIME	13.000
-SIM_END		init	12.997s	1.30984m
+TIME	13.848
+SIM_END		init	13.845s	102.577m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:09:12
+SIM_START	init	2026-06-06 16:40:11
 TIME	0.000
 SIMULATE	init
 
-TIME	49.531
-SIM_END		init	49.528s	1.73925m
+TIME	15.678
+SIM_END		init	15.675s	122.605m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:10:19
+SIM_START	init	2026-06-06 16:40:49
 TIME	0.000
 SIMULATE	init
 
-TIME	62.087
-SIM_END		init	62.084s	1.78765m
+TIME	4.915
+ERROR		Wheelspeed too high of tire 0: +6901.308
+SIM_ABORT	init	4.918s	10.6301m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:10:57
+SIM_START	init	2026-06-06 16:41:57
 TIME	0.000
 SIMULATE	init
 
-TIME	56.950
-SIM_END		init	56.947s	1.76977m
+TIME	13.005
+SIM_END		init	13.002s	99.5037m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:12:13
+SIM_START	init	2026-06-06 16:43:01
 TIME	0.000
 SIMULATE	init
 
-TIME	18.598
-SIM_END		init	18.595s	2.10745m
+TIME	12.757
+SIM_END		init	12.754s	93.8661m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:12:44
+SIM_START	init	2026-06-06 16:45:45
 TIME	0.000
 SIMULATE	init
 
-TIME	100.003
-SIM_END		init	100s	1.87149m
+TIME	15.345
+SIM_END		init	15.342s	118.726m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:14:01
+SIM_START	init	2026-06-06 16:46:46
 TIME	0.000
 SIMULATE	init
 
-TIME	41.490
-SIM_END		init	41.487s	956.139m
+TIME	14.065
+SIM_END		init	14.062s	106.976m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:15:17
+SIM_START	init	2026-06-06 16:47:22
 TIME	0.000
 SIMULATE	init
 
-TIME	45.600
-SIM_END		init	45.597s	965.573m
+TIME	17.839
+SIM_END		init	17.836s	155.829m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:18:14
+SIM_START	init	2026-06-06 16:48:35
 TIME	0.000
 SIMULATE	init
 
-TIME	23.399
-SIM_END		init	23.396s	429.434m
+TIME	11.908
+SIM_END		init	11.905s	94.2805m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:18:44
+SIM_START	init	2026-06-06 16:49:04
 TIME	0.000
 SIMULATE	init
 
-TIME	46.120
-ERROR		Vehicle leaves road at about x=-0.0310202, y=-305.499 TireNo=1
-SIM_ABORT	init	46.123s	987.378m
+TIME	13.985
+SIM_END		init	13.982s	104.51m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:23:40
+SIM_START	init	2026-06-06 16:49:41
 TIME	0.000
 SIMULATE	init
 
-TIME	19.537
-SIM_END		init	19.534s	196.059m
+TIME	18.790
+SIM_END		init	18.787s	177.751m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 15:24:39
+SIM_START	init	2026-06-06 16:50:04
 TIME	0.000
 SIMULATE	init
 
-TIME	16.578
-SIM_END		init	16.575s	135.361m
+TIME	15.795
+SIM_END		init	15.792s	123.264m
 APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
 COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
  
 		I/O Configuration: default
-SIM_START	init	2026-06-06 16:13:02
+SIM_START	init	2026-06-06 16:50:26
 TIME	0.000
 SIMULATE	init
 
-TIME	22.228
-SIM_END		init	22.225s	272.944m
+TIME	21.631
+ERROR		Vehicle leaves road at about x=-0.00136822, y=-106.825 TireNo=1
+SIM_ABORT	init	21.634s	253.775m
+APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
+COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
+ 
+		I/O Configuration: default
+SIM_START	init	2026-06-06 16:53:30
+TIME	0.000
+SIMULATE	init
+
+TIME	21.631
+ERROR		Vehicle leaves road at about x=-0.00136822, y=-106.825 TireNo=1
+SIM_ABORT	init	21.634s	253.775m
+APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
+COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
+ 
+		I/O Configuration: default
+SIM_START	init	2026-06-06 16:54:00
+TIME	0.000
+SIMULATE	init
+
+TIME	21.631
+ERROR		Vehicle leaves road at about x=-0.00136822, y=-106.825 TireNo=1
+SIM_ABORT	init	21.634s	253.775m
