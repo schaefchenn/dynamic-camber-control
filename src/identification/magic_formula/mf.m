@@ -13,10 +13,10 @@ tire = read_tir(tir_file);
 
 %% inputs
 
-Fz = 8500;
-kappa = 0; %-1:0.01:1;
-alpha = -0.2:0.01:0.2;
-gamma = 0;%-0.1047:(0.1047/2):0.1047;
+Fz = 6500;
+kappa = -0.3; %-1:0.01:1;
+alpha = -0.3:0.01:0.3;
+gamma = -0.1047:(0.1047/2):0.1047;
 
 %% parameter
 % general
@@ -151,9 +151,6 @@ for i = 1:length(gamma)
         (cos(Cxa .* atan(Bxa .* S_Hxa - Exa .* (Bxa .* S_Hxa - atan(Bxa .* S_Hxa)))));
 
     Fx = Fx0 .* Gxa;
-    % figure(1)
-    % plot(kappa, Fx); hold on;
-    % legendStrings1{i} = sprintf('\\gamma = %.4f', gamma(i));
 
     % lateral (combined slip)
     S_Hyk = r_Hy1 + r_Hy2 .* dfz;
@@ -169,7 +166,7 @@ for i = 1:length(gamma)
     Gyk = (cos(Cyk .* atan(Byk .* kappa_s - Eyk .* (Byk .* kappa_s - atan(Byk .* kappa_s))))) ./ ...
         (cos(Cyk .* atan(Byk .* S_Hyk - Eyk .* (Byk .* S_Hyk - atan(Byk .* S_Hyk)))));
 
-    Fy = Fy0 .* Gyk + S_Vyk;
+    Fy = -Fy0 .* Gyk + S_Vyk;
     
     figure(2)
     plot(alpha, Fy); hold on;

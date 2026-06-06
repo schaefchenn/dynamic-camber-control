@@ -1,7 +1,7 @@
 #INFOFILE1.1 (UTF-8) - Do not remove this line!
 FileIdent = CarMaker-DVA 4.0
 nDialogQu = 10
-Qu.0.Name = Car.CRR.rx_ext
+Qu.0.Name = Car.CFL.rx_ext
 Qu.0.Mode = - value
 Qu.0.Count = 1
 Qu.0.Unit = rad

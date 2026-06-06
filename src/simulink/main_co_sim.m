@@ -35,14 +35,11 @@ config.carmaker.dir = fullfile(config.base.root, "carmaker");
 addpath(genpath(fullfile(config.carmaker.dir, "bmw/src_cm4sl")))
 
 %% initialise carMaker environment
-if ~isappdata(0, 'cmenv_initialized')
-    try 
-        run('cmenv.m')
-    catch me
-        warning(me.message)
-        return
-    end
-
+try 
+    run('cmenv.m')
+ catch me
+     warning(me.message)
+     return
 end
 
 %% user selection

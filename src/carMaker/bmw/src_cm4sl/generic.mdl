@@ -13,6 +13,7 @@ __MWOPC_PART_BEGIN__ /[Content_Types].xml
   <Override ContentType="application/vnd.mathworks.package.coreProperties+xml" PartName="/metadata/mwcoreProperties.xml"/>
   <Override ContentType="application/vnd.mathworks.package.corePropertiesExtension+xml" PartName="/metadata/mwcorePropertiesExtension.xml"/>
   <Override ContentType="application/vnd.mathworks.package.corePropertiesReleaseInfo+xml" PartName="/metadata/mwcorePropertiesReleaseInfo.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.mf0+xml" PartName="/simulink/codeDictionary.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.configSet+xml" PartName="/simulink/configSet0.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.configSetInfo+xml" PartName="/simulink/configSetInfo.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.graphicalInterface+xml" PartName="/simulink/graphicalInterface.xml"/>
@@ -28,6 +29,7 @@ __MWOPC_PART_BEGIN__ /_rels/.rels
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
   <Relationship Id="blockDiagram" Target="simulink/blockdiagram.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/blockDiagram"/>
   <Relationship Id="blockDiagramDefaults" Target="simulink/bddefaults.xml" Type="http://schemas.mathworks.com/simulink/2017/relationships/blockDiagramDefaults"/>
+  <Relationship Id="codeDictionary" Target="simulink/codeDictionary.xml" Type="http://schemas.mathworks.com/simulinkModel/2017/relationships/codeDictionary"/>
   <Relationship Id="configSetInfo" Target="simulink/configSetInfo.xml" Type="http://schemas.mathworks.com/simulink/2014/relationships/configSetInfo"/>
   <Relationship Id="modelDictionary" Target="simulink/modelDictionary.xml" Type="http://schemas.mathworks.com/simulinkModel/2016/relationships/modelDictionary"/>
   <Relationship Id="rId1" Target="metadata/mwcoreProperties.xml" Type="http://schemas.mathworks.com/package/2012/relationships/coreProperties"/>
@@ -42,9 +44,9 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <cp:category>model</cp:category>
   <dcterms:created xsi:type="dcterms:W3CDTF">2002-02-08T14:09:51Z</dcterms:created>
   <dc:creator>fh</dc:creator>
-  <cp:lastModifiedBy>v2544182</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-05-11T14:59:16Z</dcterms:modified>
-  <cp:revision>6.1</cp:revision>
+  <cp:lastModifiedBy>marce</cp:lastModifiedBy>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-06-06T12:53:41Z</dcterms:modified>
+  <cp:revision>6.11</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -115,7 +117,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.1&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.11&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -147,11 +149,185 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
         <P Name="DefaultTransitionBetweenContTasks" Class="char">Ensure deterministic transfer (minimum delay)</P>
         <P Name="DefaultExtrapolationMethodBetweenContTasks" Class="char">None</P>
       </Object>
+      <Object PropName="ModelMappings" ObjectID="3" ClassName="Simulink.CoderDictionary.ModelMappingSLC">
+        <P Name="DummyName" Class="char"/>
+        <Object PropName="Inports" ObjectID="4" ClassName="Simulink.CoderDictionary.InportsMapping">
+          <Object PropName="MappedTo" ObjectID="5" ClassName="Simulink.DataReferenceClass">
+            <P Name="MappedTo" Class="char">StorageClass</P>
+            <P Name="StorageClass" Class="double">[]</P>
+            <P Name="ServicePort" Class="double">[]</P>
+            <P Name="CSCAttributes" Class="char"/>
+            <P Name="MemorySection" Class="double">[]</P>
+            <P Name="Identifier" Class="char"/>
+          </Object>
+          <P Name="StereotypeProperties" Class="char"/>
+          <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+        </Object>
+        <Object PropName="Outports" ObjectID="6" ClassName="Simulink.CoderDictionary.OutportsMapping">
+          <Object PropName="MappedTo" ObjectID="7" ClassName="Simulink.DataReferenceClass">
+            <P Name="MappedTo" Class="char">StorageClass</P>
+            <P Name="StorageClass" Class="double">[]</P>
+            <P Name="ServicePort" Class="double">[]</P>
+            <P Name="CSCAttributes" Class="char"/>
+            <P Name="MemorySection" Class="double">[]</P>
+            <P Name="Identifier" Class="char"/>
+          </Object>
+          <P Name="StereotypeProperties" Class="char"/>
+          <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+        </Object>
+        <P Name="ModelScopedParameters" Class="double">[]</P>
+        <P Name="Parameters" Class="double">[]</P>
+        <P Name="Signals" Class="double">[]</P>
+        <P Name="DataStores" Class="double">[]</P>
+        <P Name="States" Class="double">[]</P>
+        <Object PropName="DefaultsMapping" ObjectID="8" ClassName="Simulink.CoderDictionary.DefaultsMapping">
+          <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+          <Object PropName="Inports" ObjectID="9" ClassName="Simulink.DataReferenceClass">
+            <P Name="MappedTo" Class="char">StorageClass</P>
+            <P Name="StorageClass" Class="double">[]</P>
+            <P Name="ServicePort" Class="double">[]</P>
+            <P Name="CSCAttributes" Class="char"/>
+            <P Name="MemorySection" Class="double">[]</P>
+            <P Name="Identifier" Class="char"/>
+          </Object>
+          <Object PropName="Outports" ObjectID="10" ClassName="Simulink.DataReferenceClass">
+            <P Name="MappedTo" Class="char">StorageClass</P>
+            <P Name="StorageClass" Class="double">[]</P>
+            <P Name="ServicePort" Class="double">[]</P>
+            <P Name="CSCAttributes" Class="char"/>
+            <P Name="MemorySection" Class="double">[]</P>
+            <P Name="Identifier" Class="char"/>
+          </Object>
+          <Object PropName="GlobalParameters" ObjectID="11" ClassName="Simulink.DataReferenceClass">
+            <P Name="MappedTo" Class="char">StorageClass</P>
+            <P Name="StorageClass" Class="double">[]</P>
+            <P Name="ServicePort" Class="double">[]</P>
+            <P Name="CSCAttributes" Class="char"/>
+            <P Name="MemorySection" Class="double">[]</P>
+            <P Name="Identifier" Class="char"/>
+          </Object>
+          <Object PropName="SharedParameters" ObjectID="12" ClassName="Simulink.DataReferenceClass">
+            <P Name="MappedTo" Class="char">StorageClass</P>
+            <P Name="StorageClass" Class="double">[]</P>
+            <P Name="ServicePort" Class="double">[]</P>
+            <P Name="CSCAttributes" Class="char"/>
+            <P Name="MemorySection" Class="double">[]</P>
+            <P Name="Identifier" Class="char"/>
+          </Object>
+          <Object PropName="PerInstanceParameters" ObjectID="13" ClassName="Simulink.DataReferenceClass">
+            <P Name="MappedTo" Class="char">StorageClass</P>
+            <P Name="StorageClass" Class="double">[]</P>
+            <P Name="ServicePort" Class="double">[]</P>
+            <P Name="CSCAttributes" Class="char"/>
+            <P Name="MemorySection" Class="double">[]</P>
+            <P Name="Identifier" Class="char"/>
+          </Object>
+          <Object PropName="SharedLocalDataStores" ObjectID="14" ClassName="Simulink.DataReferenceClass">
+            <P Name="MappedTo" Class="char">StorageClass</P>
+            <P Name="StorageClass" Class="double">[]</P>
+            <P Name="ServicePort" Class="double">[]</P>
+            <P Name="CSCAttributes" Class="char"/>
+            <P Name="MemorySection" Class="double">[]</P>
+            <P Name="Identifier" Class="char"/>
+          </Object>
+          <Object PropName="GlobalDataStores" ObjectID="15" ClassName="Simulink.DataReferenceClass">
+            <P Name="MappedTo" Class="char">StorageClass</P>
+            <P Name="StorageClass" Class="double">[]</P>
+            <P Name="ServicePort" Class="double">[]</P>
+            <P Name="CSCAttributes" Class="char"/>
+            <P Name="MemorySection" Class="double">[]</P>
+            <P Name="Identifier" Class="char"/>
+          </Object>
+          <Object PropName="InternalData" ObjectID="16" ClassName="Simulink.DataReferenceClass">
+            <P Name="MappedTo" Class="char">StorageClass</P>
+            <P Name="StorageClass" Class="double">[]</P>
+            <P Name="ServicePort" Class="double">[]</P>
+            <P Name="CSCAttributes" Class="char"/>
+            <P Name="MemorySection" Class="double">[]</P>
+            <P Name="Identifier" Class="char"/>
+          </Object>
+          <Object PropName="Constants" ObjectID="17" ClassName="Simulink.DataReferenceClass">
+            <P Name="MappedTo" Class="char">StorageClass</P>
+            <P Name="StorageClass" Class="double">[]</P>
+            <P Name="ServicePort" Class="double">[]</P>
+            <P Name="CSCAttributes" Class="char"/>
+            <P Name="MemorySection" Class="double">[]</P>
+            <P Name="Identifier" Class="char"/>
+          </Object>
+          <Object PropName="InitTermFunctions" ObjectID="18" ClassName="Simulink.FunctionReferenceClass">
+            <P Name="FunctionClass" Class="double">[]</P>
+            <P Name="MemorySection" Class="double">[]</P>
+          </Object>
+          <Object PropName="ExecutionFunctions" ObjectID="19" ClassName="Simulink.FunctionReferenceClass">
+            <P Name="FunctionClass" Class="double">[]</P>
+            <P Name="MemorySection" Class="double">[]</P>
+          </Object>
+          <Object PropName="SharedUtilityFunctions" ObjectID="20" ClassName="Simulink.FunctionReferenceClass">
+            <P Name="FunctionClass" Class="double">[]</P>
+            <P Name="MemorySection" Class="double">[]</P>
+          </Object>
+        </Object>
+        <P Name="Name" Class="char">generic_SLC</P>
+        <P Name="Active" Class="logical">1</P>
+      </Object>
     </ConcurrentExecutionSettings>
     <System Ref="system_root"/>
   </Model>
 </ModelInformation>
 
+__MWOPC_PART_BEGIN__ /simulink/codeDictionary.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" defaultPackage="coderdictionary.data" packageUris="http://schema.mathworks.com/mf0/coderdictionary_data/R2022b http://schema.mathworks.com/mf0/coderdictionary_data/R2022b/coderdictionary.data">
+  <Container type="Container" uuid="e6a380b4-c32e-4fae-b6fe-d71eecbebeea">
+    <ReferencedContainers type="ReferenceContainerInfo" uuid="f148b87a-8372-46cc-910a-5f7190db7d5f">
+      <Name>SimulinkBuiltin</Name>
+    </ReferencedContainers>
+    <ReferencedContainers type="ReferenceContainerInfo" uuid="f96ab913-4c1c-4847-8176-06804dd17a56">
+      <Name>Simulink</Name>
+    </ReferencedContainers>
+    <CDefinitions type="C_Definitions" uuid="28a0bb12-b4d5-4713-934d-8bd136d3d8f3">
+      <SoftwareComponentTemplates type="SoftwareComponentTemplate" uuid="a4b29e4e-1181-44da-9df0-a8f146697633">
+        <Name>CODER_DICTIONARY</Name>
+        <Constants type="DataConfiguration" uuid="a381b8f3-11b7-4bb2-873a-16dd357f11ae">
+          <category>Constants</category>
+        </Constants>
+        <DataTransfers type="DataConfiguration" uuid="f962d60e-2b5a-49d8-a875-af08106b0fea">
+          <category>DataTransfers</category>
+        </DataTransfers>
+        <Execution type="FunctionConfiguration" uuid="0b144029-9fd4-433c-8d24-44b653cb72b7"/>
+        <GlobalDataStores type="DataConfiguration" uuid="d0701235-dbdd-4e27-996c-9b6102ed6194">
+          <category>GlobalDataStores</category>
+        </GlobalDataStores>
+        <GlobalParameters type="DataConfiguration" uuid="388c8dd3-a0d1-45a6-a36e-e4fca540e880">
+          <category>GlobalParameters</category>
+        </GlobalParameters>
+        <InitializeTerminate type="FunctionConfiguration" uuid="ff1d621e-22b3-4cf1-918c-649721016ad3"/>
+        <Inports type="DataConfiguration" uuid="43728349-14f1-4cc0-9b17-50416c5ce25b">
+          <category>Inports</category>
+        </Inports>
+        <InternalData type="DataConfiguration" uuid="25fb96e2-7fc9-4ca0-a3f7-1b70fca90da1">
+          <category>InternalData</category>
+        </InternalData>
+        <LocalParameters type="DataConfiguration" uuid="dee5758e-0e12-4acd-b09a-5f84df4dfc4e">
+          <category>LocalParameters</category>
+        </LocalParameters>
+        <ModelData type="DataConfiguration" uuid="b7ce2ff9-66f1-4321-8a0e-7a945fdbdc8c">
+          <category>ModelData</category>
+        </ModelData>
+        <Outports type="DataConfiguration" uuid="78906d32-3e06-49f2-a868-c0e73bd5923c">
+          <category>Outports</category>
+        </Outports>
+        <ParameterArguments type="DataConfiguration" uuid="eae34b92-fe5c-42f6-a303-bb9947171307">
+          <category>ParameterArguments</category>
+        </ParameterArguments>
+        <SharedLocalDataStores type="DataConfiguration" uuid="c53da652-c7f6-4364-a228-baca6e7dfc48">
+          <category>SharedLocalDataStores</category>
+        </SharedLocalDataStores>
+        <SharedUtility type="FunctionConfiguration" uuid="51872674-42dd-41bc-81ef-99b4df4ff639"/>
+      </SoftwareComponentTemplates>
+    </CDefinitions>
+  </Container>
+</MF0>
 __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
 <?xml version="1.0" encoding="utf-8"?>
 <ConfigSet>
@@ -182,7 +358,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="EnableMultiTasking">on</P>
         <P Name="AllowMultiTaskInputOutput">off</P>
         <P Name="ConcurrentTasks">off</P>
-        <P Name="SolverName">ode45</P>
+        <P Name="SolverName">FixedStepAuto</P>
         <P Name="SolverJacobianMethodControl">auto</P>
         <P Name="DaesscMode">auto</P>
         <P Name="ShapePreserveControl">DisableAll</P>
@@ -336,7 +512,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="SaveWithDisabledLinksMsg">warning</P>
         <P Name="SaveWithParameterizedLinksMsg">none</P>
         <P Name="CheckSSInitialOutputMsg">on</P>
-        <P Name="UnderspecifiedInitializationDetection">Classic</P>
+        <P Name="UnderspecifiedInitializationDetection">Simplified</P>
         <P Name="MergeDetectMultiDrivingBlocksExec">none</P>
         <P Name="CheckExecutionContextPreStartOutputMsg">off</P>
         <P Name="SignalResolutionControl">TryResolveAllWithWarning</P>
@@ -883,8 +1059,8 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
       </Object>
     </Array>
     <P Name="Name">Configuration</P>
-    <P Name="CurrentDlgPage">Solver</P>
-    <P Name="ConfigPrmDlgPosition">[ 517, 260, 1403, 918 ]</P>
+    <P Name="CurrentDlgPage">Diagnostics/Data Validity</P>
+    <P Name="ConfigPrmDlgPosition">[ 447, 92, 1403, 918 ]</P>
     <P Name="ExtraOptions"/>
   </Object>
 </ConfigSet>
@@ -899,7 +1075,7 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 <?xml version="1.0" encoding="utf-8"?>
 <GraphicalInterface>
   <P Name="NumRootInports">1</P>
-  <Inport Name="Input">
+  <Inport Name="in">
     <P Name="BusObject">controls</P>
     <P Name="OutputFunctionCall">off</P>
     <P Name="InportServerType">off</P>
@@ -907,9 +1083,10 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
     <P Name="UnitExpr">inherit</P>
   </Inport>
   <P Name="NumRootOutports">1</P>
-  <Outport Name="Output">
+  <Outport Name="out">
     <P Name="BusObject">vehicle_states</P>
     <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">states</P>
     <P Name="UnitExpr">inherit</P>
     <P Name="OutportClientType">off</P>
   </Outport>
@@ -923,11 +1100,11 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
   <P Name="HasTerminateEvent">0</P>
   <P Name="PreCompExecutionDomainType">Unset</P>
   <P Name="UseModelRefSolver">0</P>
-  <P Name="SolverName">ode45</P>
+  <P Name="SolverName">FixedStepAuto</P>
   <P Name="IsExportFunctionModel">0</P>
   <P Name="SimulinkSubDomainType">Simulink</P>
   <P Name="NumParameterArguments">0</P>
-  <P Name="NumExternalFileReferences">2</P>
+  <P Name="NumExternalFileReferences">23</P>
   <ExternalFileReference>
     <P Name="Reference">simulink/Logic and Bit
 Operations/Compare
@@ -943,14 +1120,140 @@ Configuration</P>
     <P Name="SID">1727</P>
     <P Name="Type">LIBRARY_BLOCK</P>
   </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict</P>
+    <P Name="SID">2275</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict1</P>
+    <P Name="SID">2276</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict10</P>
+    <P Name="SID">2287</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict11</P>
+    <P Name="SID">2288</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict12</P>
+    <P Name="SID">2289</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict13</P>
+    <P Name="SID">2290</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict14</P>
+    <P Name="SID">2291</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict15</P>
+    <P Name="SID">2292</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict16</P>
+    <P Name="SID">2293</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict2</P>
+    <P Name="SID">2277</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict3</P>
+    <P Name="SID">2278</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict4</P>
+    <P Name="SID">2279</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict5</P>
+    <P Name="SID">2280</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict6</P>
+    <P Name="SID">2281</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict7</P>
+    <P Name="SID">2282</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict8</P>
+    <P Name="SID">2283</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict9</P>
+    <P Name="SID">2286</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Write CM Dict</P>
+    <P Name="Path">$bdroot/Write CM Dict</P>
+    <P Name="SID">2296</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Write CM Dict</P>
+    <P Name="Path">$bdroot/Write CM Dict1</P>
+    <P Name="SID">2299</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Write CM Dict</P>
+    <P Name="Path">$bdroot/Write CM Dict2</P>
+    <P Name="SID">2300</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Write CM Dict</P>
+    <P Name="Path">$bdroot/Write CM Dict3</P>
+    <P Name="SID">2301</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
   <P Name="OrderedModelArguments">1</P>
 </GraphicalInterface>
 
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="41e6f457-57f6-4c74-a91f-dddc8d6b69c4">
-    <Interface type="Interface" uuid="71ae015d-4cfb-4bdf-9dc6-048eede05aae"/>
+  <System type="System" uuid="3f3b06f9-6e88-463f-ad57-bcdc81a7f09d">
+    <Interface type="Interface" uuid="7d46b07a-8226-4d77-8672-8527249cc134"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
@@ -962,16 +1265,230 @@ __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2022b_202203181029">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="a3db648b-97fa-44dc-98eb-865e318bb9a5">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="31f191b0-5337-4fb1-a31c-9dec08a9f2fa">
+    <globalData type="sltp.mm.core.GlobalData" uuid="a2dcc26a-c5fa-4c00-abaf-0509a8b5283c">
+      <dataName>portInput</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="00e8c3c7-09a0-41bf-96a1-513bd7da148d">
+      <dataName>portInput_u_camber_FL</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="ee703a65-5bd1-4a49-af26-2e91e3be010b">
+      <dataName>portInput_u_camber_FR</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="a993eb13-6363-4bd6-bfae-ab6ddebb5b8e">
+      <dataName>portInput_u_camber_RL</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="3708b1f1-b68e-48a5-bb65-02686326107a">
+      <dataName>portInput_u_camber_RR</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="63388807-e134-4315-9c4b-1fba95008327">
+      <dataName>portOutput</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="a1c169c9-dda5-4cab-b395-4dac926651ee">
+      <dataName>portOutput_ax</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="37d28ef2-dbb7-49c5-a4fc-1e38b41131cb">
+      <dataName>portOutput_ay</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="feb493a8-d020-4931-af47-c867f6473b00">
+      <dataName>portOutput_camber_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="5ab67fc1-a7f5-4987-b6ce-08e090b13459">
+      <dataName>portOutput_camber_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="3d350157-60c5-4213-9142-9accf3237334">
+      <dataName>portOutput_camber_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="ff49a6d7-4ba8-484d-9b85-2c84a04d3843">
+      <dataName>portOutput_camber_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="187ef8d4-2b22-43b0-9f40-88303fd5cb11">
+      <dataName>portOutput_delta_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="5fd6d993-22a7-4de2-86de-a40dfc28ace3">
+      <dataName>portOutput_delta_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="5aaa7f5f-b895-4f21-a03e-daa60bf4b818">
+      <dataName>portOutput_delta_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="e743cb9e-4dd2-4966-bb8b-a23b107fac20">
+      <dataName>portOutput_delta_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="447c10ab-22fa-437a-a1f9-5339b3017f75">
+      <dataName>portOutput_is_transient</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="a566e622-816e-4c2d-80ef-e35eea41cf9b">
+      <dataName>portOutput_omega_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="7b690d0f-b20b-4c95-894a-017e0bf1aea6">
+      <dataName>portOutput_omega_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="845eca39-820d-4b5d-ae3d-ba0672ecc1c8">
+      <dataName>portOutput_omega_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="571dc3ad-97e8-4763-9bfc-2d7ee0735772">
+      <dataName>portOutput_omega_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="4bb7e378-497c-4944-acfe-1e21dcdc6f2d">
+      <dataName>portOutput_side_slip_angle</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="b218e3a7-aa20-4cc7-a86a-52e3d61636d5">
+      <dataName>portOutput_v</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="efe28e70-d5b6-41fa-8f2e-8d1c4eaf0251">
+      <dataName>portOutput_yaw_rate</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="b5441124-e06d-4131-accb-f0e125f50bec">
+      <dataName>portin</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="a701f136-49f9-46a9-b046-d93fa7690b40">
+      <dataName>portin_u_camber_FL</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="866e3d3a-af87-4e7f-95c1-a18c787be2aa">
+      <dataName>portin_u_camber_FR</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="fd9a0c91-038f-4c6c-a9b1-fd4fb5139654">
+      <dataName>portin_u_camber_RL</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="9e5084a2-c12c-45fe-877b-9b4ab6d13c08">
+      <dataName>portin_u_camber_RR</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="0e3f5be0-d853-4f72-826a-f816b4225d04">
+      <dataName>portout</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="d1bc1a2a-ae34-4b67-b862-5f0af7f9d4bd">
+      <dataName>portout_ax</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="30a9cf65-bec9-42d7-ae25-594f40ec3ebe">
+      <dataName>portout_ay</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="a66dfd5b-b0b8-4e0b-80a3-e894b13a2e5d">
+      <dataName>portout_camber_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="08bc442d-c3d6-4b09-b8f6-1f806dc455c2">
+      <dataName>portout_camber_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="6231bf52-2094-441b-b66e-b5117efbe21c">
+      <dataName>portout_camber_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="97e8b65b-d61d-46b0-b825-a3ccc75cf7d7">
+      <dataName>portout_camber_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="28b45f9a-d463-4da3-a55e-e023f3a853c6">
+      <dataName>portout_delta_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="9b3d99b7-42e7-4251-a1f2-f860c2587e55">
+      <dataName>portout_delta_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="b9758cfe-ac35-40a7-9450-0f56c060e0c0">
+      <dataName>portout_delta_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="4abb932d-82c0-4447-b047-00d085d79379">
+      <dataName>portout_delta_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="d6bdd8fa-4395-445f-974b-51b05656bcf2">
+      <dataName>portout_is_transient</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="cb29e795-3760-42ec-b13e-db1d04877e60">
+      <dataName>portout_omega_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="7d0407b9-2e2a-4088-bc96-b259bcbcdeb0">
+      <dataName>portout_omega_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="b828650a-20d6-4a72-a8fd-93b040856f45">
+      <dataName>portout_omega_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="c95ac88f-a1e3-495f-a491-33c48e5e5ace">
+      <dataName>portout_omega_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="64300dd6-b0dc-4c12-b8f2-2ba7e8ee84b3">
+      <dataName>portout_side_slip_angle</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="d3c6ed90-09eb-473f-910e-0b8a9e010ddd">
+      <dataName>portout_v</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="baa786dd-28fe-4bf5-863c-076823c93e7c">
+      <dataName>portout_yaw_rate</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <priorityDirection>HighNumberLast</priorityDirection>
+    <unusedTaskIds>2</unusedTaskIds>
     <editorState type="sltp.mm.core.EditorState" uuid="c3f3fdcd-643e-4ffa-aa05-808d5c935fa9">
+      <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="f89cfcb8-af52-4a7d-957d-0ea6b687ef93"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="9d5ff093-f5da-44f9-a2e5-d3c610117aff">
-      <context type="sltp.mm.core.Context" uuid="a3db648b-97fa-44dc-98eb-865e318bb9a5"/>
+    <rootTask type="sltp.mm.core.Task" uuid="7528fda3-c2e3-4d6f-b261-65cef08bb410">
+      <context type="sltp.mm.core.Context" uuid="31f191b0-5337-4fb1-a31c-9dec08a9f2fa"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="2425c717-3e10-4bfd-b483-4719bf27b5d7"/>
+      <subgraph type="sltp.mm.core.Graph" uuid="12e5d632-5c8c-4e44-9954-97c008d439d4">
+        <tasks type="sltp.mm.core.Task" uuid="202e247f-c3a0-4e92-bca9-b71a212361df">
+          <context type="sltp.mm.core.Context" uuid="31f191b0-5337-4fb1-a31c-9dec08a9f2fa"/>
+          <explicit>false</explicit>
+          <id>1</id>
+          <isTimed>true</isTimed>
+          <name>D1</name>
+          <priority>40</priority>
+          <rates type="sltp.mm.core.Rate" uuid="a1352d92-7bf0-4082-8046-467062083ecc">
+            <annotation>D1</annotation>
+            <color>-436207361</color>
+            <hasBlocks>true</hasBlocks>
+            <identifier>ClassicPeriodicDiscrete0.0010</identifier>
+            <rateSpec type="sltp.mm.core.RateSpec">
+              <period>.001</period>
+            </rateSpec>
+            <sti>0</sti>
+          </rates>
+        </tasks>
+      </subgraph>
     </rootTask>
   </sltp.mm.core.Context>
 </sltp_graph>
@@ -979,13 +1496,233 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2022b_202203181006">
   <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="2b9f70b9-5ec7-48ad-8a04-3aee0a9e4e24">
+    <entities type="diagram.editor.model.Entity" uuid="ac64b7b3-d974-4f76-a89b-5fb26903c49a">
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="09b59016-dde2-406d-9232-2393de062943"/>
+      <title>D1</title>
+      <type>implicit-periodic</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="beb74282-a570-4905-9717-0da0a5e69898">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="aa111dd1-1aed-4f8d-9265-02ff34f02d02"/>
+        <title>D1</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
     <syntaxElement type="sltp.mm.syntax.Graph" uuid="4c6d1c2e-5f1c-46a9-a5f6-894a7ad7dad4"/>
     <title>Default</title>
     <type>graph.Graph</type>
   </diagram.editor.model.Diagram>
   <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="a8eb4c47-ca20-4822-8166-077bd3edf98c">
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="36512141-f255-4a73-97c9-ca0d19bc8407">
+      <dataName>portInput</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="564af1b7-92e5-4d39-86f0-0cc86687e83f">
+      <dataName>portInput_u_camber_FL</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="f2808d58-e723-4ffb-80b6-78ed5560ee37">
+      <dataName>portInput_u_camber_FR</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="2b35005b-1d75-40ff-8fbd-d905e77653ab">
+      <dataName>portInput_u_camber_RL</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="8eaa0865-32f3-47b5-86da-fc8247b9495e">
+      <dataName>portInput_u_camber_RR</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="a06a2662-28c3-4faa-a593-6512d8dca027">
+      <dataName>portOutput</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="a5617e55-b4d5-4010-b0b5-4aa378328ca3">
+      <dataName>portOutput_ax</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="231b6a0b-bdc7-4ff0-b3cd-c8b5a3f8bdf4">
+      <dataName>portOutput_ay</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="6f087fe8-7f02-44ff-b2b0-fccb0b8d7bb1">
+      <dataName>portOutput_camber_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="73a525cb-2221-410a-8a92-1fa2e83f5647">
+      <dataName>portOutput_camber_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="c35012b5-c94f-4ce9-86fb-4a00b48aef67">
+      <dataName>portOutput_camber_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="afbb5355-d9e0-4f9e-b274-f9d437795001">
+      <dataName>portOutput_camber_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="42e207fd-9958-4854-b36e-afbfbe919b54">
+      <dataName>portOutput_delta_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="4a41ccd1-abf9-4ca5-97a6-9a1b5bda0d63">
+      <dataName>portOutput_delta_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="f42d6afd-c2d4-49d4-9752-c45c3ff26056">
+      <dataName>portOutput_delta_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="4ed376f8-52af-4410-bd8d-4a3c1d77ef71">
+      <dataName>portOutput_delta_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="e1603a6a-d061-4860-ad52-7ef09bf61dd2">
+      <dataName>portOutput_is_transient</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="bb07259d-0954-45cc-a59c-08b0f9d39284">
+      <dataName>portOutput_omega_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="fe1a36ae-3f8c-49e2-89f4-2a47b7a0b163">
+      <dataName>portOutput_omega_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="dd6b1ddd-4eb0-4096-ac12-4f28c185d4f6">
+      <dataName>portOutput_omega_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="95c38349-e137-45a4-a688-4e4714a89f8c">
+      <dataName>portOutput_omega_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="5972c5c7-2aec-49ff-8449-10af24f187b2">
+      <dataName>portOutput_side_slip_angle</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="3d2cfde0-aeda-45da-8a23-c5f06d1008e7">
+      <dataName>portOutput_v</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="6c5f14e7-a3ad-435f-9c15-ccaf40521357">
+      <dataName>portOutput_yaw_rate</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="3f5c0be5-c8f5-4dfb-95e1-66865fabb474">
+      <dataName>portin</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="a5b23342-1470-4bfe-b55d-861edf4af3cb">
+      <dataName>portin_u_camber_FL</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="f53d7dc2-6e01-4a26-82ca-22fe6863baf1">
+      <dataName>portin_u_camber_FR</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="a70c79a3-a9de-4bca-9679-8b20da441b95">
+      <dataName>portin_u_camber_RL</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="aace7dab-e9f9-4ce8-84c1-2f7aba3c365e">
+      <dataName>portin_u_camber_RR</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="0d1cb365-b727-4411-aa18-3167639debeb">
+      <dataName>portout</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="92004caa-1d50-4632-b505-f41521ed5461">
+      <dataName>portout_ax</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="b1068455-7afa-4086-b34f-464b28e73119">
+      <dataName>portout_ay</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="94ca9211-8458-4371-9279-002d5962afb2">
+      <dataName>portout_camber_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="c7e8b8b6-348d-441e-b153-553915c6d7ab">
+      <dataName>portout_camber_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="33323cec-2f0b-4738-8ef6-f6dcc1786d42">
+      <dataName>portout_camber_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="a45e8ed8-6eba-43e0-9c15-e196acaff7bf">
+      <dataName>portout_camber_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="ab903852-40e1-4b07-9512-1577a93f3029">
+      <dataName>portout_delta_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="0388bcca-794c-4192-8d29-acd65a2a3a5e">
+      <dataName>portout_delta_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="49af8399-d315-467a-a41c-cbe5e2514b72">
+      <dataName>portout_delta_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="fb5c1f1c-4093-479e-b911-f5698794eb52">
+      <dataName>portout_delta_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="08ff2b97-a154-4f5d-b740-321c4ea139e0">
+      <dataName>portout_is_transient</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="58b4fc6c-dc0b-4a5c-bc4d-dbbabbf48735">
+      <dataName>portout_omega_FL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="60bf15fd-a66e-475f-a7e5-f90f1c7330ae">
+      <dataName>portout_omega_FR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="2e858423-17de-4c29-875c-934ea358abbf">
+      <dataName>portout_omega_RL</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="358c8a1b-93b6-463c-87df-6b5b260fbe60">
+      <dataName>portout_omega_RR</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="9d902c11-5ca6-4508-8847-9e036da9038c">
+      <dataName>portout_side_slip_angle</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="81932176-6c0a-4061-a378-217aa7ca37ea">
+      <dataName>portout_v</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="59565f00-02ee-4e8c-b221-e93a201b0c68">
+      <dataName>portout_yaw_rate</dataName>
+      <type>RootOutport</type>
+    </globalData>
     <rootGraph type="sltp.mm.syntax.Graph" uuid="4c6d1c2e-5f1c-46a9-a5f6-894a7ad7dad4">
-      <priorityDirection>HighNumberFirst</priorityDirection>
+      <children type="sltp.mm.syntax.Node" uuid="09b59016-dde2-406d-9232-2393de062943">
+        <priority>40</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#e60000</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0.001</rate>
+          <title>D1</title>
+        </rates>
+        <title>D1</title>
+        <type>implicit-periodic</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="ac64b7b3-d974-4f76-a89b-5fb26903c49a"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="aa111dd1-1aed-4f8d-9265-02ff34f02d02">
+          <title>D1</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="beb74282-a570-4905-9717-0da0a5e69898"/>
+        </subgraph>
+      </children>
       <title>Default</title>
       <diagramElement type="diagram.editor.model.Diagram" uuid="2b9f70b9-5ec7-48ad-8a04-3aee0a9e4e24"/>
     </rootGraph>
@@ -2598,6 +3335,32 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1780.xml
     <P Name="Position">[770, 30, 895, 260]</P>
     <P Name="ZOrder">-13</P>
     <P Name="BackgroundColor">green</P>
+    <PortProperties>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">Vhcl.Steering</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="PropagatedSignals">Vhcl.Motion</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="PropagatedSignals">Vhcl.PoI</P>
+      </Port>
+      <Port Type="out" Index="5">
+        <P Name="PropagatedSignals">Vhcl.Wheel.FL</P>
+      </Port>
+      <Port Type="out" Index="6">
+        <P Name="PropagatedSignals">Vhcl.Wheel.FR</P>
+      </Port>
+      <Port Type="out" Index="7">
+        <P Name="PropagatedSignals">Vhcl.Wheel.RL</P>
+      </Port>
+      <Port Type="out" Index="8">
+        <P Name="PropagatedSignals">Vhcl.Wheel.RR</P>
+      </Port>
+      <Port Type="out" Index="9">
+        <P Name="PropagatedSignals">Car.Hitch.FrcTrq</P>
+      </Port>
+    </PortProperties>
     <System Ref="system_2122"/>
   </Block>
   <Block BlockType="Outport" Name="Sync_Out" SID="2179">
@@ -2857,41 +3620,81 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1785.xml
     <P Name="Position">[100, 93, 130, 107]</P>
     <P Name="ZOrder">-2</P>
     <P Name="Port">2</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Vhcl.Steering</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Vhcl.Motion" SID="1788">
     <P Name="Position">[100, 128, 130, 142]</P>
     <P Name="ZOrder">-3</P>
     <P Name="Port">3</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Vhcl.Motion</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Vhcl.PoI" SID="1789">
     <P Name="Position">[100, 163, 130, 177]</P>
     <P Name="ZOrder">-4</P>
     <P Name="Port">4</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Vhcl.PoI</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Vhcl.Wheel.FL" SID="1790">
     <P Name="Position">[100, 198, 130, 212]</P>
     <P Name="ZOrder">-5</P>
     <P Name="Port">5</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Vhcl.Wheel.FL</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Vhcl.Wheel.FR" SID="1791">
     <P Name="Position">[100, 233, 130, 247]</P>
     <P Name="ZOrder">-6</P>
     <P Name="Port">6</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Vhcl.Wheel.FR</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Vhcl.Wheel.RL" SID="1792">
     <P Name="Position">[100, 268, 130, 282]</P>
     <P Name="ZOrder">-7</P>
     <P Name="Port">7</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Vhcl.Wheel.RL</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Vhcl.Wheel.RR" SID="1793">
     <P Name="Position">[100, 303, 130, 317]</P>
     <P Name="ZOrder">-8</P>
     <P Name="Port">8</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Vhcl.Wheel.RR</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Car.Hitch.FrcTrq" SID="1794">
     <P Name="Position">[100, 338, 130, 352]</P>
     <P Name="ZOrder">-9</P>
     <P Name="Port">9</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Car.Hitch.FrcTrq</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Vhcl.Fr1A" SID="1795">
     <P Name="Position">[100, 373, 130, 387]</P>
@@ -5325,36 +6128,71 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1873.xml
     <P Name="Position">[35, 78, 65, 92]</P>
     <P Name="ZOrder">-2</P>
     <P Name="Port">2</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Load</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="vxtrans" SID="1876">
     <P Name="Position">[35, 123, 65, 137]</P>
     <P Name="ZOrder">-3</P>
     <P Name="Port">3</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In vxtrans</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="vytrans" SID="1877">
     <P Name="Position">[35, 168, 65, 182]</P>
     <P Name="ZOrder">-4</P>
     <P Name="Port">4</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In vytrans</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Rim_rotv" SID="1878">
     <P Name="Position">[35, 213, 65, 227]</P>
     <P Name="ZOrder">-5</P>
     <P Name="Port">5</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Rim_rotv</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Rim_turnv" SID="1879">
     <P Name="Position">[35, 258, 65, 272]</P>
     <P Name="ZOrder">-6</P>
     <P Name="Port">6</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Rim_turnv</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="InclinAngle" SID="1880">
     <P Name="Position">[35, 303, 65, 317]</P>
     <P Name="ZOrder">-7</P>
     <P Name="Port">7</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Camber</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="muRoad" SID="1881">
     <P Name="Position">[35, 348, 65, 362]</P>
     <P Name="ZOrder">-8</P>
     <P Name="Port">8</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In mu</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Ground" Name="Ground1" SID="1882">
     <P Name="Position">[320, 30, 340, 50]</P>
@@ -5637,36 +6475,71 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1913.xml
     <P Name="Position">[35, 78, 65, 92]</P>
     <P Name="ZOrder">-2</P>
     <P Name="Port">2</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Load</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="vxtrans" SID="1916">
     <P Name="Position">[35, 123, 65, 137]</P>
     <P Name="ZOrder">-3</P>
     <P Name="Port">3</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In vxtrans</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="vytrans" SID="1917">
     <P Name="Position">[35, 168, 65, 182]</P>
     <P Name="ZOrder">-4</P>
     <P Name="Port">4</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In vytrans</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Rim_rotv" SID="1918">
     <P Name="Position">[35, 213, 65, 227]</P>
     <P Name="ZOrder">-5</P>
     <P Name="Port">5</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Rim_rotv</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Rim_turnv" SID="1919">
     <P Name="Position">[35, 258, 65, 272]</P>
     <P Name="ZOrder">-6</P>
     <P Name="Port">6</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Rim_turnv</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="InclinAngle" SID="1920">
     <P Name="Position">[35, 303, 65, 317]</P>
     <P Name="ZOrder">-7</P>
     <P Name="Port">7</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Camber</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="muRoad" SID="1921">
     <P Name="Position">[35, 348, 65, 362]</P>
     <P Name="ZOrder">-8</P>
     <P Name="Port">8</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In mu</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Ground" Name="Ground1" SID="1922">
     <P Name="Position">[320, 30, 340, 50]</P>
@@ -5949,36 +6822,71 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1953.xml
     <P Name="Position">[35, 78, 65, 92]</P>
     <P Name="ZOrder">-2</P>
     <P Name="Port">2</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Load</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="vxtrans" SID="1956">
     <P Name="Position">[35, 123, 65, 137]</P>
     <P Name="ZOrder">-3</P>
     <P Name="Port">3</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In vxtrans</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="vytrans" SID="1957">
     <P Name="Position">[35, 168, 65, 182]</P>
     <P Name="ZOrder">-4</P>
     <P Name="Port">4</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In vytrans</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Rim_rotv" SID="1958">
     <P Name="Position">[35, 213, 65, 227]</P>
     <P Name="ZOrder">-5</P>
     <P Name="Port">5</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Rim_rotv</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Rim_turnv" SID="1959">
     <P Name="Position">[35, 258, 65, 272]</P>
     <P Name="ZOrder">-6</P>
     <P Name="Port">6</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Rim_turnv</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="InclinAngle" SID="1960">
     <P Name="Position">[35, 303, 65, 317]</P>
     <P Name="ZOrder">-7</P>
     <P Name="Port">7</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Camber</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="muRoad" SID="1961">
     <P Name="Position">[35, 348, 65, 362]</P>
     <P Name="ZOrder">-8</P>
     <P Name="Port">8</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In mu</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Ground" Name="Ground1" SID="1962">
     <P Name="Position">[320, 30, 340, 50]</P>
@@ -6261,36 +7169,71 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_1993.xml
     <P Name="Position">[35, 78, 65, 92]</P>
     <P Name="ZOrder">-2</P>
     <P Name="Port">2</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Load</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="vxtrans" SID="1996">
     <P Name="Position">[35, 123, 65, 137]</P>
     <P Name="ZOrder">-3</P>
     <P Name="Port">3</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In vxtrans</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="vytrans" SID="1997">
     <P Name="Position">[35, 168, 65, 182]</P>
     <P Name="ZOrder">-4</P>
     <P Name="Port">4</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In vytrans</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Rim_rotv" SID="1998">
     <P Name="Position">[35, 213, 65, 227]</P>
     <P Name="ZOrder">-5</P>
     <P Name="Port">5</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Rim_rotv</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="Rim_turnv" SID="1999">
     <P Name="Position">[35, 258, 65, 272]</P>
     <P Name="ZOrder">-6</P>
     <P Name="Port">6</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Rim_turnv</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="InclinAngle" SID="2000">
     <P Name="Position">[35, 303, 65, 317]</P>
     <P Name="ZOrder">-7</P>
     <P Name="Port">7</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In Camber</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Inport" Name="muRoad" SID="2001">
     <P Name="Position">[35, 348, 65, 362]</P>
     <P Name="ZOrder">-8</P>
     <P Name="Port">8</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">Tire_In mu</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Ground" Name="Ground1" SID="2002">
     <P Name="Position">[320, 30, 340, 50]</P>
@@ -8305,7 +9248,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2122.xml
     <PortProperties>
       <Port Type="out" Index="1">
         <P Name="Name">Car.Hitch.FrcTrq</P>
-        <P Name="PropagatedSignals">Car Hitch Frc2Car x, Car Hitch Frc2Car y, Car Hitch Frc2Car z, Car Hitch Trq2Car x, Car Hitch Trq2Car y, Car Hitch Trq2Car z</P>
       </Port>
     </PortProperties>
     <System Ref="system_2129"/>
@@ -8317,7 +9259,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2122.xml
     <PortProperties>
       <Port Type="out" Index="1">
         <P Name="Name">Vhcl.Motion</P>
-        <P Name="PropagatedSignals">Vhcl v, Vhcl Distance, Vhcl sRoad, Vhcl Hitch_Pos x, Vhcl Hitch_Pos y, Vhcl Hitch_Pos z, Vhcl Roll, Vhcl RollVel, Vhcl RollAcc, Vhcl Pitch, Vhcl PitchVel, Vhcl PitchAcc, Vhcl Yaw, Vhcl YawVel, Vhcl YawAcc</P>
       </Port>
     </PortProperties>
     <System Ref="system_2134"/>
@@ -8329,7 +9270,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2122.xml
     <PortProperties>
       <Port Type="out" Index="1">
         <P Name="Name">Vhcl.PoI</P>
-        <P Name="PropagatedSignals">Vhcl PoI_Pos x, Vhcl PoI_Pos y, Vhcl PoI_Pos z, Vhcl PoI_Vel x, Vhcl PoI_Vel y, Vhcl PoI_Vel z, Vhcl PoI_Acc x, Vhcl PoI_Acc y, Vhcl PoI_Acc z, Vhcl PoI_Vel_1 x, Vhcl PoI_Vel_1 y, Vhcl PoI_Vel_1 z, Vhcl PoI_Acc_1 x, Vhcl PoI_Acc_1 y, Vhcl PoI_Acc_1 z, Vhcl PoI_GCS Long, Vhcl PoI_GCS Lat, Vhcl PoI_GCS Elev</P>
       </Port>
     </PortProperties>
     <System Ref="system_2139"/>
@@ -8341,7 +9281,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2122.xml
     <PortProperties>
       <Port Type="out" Index="1">
         <P Name="Name">Vhcl.Steering</P>
-        <P Name="PropagatedSignals">Vhcl Steering Ang, Vhcl Steering AngVel, Vhcl Steering AngAcc, Vhcl Steering Trq</P>
       </Port>
     </PortProperties>
     <System Ref="system_2144"/>
@@ -8353,7 +9292,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2122.xml
     <PortProperties>
       <Port Type="out" Index="1">
         <P Name="Name">Vhcl.Wheel.FL</P>
-        <P Name="PropagatedSignals">Vhcl Wheel FL t x, Vhcl Wheel FL t y, Vhcl Wheel FL t z, Vhcl Wheel FL r_zxy x, Vhcl Wheel FL r_zxy y, Vhcl Wheel FL r_zxy z, Vhcl Wheel FL Fx, Vhcl Wheel FL Fy, Vhcl Wheel FL Fz, Vhcl Wheel FL vBelt, Vhcl Wheel FL LongSlip, Vhcl Wheel FL SideSlip, Vhcl Wheel FL Trq_T2W, Vhcl Wheel FL Trq_WhlBearing</P>
       </Port>
     </PortProperties>
     <System Ref="system_2149"/>
@@ -8365,7 +9303,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2122.xml
     <PortProperties>
       <Port Type="out" Index="1">
         <P Name="Name">Vhcl.Wheel.FR</P>
-        <P Name="PropagatedSignals">Vhcl Wheel FR t x, Vhcl Wheel FR t y, Vhcl Wheel FR t z, Vhcl Wheel FR r_zxy x, Vhcl Wheel FR r_zxy y, Vhcl Wheel FR r_zxy z, Vhcl Wheel FR Fx, Vhcl Wheel FR Fy, Vhcl Wheel FR Fz, Vhcl Wheel FR vBelt, Vhcl Wheel FR LongSlip, Vhcl Wheel FR SideSlip, Vhcl Wheel FR Trq_T2W, Vhcl Wheel FR Trq_WhlBearing</P>
       </Port>
     </PortProperties>
     <System Ref="system_2154"/>
@@ -8377,7 +9314,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2122.xml
     <PortProperties>
       <Port Type="out" Index="1">
         <P Name="Name">Vhcl.Wheel.RL</P>
-        <P Name="PropagatedSignals">Vhcl Wheel RL t x, Vhcl Wheel RL t y, Vhcl Wheel RL t z, Vhcl Wheel RL r_zxy x, Vhcl Wheel RL r_zxy y, Vhcl Wheel RL r_zxy z, Vhcl Wheel RL Fx, Vhcl Wheel RL Fy, Vhcl Wheel RL Fz, Vhcl Wheel RL vBelt, Vhcl Wheel RL LongSlip, Vhcl Wheel RL SideSlip, Vhcl Wheel RL Trq_T2W, Vhcl Wheel RL Trq_WhlBearing</P>
       </Port>
     </PortProperties>
     <System Ref="system_2159"/>
@@ -8389,7 +9325,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2122.xml
     <PortProperties>
       <Port Type="out" Index="1">
         <P Name="Name">Vhcl.Wheel.RR</P>
-        <P Name="PropagatedSignals">Vhcl Wheel RR t x, Vhcl Wheel RR t y, Vhcl Wheel RR t z, Vhcl Wheel RR r_zxy x, Vhcl Wheel RR r_zxy y, Vhcl Wheel RR r_zxy z, Vhcl Wheel RR Fx, Vhcl Wheel RR Fy, Vhcl Wheel RR Fz, Vhcl Wheel RR vBelt, Vhcl Wheel RR LongSlip, Vhcl Wheel RR SideSlip, Vhcl Wheel RR Trq_T2W, Vhcl Wheel RR Trq_WhlBearing</P>
       </Port>
     </PortProperties>
     <System Ref="system_2164"/>
@@ -12577,14 +13512,49 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2237.xml
 __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[-1, -8, 1921, 1153]</P>
+  <P Name="Location">[-1, -8, 1921, 1033]</P>
   <P Name="Open">on</P>
+  <P Name="ZoomFactor">136</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">2271</P>
-  <Block BlockType="Inport" Name="Input" SID="2270">
-    <P Name="Position">[-355, 388, -325, 402]</P>
-    <P Name="ZOrder">177</P>
+  <P Name="SIDHighWatermark">2301</P>
+  <Block BlockType="Inport" Name="in" SID="2295">
+    <P Name="Position">[-330, 218, -300, 232]</P>
+    <P Name="ZOrder">22</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:4"/>
     <P Name="OutDataTypeStr">Bus: controls</P>
+  </Block>
+  <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="2273">
+    <PortCounts in="18" out="1"/>
+    <P Name="Position">[635, 139, 640, 566]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Inputs">18</P>
+    <P Name="DisplayOption">bar</P>
+    <P Name="InheritFromInputs">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">states</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="2297">
+    <PortCounts in="1" out="4"/>
+    <P Name="Position">[-230, 114, -225, 331]</P>
+    <P Name="ZOrder">24</P>
+    <P Name="OutputSignals">u_camber_FL,u_camber_FR,u_camber_RL,u_camber_RR</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">&lt;u_camber_FL&gt;</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="Name">&lt;u_camber_FR&gt;</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="Name">&lt;u_camber_RL&gt;</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="Name">&lt;u_camber_RR&gt;</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="SubSystem" Name="CarMaker" SID="1726">
     <PortCounts/>
@@ -12596,6 +13566,17 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
       <Display>image(imread(&apos;CarMakerSys.png&apos;));</Display>
     </Mask>
     <System Ref="system_1726"/>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="2294">
+    <P Name="Position">[380, 457, 475, 473]</P>
+    <P Name="ZOrder">21</P>
+    <P Name="Value">true</P>
+    <P Name="OutDataTypeStr">boolean</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">is_transient</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Reference" Name="Edit Model&#xA;Configuration" SID="1727">
     <PortCounts/>
@@ -12625,11 +13606,595 @@ Configuration</P>
     </Mask>
     <System Ref="system_1728"/>
   </Block>
-  <Block BlockType="Outport" Name="Output" SID="2271">
-    <P Name="Position">[665, 388, 695, 402]</P>
-    <P Name="ZOrder">179</P>
+  <Block BlockType="Reference" Name="Read CM Dict" SID="2275">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 130, 475, 150]</P>
+    <P Name="ZOrder">4</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.ax</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">ax</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict1" SID="2276">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 155, 475, 175]</P>
+    <P Name="ZOrder">5</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.ay</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">ay</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict10" SID="2287">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 380, 475, 400]</P>
+    <P Name="ZOrder">14</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.WheelSpd_FR</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">omega_FR</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict11" SID="2288">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 405, 475, 425]</P>
+    <P Name="ZOrder">15</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.WheelSpd_RL</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">omega_RL</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict12" SID="2289">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 430, 475, 450]</P>
+    <P Name="ZOrder">16</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.WheelSpd_RR</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">omega_RR</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict13" SID="2290">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 480, 475, 500]</P>
+    <P Name="ZOrder">17</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.CamberFL</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">camber_FL</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict14" SID="2291">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 505, 475, 525]</P>
+    <P Name="ZOrder">18</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.CamberFR</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">camber_FR</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict15" SID="2292">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 530, 475, 550]</P>
+    <P Name="ZOrder">19</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.CamberRL</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">camber_RL</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict16" SID="2293">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 555, 475, 575]</P>
+    <P Name="ZOrder">20</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.CamberRR</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">camber_RR</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict2" SID="2277">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 180, 475, 200]</P>
+    <P Name="ZOrder">6</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.v</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">v</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict3" SID="2278">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 205, 475, 225]</P>
+    <P Name="ZOrder">7</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.YawRate</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">yaw_rate</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict4" SID="2279">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 230, 475, 250]</P>
+    <P Name="ZOrder">8</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.SideSlipAngle</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">side_slip_angle</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict5" SID="2280">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 255, 475, 275]</P>
+    <P Name="ZOrder">9</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.SteerAngleFL</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">delta_FL</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict6" SID="2281">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 280, 475, 300]</P>
+    <P Name="ZOrder">10</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.SteerAngleFR</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">delta_FR</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict7" SID="2282">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 305, 475, 325]</P>
+    <P Name="ZOrder">11</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.SteerAngleRL</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">delta_RL</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict8" SID="2283">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 330, 475, 350]</P>
+    <P Name="ZOrder">12</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.SteerAngleRR</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">delta_RR</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict9" SID="2286">
+    <PortCounts out="1"/>
+    <P Name="Position">[380, 355, 475, 375]</P>
+    <P Name="ZOrder">13</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.WheelSpd_FL</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">omega_FL</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Write CM Dict" SID="2296">
+    <PortCounts in="1"/>
+    <P Name="Position">[-105, 129, -15, 151]</P>
+    <P Name="ZOrder">23</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Write CM Dict</P>
+    <P Name="SourceType">Write CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.CFL.rx_ext</P>
+      <P Name="xsync">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Write CM Dict1" SID="2299">
+    <PortCounts in="1"/>
+    <P Name="Position">[-105, 184, -15, 206]</P>
+    <P Name="ZOrder">26</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Write CM Dict</P>
+    <P Name="SourceType">Write CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.CFR.rx_ext</P>
+      <P Name="xsync">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Write CM Dict2" SID="2300">
+    <PortCounts in="1"/>
+    <P Name="Position">[-105, 239, -15, 261]</P>
+    <P Name="ZOrder">27</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Write CM Dict</P>
+    <P Name="SourceType">Write CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.CRL.rx_ext</P>
+      <P Name="xsync">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Write CM Dict3" SID="2301">
+    <PortCounts in="1"/>
+    <P Name="Position">[-105, 294, -15, 316]</P>
+    <P Name="ZOrder">28</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Write CM Dict</P>
+    <P Name="SourceType">Write CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Car.CRR.rx_ext</P>
+      <P Name="xsync">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Outport" Name="out" SID="2272">
+    <P Name="Position">[735, 348, 765, 362]</P>
+    <P Name="ZOrder">1</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:6"/>
     <P Name="OutDataTypeStr">Bus: vehicle_states</P>
   </Block>
+  <Line>
+    <P Name="Name">states</P>
+    <P Name="ZOrder">1</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">2273#out:1</P>
+    <P Name="Dst">2272#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">ax</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2275#out:1</P>
+    <P Name="Dst">2273#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">ay</P>
+    <P Name="ZOrder">4</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2276#out:1</P>
+    <P Name="Dst">2273#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">v</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2277#out:1</P>
+    <P Name="Dst">2273#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">delta_FL</P>
+    <P Name="ZOrder">6</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2280#out:1</P>
+    <P Name="Dst">2273#in:6</P>
+  </Line>
+  <Line>
+    <P Name="Name">side_slip_angle</P>
+    <P Name="ZOrder">7</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2279#out:1</P>
+    <P Name="Dst">2273#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">yaw_rate</P>
+    <P Name="ZOrder">8</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2278#out:1</P>
+    <P Name="Dst">2273#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">delta_RR</P>
+    <P Name="ZOrder">9</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2283#out:1</P>
+    <P Name="Dst">2273#in:9</P>
+  </Line>
+  <Line>
+    <P Name="Name">delta_RL</P>
+    <P Name="ZOrder">10</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2282#out:1</P>
+    <P Name="Dst">2273#in:8</P>
+  </Line>
+  <Line>
+    <P Name="Name">delta_FR</P>
+    <P Name="ZOrder">11</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2281#out:1</P>
+    <P Name="Dst">2273#in:7</P>
+  </Line>
+  <Line>
+    <P Name="Name">omega_FL</P>
+    <P Name="ZOrder">13</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2286#out:1</P>
+    <P Name="Dst">2273#in:10</P>
+  </Line>
+  <Line>
+    <P Name="Name">omega_FR</P>
+    <P Name="ZOrder">20</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2287#out:1</P>
+    <P Name="Dst">2273#in:11</P>
+  </Line>
+  <Line>
+    <P Name="Name">omega_RL</P>
+    <P Name="ZOrder">19</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2288#out:1</P>
+    <P Name="Dst">2273#in:12</P>
+  </Line>
+  <Line>
+    <P Name="Name">omega_RR</P>
+    <P Name="ZOrder">18</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2289#out:1</P>
+    <P Name="Dst">2273#in:13</P>
+  </Line>
+  <Line>
+    <P Name="Name">camber_FL</P>
+    <P Name="ZOrder">21</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2290#out:1</P>
+    <P Name="Dst">2273#in:15</P>
+  </Line>
+  <Line>
+    <P Name="Name">camber_FR</P>
+    <P Name="ZOrder">27</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2291#out:1</P>
+    <P Name="Dst">2273#in:16</P>
+  </Line>
+  <Line>
+    <P Name="Name">camber_RL</P>
+    <P Name="ZOrder">26</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2292#out:1</P>
+    <P Name="Dst">2273#in:17</P>
+  </Line>
+  <Line>
+    <P Name="Name">camber_RR</P>
+    <P Name="ZOrder">25</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2293#out:1</P>
+    <P Name="Dst">2273#in:18</P>
+  </Line>
+  <Line>
+    <P Name="Name">is_transient</P>
+    <P Name="ZOrder">28</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2294#out:1</P>
+    <P Name="Dst">2273#in:14</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">31</P>
+    <P Name="Src">2295#out:1</P>
+    <P Name="Dst">2297#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;u_camber_FL&gt;</P>
+    <P Name="ZOrder">32</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2297#out:1</P>
+    <P Name="Dst">2296#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;u_camber_RR&gt;</P>
+    <P Name="ZOrder">33</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2297#out:4</P>
+    <P Name="Dst">2301#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;u_camber_FR&gt;</P>
+    <P Name="ZOrder">34</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2297#out:2</P>
+    <P Name="Dst">2299#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;u_camber_RL&gt;</P>
+    <P Name="ZOrder">35</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2297#out:3</P>
+    <P Name="Dst">2300#in:1</P>
+  </Line>
   <Annotation SID="704">
     <P Name="Name">Generic Car Model</P>
     <P Name="Position">[105, 34, 266, 57]</P>
@@ -12666,7 +14231,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
   <Object PropName="BdWindowsInfo" ObjectID="1" ClassName="Simulink.BDWindowsInfo">
     <Object PropName="WindowsInfo" ObjectID="2" ClassName="Simulink.WindowInfo">
       <P Name="IsActive" Class="logical">1</P>
-      <P Name="Location" Class="double">[121.0, 174.0, 508.0, 472.0]</P>
+      <P Name="Location" Class="double">[632.0, 127.0, 508.0, 472.0]</P>
       <Object PropName="ModelBrowserInfo" ObjectID="3" ClassName="Simulink.ModelBrowserInfo">
         <P Name="Visible" Class="logical">0</P>
         <P Name="DockPosition" Class="char">Left</P>
@@ -12683,28 +14248,43 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <P Name="IsTabbed" Class="logical">1</P>
         <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
         <P Name="LoadSaveID" Class="char">0</P>
-        <P Name="Extents" Class="double">[460.0, 234.0]</P>
-        <P Name="ZoomFactor" Class="double">1.0</P>
-        <P Name="Offset" Class="double">[0.0, -5.0]</P>
-        <P Name="SceneRectInView" Class="double">[0.0, -5.0, 460.0, 234.0]</P>
+        <P Name="Extents" Class="double">[468.0, 236.0]</P>
+        <P Name="ZoomFactor" Class="double">1.361963190184049</P>
+        <P Name="Offset" Class="double">[-292.93003941441441, -1.279279279279308]</P>
+        <P Name="SceneRectInView" Class="double">[-292.93003941441441, -1.279279279279308, 343.62162162162167, 173.27927927927928]</P>
       </Object>
-      <Object PropName="DockComponentsInfo" ObjectID="6" ClassName="Simulink.DockComponentInfo">
-        <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
-        <P Name="ID" Class="char">Property Inspector</P>
-        <P Name="Visible" Class="logical">0</P>
-        <P Name="CreateCallback" Class="char"/>
-        <P Name="UserData" Class="char"/>
-        <P Name="Floating" Class="logical">0</P>
-        <P Name="DockPosition" Class="char">Right</P>
-        <P Name="Width" Class="int32">640</P>
-        <P Name="Height" Class="int32">480</P>
-        <P Name="Minimized" Class="char">Unset</P>
-      </Object>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABeAP///wAAAAEAAAAAAAAAAPwCAAAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAAD/////AAABrAD///8AAAHyAAABJwAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAA</P>
+      <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*2">
+        <Object ObjectID="6">
+          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
+          <P Name="ID" Class="char">Property Inspector</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char"/>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Right</P>
+          <P Name="Width" Class="int32">640</P>
+          <P Name="Height" Class="int32">480</P>
+          <P Name="Minimized" Class="char">Unset</P>
+        </Object>
+        <Object ObjectID="7">
+          <P Name="Type" Class="char">Simulink:Editor:ReferencedFiles</P>
+          <P Name="ID" Class="char">Referenced Files</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char">{&quot;filterShowRefModels&quot;:&quot;true&quot;,&quot;filterShowRefSubs&quot;:&quot;true&quot;,&quot;filterShowOnlyDirtyFiles&quot;:&quot;false&quot;}
+</P>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Left</P>
+          <P Name="Width" Class="int32">640</P>
+          <P Name="Height" Class="int32">480</P>
+          <P Name="Minimized" Class="char">Unset</P>
+        </Object>
+      </Array>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjAD///8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAAAwAAAAAAAAAA/AEAAAAB+/////8AAAAAAP////8AAAFZAP///wAAAfoAAAEpAAAAAQAAAAIAAAABAAAAAvwAAAABAAAAAgAAAAA=</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">847b2ec0-ed31-448b-ae2a-74c72e03924e</P>
     </Object>
-    <P Name="BDUuid" Class="char">d4792efb-97e5-406f-8d62-a8e7eb5492a5</P>
+    <P Name="BDUuid" Class="char">ce1d46f5-7492-465d-9b6c-c8a623837345</P>
   </Object>
 </WindowsInfo>
 
