@@ -37,9 +37,9 @@ addpath(genpath(fullfile(config.carmaker.dir, "bmw/src_cm4sl")))
 %% initialise carMaker environment
 try 
     run('cmenv.m')
- catch me
-     warning(me.message)
-     return
+catch me
+    warning(me.message)
+    return
 end
 
 %% user selection

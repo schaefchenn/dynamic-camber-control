@@ -71,6 +71,10 @@ function []= create_bus_vehicle_states()
     elem(18) = Simulink.BusElement;
     elem(18).Name = 'camber_RR';
     elem(18).DataType = 'double';
+
+    elem(19) = Simulink.BusElement;
+    elem(19).Name = 'is_on';
+    elem(19).DataType = 'boolean';
     
     vehicleStates = Simulink.Bus;
     vehicleStates.Elements = elem;

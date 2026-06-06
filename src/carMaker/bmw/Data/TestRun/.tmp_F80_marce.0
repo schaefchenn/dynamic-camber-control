@@ -46,16 +46,14 @@ DrivMan.Man.0.ConsiderDomain = own
 DrivMan.Man.0.Transition.Interrupt = self
 DrivMan.Man.0.Transition.EndCond = end
 DrivMan.Man.0.Transition.SimultanStart = end
-DrivMan.Man.0.LongStep.0.Info = acc_to_50
-DrivMan.Man.0.LongStep.0.EndCond = Car.v >= 50/3.6
+DrivMan.Man.0.LongStep.0.EndCond = Car.v >= 100/3.6
 DrivMan.Man.0.LongStep.0.Dyn = Driver 1 0 100
 DrivMan.Man.0.LongStep.1.TimeLimit = 30.0
 DrivMan.Man.0.LongStep.1.Dyn = Driver 1 0
-DrivMan.Man.0.LatStep.0.Info = acc_to_50
-DrivMan.Man.0.LatStep.0.EndCond = Car.v >= 50/3.6
+DrivMan.Man.0.LatStep.0.EndCond = Car.v >= 100/3.6
 DrivMan.Man.0.LatStep.0.Dyn = Driver 0
 DrivMan.Man.0.LatStep.1.TimeLimit = 30.0
-DrivMan.Man.0.LatStep.1.Dyn = Sinus 250.0 time 5.0 0.0 0.5 abs 1 0
+DrivMan.Man.0.LatStep.1.Dyn = Step 69 0.0 1.0 abs 1
 DrivMan.Man.0.LatStep.1.SteerMode = Angle
 Traffic.SpeedUnit = ms
 Traffic.IFF.FName =
