@@ -14,7 +14,7 @@ tire = read_tir(tir_file);
 %% inputs
 
 Fz = 1000;
-kappa = -0.3; %-1:0.01:1;
+kappa = 0.1; %-1:0.01:1;
 alpha = -0.3:0.01:0.3;
 gamma = -0.1047:(0.1047/2):0.1047;
 

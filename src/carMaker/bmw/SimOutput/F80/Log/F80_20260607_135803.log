@@ -1,0 +1,20 @@
+APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
+COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
+ 
+		I/O Configuration: default
+SIM_START	init	2026-06-07 13:59:08
+TIME	0.000
+SIMULATE	init
+
+TIME	42.147
+SIM_END		init	42.144s	639.252m
+APPLICATION	CarMaker 12.0.4 - Car_Generic #6 (win64-12.0.4)
+COMPILED	jetbrains@ed34c7527870 2025-02-17 16:06:31
+ 
+		I/O Configuration: default
+SIM_START	init	2026-06-07 18:22:20
+TIME	0.000
+SIMULATE	init
+
+TIME	48.729
+SIM_END		init	48.729s	755.994m
