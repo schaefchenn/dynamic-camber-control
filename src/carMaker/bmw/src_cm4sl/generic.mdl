@@ -46,8 +46,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2002-02-08T14:09:51Z</dcterms:created>
   <dc:creator>fh</dc:creator>
   <cp:lastModifiedBy>marce</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-06-07T17:43:16Z</dcterms:modified>
-  <cp:revision>6.32</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-06-08T18:35:13Z</dcterms:modified>
+  <cp:revision>6.40</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -119,7 +119,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.32&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.40&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -1137,7 +1137,7 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
   <P Name="IsExportFunctionModel">0</P>
   <P Name="SimulinkSubDomainType">Simulink</P>
   <P Name="NumParameterArguments">0</P>
-  <P Name="NumExternalFileReferences">31</P>
+  <P Name="NumExternalFileReferences">32</P>
   <ExternalFileReference>
     <P Name="Reference">simulink/Logic and Bit
 Operations/Compare
@@ -1263,6 +1263,12 @@ Configuration</P>
   </ExternalFileReference>
   <ExternalFileReference>
     <P Name="Reference">CarMaker4SL/Read CM Dict</P>
+    <P Name="Path">$bdroot/Read CM Dict25</P>
+    <P Name="SID">2334</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">CarMaker4SL/Read CM Dict</P>
     <P Name="Path">$bdroot/Read CM Dict3</P>
     <P Name="SID">2278</P>
     <P Name="Type">LIBRARY_BLOCK</P>
@@ -1333,8 +1339,8 @@ Configuration</P>
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="88e25a4d-503c-4cb7-87d7-fb9899c57fa1">
-    <Interface type="Interface" uuid="69ba6b54-de5c-4c48-9090-cf42ca04c4bf"/>
+  <System type="System" uuid="2a301d1c-eb5f-41d0-847f-9e403a3c84c9">
+    <Interface type="Interface" uuid="ce4c1eea-a678-4876-9d44-ac6ec5d34f4c"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/plugins/LogicAnalyzerPlugin.xml
@@ -1352,204 +1358,204 @@ __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2022b_202203181029">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="d4e084b6-6fae-49f4-a234-2e4fb71b9da6">
-    <globalData type="sltp.mm.core.GlobalData" uuid="a9e747cb-244a-4eb5-aa57-f1a15b44190a">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="79d0f5a4-11a0-4da2-b8ea-4541a705bdb7">
+    <globalData type="sltp.mm.core.GlobalData" uuid="4ca08a7d-e98f-4e0a-a1cf-003174b80f1e">
       <dataName>portInput</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="f4cef993-905f-4f84-8f3f-187bd71ae748">
+    <globalData type="sltp.mm.core.GlobalData" uuid="4b293442-bf4f-4fa0-8248-589e46886da2">
       <dataName>portInput_u_camber_FL</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="14abd48a-2258-4736-8d12-e2443c49ac25">
+    <globalData type="sltp.mm.core.GlobalData" uuid="42e6a8c3-d6f9-4d40-8af6-8d5b0a382038">
       <dataName>portInput_u_camber_FR</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="10e83c3f-69ea-45a2-83f8-d00301176678">
+    <globalData type="sltp.mm.core.GlobalData" uuid="e94176c7-daf0-4d4e-97e1-0d51f509da42">
       <dataName>portInput_u_camber_RL</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="b0de8748-3469-400b-a634-6cda3534c026">
+    <globalData type="sltp.mm.core.GlobalData" uuid="a17d6b68-518b-45a5-b7ac-3fb04941818f">
       <dataName>portInput_u_camber_RR</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="d1eedf97-b75a-49af-b694-950d22f885a8">
+    <globalData type="sltp.mm.core.GlobalData" uuid="d8d9dd9d-bed6-43fc-a369-6b3d1eb92ef0">
       <dataName>portOutput</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="80f881c5-84e0-448d-a330-2c72f2d9dd8b">
+    <globalData type="sltp.mm.core.GlobalData" uuid="7dfe9e21-1c90-44f1-8c3e-67a984ea7867">
       <dataName>portOutput_ax</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="4b9e5d65-2ddc-4961-a04c-9c6102414a3c">
+    <globalData type="sltp.mm.core.GlobalData" uuid="6baf443a-b59d-4823-a5cd-23c452278bed">
       <dataName>portOutput_ay</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="fd30ef1b-33e6-4c26-8d9a-9a4e28a591ed">
+    <globalData type="sltp.mm.core.GlobalData" uuid="c3260478-4ecf-4acf-ac5c-769d0a26008a">
       <dataName>portOutput_camber_FL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="7b49da63-fd56-4a7f-9423-79f1181e9f47">
+    <globalData type="sltp.mm.core.GlobalData" uuid="a4ec252a-8dd8-4143-9a17-b600f9e04329">
       <dataName>portOutput_camber_FR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="8def6a79-ef07-484f-8aeb-db02d865dd40">
+    <globalData type="sltp.mm.core.GlobalData" uuid="1cf14d5c-1dc4-4c2f-869f-94d8fb58f278">
       <dataName>portOutput_camber_RL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="de0215a9-37e2-4314-a295-7d42d0e5ca64">
+    <globalData type="sltp.mm.core.GlobalData" uuid="7d24e488-4a59-437a-a978-721b3cd40882">
       <dataName>portOutput_camber_RR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="ae639f00-c8b4-4c9a-b188-7b161c9ee246">
+    <globalData type="sltp.mm.core.GlobalData" uuid="99669bdc-9f5d-4670-9d4f-ce78c51902cf">
       <dataName>portOutput_delta_FL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="025e63e9-c948-45e7-bc5b-446840acc214">
+    <globalData type="sltp.mm.core.GlobalData" uuid="84faab93-f105-47eb-9cc3-ee02e585f1f9">
       <dataName>portOutput_delta_FR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="7b0f64f3-0932-4fa9-9a90-579f01ff3e0a">
+    <globalData type="sltp.mm.core.GlobalData" uuid="ce985857-08a3-489b-87da-f9e416633202">
       <dataName>portOutput_delta_RL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="9df476a2-303b-4181-a89d-af072f2a74ca">
+    <globalData type="sltp.mm.core.GlobalData" uuid="5082cd24-eb0f-45b7-88eb-01cf85cb186f">
       <dataName>portOutput_delta_RR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="119c8c84-f5b6-492b-8023-29419c2da0e6">
+    <globalData type="sltp.mm.core.GlobalData" uuid="2b54bfb1-06d7-43a7-8776-ba121e88812c">
       <dataName>portOutput_is_transient</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="85e2b747-4c8b-4373-92a7-893fe4bae50b">
+    <globalData type="sltp.mm.core.GlobalData" uuid="0d06f7a9-1c0c-40b4-8bf3-a0752857efaf">
       <dataName>portOutput_omega_FL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="d2ea583d-7074-4c26-812b-194bdbe36f6e">
+    <globalData type="sltp.mm.core.GlobalData" uuid="41027642-586a-4d48-828b-c3278c7b24da">
       <dataName>portOutput_omega_FR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="21909c2a-9505-46a0-aeb5-6c90ac9d2a17">
+    <globalData type="sltp.mm.core.GlobalData" uuid="e6296db9-bce9-4d11-8e48-39af6f2e7526">
       <dataName>portOutput_omega_RL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="11d732e0-e99c-4eb6-9cfb-25fa35b417a3">
+    <globalData type="sltp.mm.core.GlobalData" uuid="590d6a53-8aca-4bcf-9be4-f316122c05c7">
       <dataName>portOutput_omega_RR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="2b065d23-e9fa-43a2-9e2c-eeb5c765edf3">
+    <globalData type="sltp.mm.core.GlobalData" uuid="136f9a59-7d9a-4240-818f-b8dc7f0761e0">
       <dataName>portOutput_side_slip_angle</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="62173588-4916-4686-84b2-777aeb64e27a">
+    <globalData type="sltp.mm.core.GlobalData" uuid="1f1382de-2799-4551-9897-1d667bae2dce">
       <dataName>portOutput_v</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="203f4569-d5c4-4acf-b399-3321c0061ecd">
+    <globalData type="sltp.mm.core.GlobalData" uuid="925dfed0-a7c5-40a0-b39e-f1b236e32323">
       <dataName>portOutput_yaw_rate</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="793bd16d-64e3-4ef1-9b3e-5a56217a12b8">
+    <globalData type="sltp.mm.core.GlobalData" uuid="d5292bc5-a6de-41fc-a53c-fa0c06459d02">
       <dataName>portin</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="23fddac7-588f-48c6-ad17-2d57c6c2b7f6">
+    <globalData type="sltp.mm.core.GlobalData" uuid="8e2bb40c-65ef-42c9-a9d1-6dafcf03ffc4">
       <dataName>portin_u_camber_FL</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="631d7100-7441-4fec-8a37-65c2e0f9cf8d">
+    <globalData type="sltp.mm.core.GlobalData" uuid="ba1113e3-0b32-476f-b351-7bcb133a0b45">
       <dataName>portin_u_camber_FR</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="2d1e1acb-e97c-40fd-b473-c93a52b66fdc">
+    <globalData type="sltp.mm.core.GlobalData" uuid="5c8ff97d-66c6-46c0-a40e-60b47bbdfa4d">
       <dataName>portin_u_camber_RL</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="a9f4d031-8d19-4432-9602-17c9c810aa9d">
+    <globalData type="sltp.mm.core.GlobalData" uuid="979fcefb-0cf8-4eb9-b4ca-dfb811b058bf">
       <dataName>portin_u_camber_RR</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="febfcf4e-681b-4602-9951-b8a05f7b6032">
+    <globalData type="sltp.mm.core.GlobalData" uuid="10d7add5-935e-4331-915e-0cb6a4310a0c">
       <dataName>portout</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="02b88672-553e-4ada-ba5f-f0d28de4d129">
+    <globalData type="sltp.mm.core.GlobalData" uuid="1af7cbeb-90f8-4b1d-a97a-ff62e57f5ba5">
       <dataName>portout_ax</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="72816721-129d-4572-a47f-8e1ca2417b16">
+    <globalData type="sltp.mm.core.GlobalData" uuid="5e6c3318-2690-4d04-83ba-24e19ce3b7fb">
       <dataName>portout_ay</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="8cc1e7cd-7cf9-45d3-b3db-50f0d53b2724">
+    <globalData type="sltp.mm.core.GlobalData" uuid="41c16b85-8305-4d08-94f4-26e1d82041e4">
       <dataName>portout_camber_FL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="138b114b-11ba-4386-8b4c-abddedef66f4">
+    <globalData type="sltp.mm.core.GlobalData" uuid="abd1f3f7-b373-4b46-9c01-a9760b65902a">
       <dataName>portout_camber_FR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="f6de2050-2de9-4ac1-b13a-a82f9d006be5">
+    <globalData type="sltp.mm.core.GlobalData" uuid="ca6aeb04-16e8-4f96-9480-fcc4a3fa0244">
       <dataName>portout_camber_RL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="eaf7fe80-8a8f-4692-8002-57e1a46b1cef">
+    <globalData type="sltp.mm.core.GlobalData" uuid="542bf5dc-a009-4db0-ab05-586d64059e2d">
       <dataName>portout_camber_RR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="d0755757-0285-47d9-989b-6b6892ae1872">
+    <globalData type="sltp.mm.core.GlobalData" uuid="57eed839-261f-4da0-9036-11a22307f895">
       <dataName>portout_delta_FL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="d1d3b335-ae95-4752-b73e-e97553666664">
+    <globalData type="sltp.mm.core.GlobalData" uuid="9e567171-865d-4582-9c44-e6532199aa67">
       <dataName>portout_delta_FR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="3fccc1ad-7464-4e2b-bcdf-7a52c93992c1">
+    <globalData type="sltp.mm.core.GlobalData" uuid="7beaa4dd-8778-451d-99e5-f1f00f83e25a">
       <dataName>portout_delta_RL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="41cb4f96-556a-4dcc-9547-fff9f96987e3">
+    <globalData type="sltp.mm.core.GlobalData" uuid="71d50a79-d095-4c31-bf19-d0e946edb9e4">
       <dataName>portout_delta_RR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="7ffa5f18-bbf4-4ad9-9bc3-9f48bcb24490">
+    <globalData type="sltp.mm.core.GlobalData" uuid="5fd0d307-436f-4cda-bc68-2fe85c1e5074">
       <dataName>portout_is_off</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="bdb8b56a-d4f8-45af-9ca9-d7c33da48258">
+    <globalData type="sltp.mm.core.GlobalData" uuid="4a23b022-4c9a-46aa-af02-0448a25063c4">
       <dataName>portout_is_on</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="e4826901-d016-41e1-927f-e768d3f20e8c">
+    <globalData type="sltp.mm.core.GlobalData" uuid="e29784b1-1165-404b-8dec-00463869be98">
       <dataName>portout_is_transient</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="e63afd3e-2d70-44a6-b5f6-774a8d4a03c0">
+    <globalData type="sltp.mm.core.GlobalData" uuid="439bc7f4-b515-4ae2-87be-78a5138803ff">
       <dataName>portout_omega_FL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="88cda166-7eb7-4675-844e-2e29e004f273">
+    <globalData type="sltp.mm.core.GlobalData" uuid="f20537ab-ac06-45fe-9441-cdcc1c3ca0c8">
       <dataName>portout_omega_FR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="3e10cf93-9632-4ba0-adb9-50db0c50d035">
+    <globalData type="sltp.mm.core.GlobalData" uuid="383656c0-e8ac-4d10-b028-81a2a4871616">
       <dataName>portout_omega_RL</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="a2ac3e69-2ef0-4c20-887e-8e315ed2ce9f">
+    <globalData type="sltp.mm.core.GlobalData" uuid="d4d8df19-6b8f-431f-a928-d6687fd26b02">
       <dataName>portout_omega_RR</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="26c42ae5-431d-41db-ba00-814583f21851">
+    <globalData type="sltp.mm.core.GlobalData" uuid="b419f319-3d45-4a7a-9fbd-f3f008c976a6">
       <dataName>portout_side_slip_angle</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="3c98ce39-d325-4da8-9fdf-8d6f6c04b4b8">
+    <globalData type="sltp.mm.core.GlobalData" uuid="651970a5-fb60-45cc-a635-be49c089153f">
       <dataName>portout_v</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="f72f075e-dff0-49d3-92e3-27befaf10927">
+    <globalData type="sltp.mm.core.GlobalData" uuid="461fd3bf-cb10-4cad-90cb-d8c1ceaa740d">
       <dataName>portout_yaw_rate</dataName>
       <type>RootOutport</type>
     </globalData>
@@ -1558,20 +1564,20 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="f89cfcb8-af52-4a7d-957d-0ea6b687ef93"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="07011e02-1d4a-43d2-96aa-df48075f406a">
-      <context type="sltp.mm.core.Context" uuid="d4e084b6-6fae-49f4-a234-2e4fb71b9da6"/>
+    <rootTask type="sltp.mm.core.Task" uuid="e7519b96-0cf1-44f4-8d25-786b62fa9783">
+      <context type="sltp.mm.core.Context" uuid="79d0f5a4-11a0-4da2-b8ea-4541a705bdb7"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="39b59822-0351-451c-b8f3-7e7bb5fcd4a0">
-        <tasks type="sltp.mm.core.Task" uuid="380f0e04-8e85-49b6-b951-2025e01a434f">
-          <context type="sltp.mm.core.Context" uuid="d4e084b6-6fae-49f4-a234-2e4fb71b9da6"/>
+      <subgraph type="sltp.mm.core.Graph" uuid="82cb68bb-9195-41d8-b38d-eee7aef84be2">
+        <tasks type="sltp.mm.core.Task" uuid="d0fa6a14-1f72-4495-a954-085e7baf9d91">
+          <context type="sltp.mm.core.Context" uuid="79d0f5a4-11a0-4da2-b8ea-4541a705bdb7"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>D1</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="fa889d7b-7a97-4a94-afe3-ea9fd68beceb">
+          <rates type="sltp.mm.core.Rate" uuid="b4dee5d6-e1ab-44c0-b429-82cc532ceda7">
             <annotation>D1</annotation>
             <color>-436207361</color>
             <hasBlocks>true</hasBlocks>
@@ -13615,9 +13621,10 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -8, 1921, 1033]</P>
-  <P Name="ZoomFactor">118</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">104</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">2318</P>
+  <P Name="SIDHighWatermark">2334</P>
   <Block BlockType="Inport" Name="in" SID="2295">
     <P Name="Position">[-330, 218, -300, 232]</P>
     <P Name="ZOrder">22</P>
@@ -13639,7 +13646,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator1" SID="2309">
     <PortCounts in="4" out="1"/>
-    <P Name="Position">[5, 423, 10, 532]</P>
+    <P Name="Position">[105, 373, 110, 482]</P>
     <P Name="ZOrder">36</P>
     <P Name="Inputs">4</P>
     <P Name="DisplayOption">bar</P>
@@ -13651,10 +13658,10 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     </PortProperties>
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator2" SID="2313">
-    <PortCounts in="2" out="1"/>
-    <P Name="Position">[110, 417, 115, 668]</P>
+    <PortCounts in="3" out="1"/>
+    <P Name="Position">[200, 364, 205, 756]</P>
     <P Name="ZOrder">39</P>
-    <P Name="Inputs">2</P>
+    <P Name="Inputs">3</P>
     <P Name="DisplayOption">bar</P>
     <P Name="InheritFromInputs">on</P>
     <PortProperties>
@@ -13665,7 +13672,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator3" SID="2314">
     <PortCounts in="4" out="1"/>
-    <P Name="Position">[5, 548, 10, 657]</P>
+    <P Name="Position">[105, 503, 110, 612]</P>
     <P Name="ZOrder">40</P>
     <P Name="Inputs">4</P>
     <P Name="DisplayOption">bar</P>
@@ -13968,7 +13975,7 @@ Configuration</P>
   </Block>
   <Block BlockType="Reference" Name="Read CM Dict17" SID="2305">
     <PortCounts out="1"/>
-    <P Name="Position">[-195, 455, -100, 475]</P>
+    <P Name="Position">[-100, 405, -5, 425]</P>
     <P Name="ZOrder">32</P>
     <P Name="BackgroundColor">orange</P>
     <P Name="LibraryVersion">1.0</P>
@@ -13989,7 +13996,7 @@ Configuration</P>
   </Block>
   <Block BlockType="Reference" Name="Read CM Dict18" SID="2306">
     <PortCounts out="1"/>
-    <P Name="Position">[-195, 430, -100, 450]</P>
+    <P Name="Position">[-100, 380, -5, 400]</P>
     <P Name="ZOrder">33</P>
     <P Name="BackgroundColor">orange</P>
     <P Name="LibraryVersion">1.0</P>
@@ -14010,7 +14017,7 @@ Configuration</P>
   </Block>
   <Block BlockType="Reference" Name="Read CM Dict19" SID="2307">
     <PortCounts out="1"/>
-    <P Name="Position">[-195, 480, -100, 500]</P>
+    <P Name="Position">[-100, 430, -5, 450]</P>
     <P Name="ZOrder">34</P>
     <P Name="BackgroundColor">orange</P>
     <P Name="LibraryVersion">1.0</P>
@@ -14052,7 +14059,7 @@ Configuration</P>
   </Block>
   <Block BlockType="Reference" Name="Read CM Dict20" SID="2308">
     <PortCounts out="1"/>
-    <P Name="Position">[-195, 505, -100, 525]</P>
+    <P Name="Position">[-100, 455, -5, 475]</P>
     <P Name="ZOrder">35</P>
     <P Name="BackgroundColor">orange</P>
     <P Name="LibraryVersion">1.0</P>
@@ -14073,7 +14080,7 @@ Configuration</P>
   </Block>
   <Block BlockType="Reference" Name="Read CM Dict21" SID="2312">
     <PortCounts out="1"/>
-    <P Name="Position">[-195, 555, -100, 575]</P>
+    <P Name="Position">[-100, 510, -5, 530]</P>
     <P Name="ZOrder">38</P>
     <P Name="BackgroundColor">orange</P>
     <P Name="LibraryVersion">1.0</P>
@@ -14094,7 +14101,7 @@ Configuration</P>
   </Block>
   <Block BlockType="Reference" Name="Read CM Dict22" SID="2316">
     <PortCounts out="1"/>
-    <P Name="Position">[-195, 580, -100, 600]</P>
+    <P Name="Position">[-100, 535, -5, 555]</P>
     <P Name="ZOrder">42</P>
     <P Name="BackgroundColor">orange</P>
     <P Name="LibraryVersion">1.0</P>
@@ -14115,7 +14122,7 @@ Configuration</P>
   </Block>
   <Block BlockType="Reference" Name="Read CM Dict23" SID="2317">
     <PortCounts out="1"/>
-    <P Name="Position">[-195, 605, -100, 625]</P>
+    <P Name="Position">[-100, 560, -5, 580]</P>
     <P Name="ZOrder">43</P>
     <P Name="BackgroundColor">orange</P>
     <P Name="LibraryVersion">1.0</P>
@@ -14136,7 +14143,7 @@ Configuration</P>
   </Block>
   <Block BlockType="Reference" Name="Read CM Dict24" SID="2318">
     <PortCounts out="1"/>
-    <P Name="Position">[-195, 630, -100, 650]</P>
+    <P Name="Position">[-100, 585, -5, 605]</P>
     <P Name="ZOrder">44</P>
     <P Name="BackgroundColor">orange</P>
     <P Name="LibraryVersion">1.0</P>
@@ -14152,6 +14159,27 @@ Configuration</P>
     <PortProperties>
       <Port Type="out" Index="1">
         <P Name="Name">slipAngleRR</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Reference" Name="Read CM Dict25" SID="2334">
+    <PortCounts out="1"/>
+    <P Name="Position">[-100, 680, -5, 700]</P>
+    <P Name="ZOrder">58</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="LibraryVersion">1.0</P>
+    <P Name="SourceBlock">CarMaker4SL/Read CM Dict</P>
+    <P Name="SourceType">Read CarMaker Dictionary Variable(s)</P>
+    <P Name="SourceProductName">CarMaker4SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="xname">Driver.Steer.Ang</P>
+      <P Name="xsync">off</P>
+      <P Name="xstime">Continuous</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">steerAngle</P>
       </Port>
     </PortProperties>
   </Block>
@@ -14303,7 +14331,7 @@ Configuration</P>
     </PortProperties>
   </Block>
   <Block BlockType="Terminator" Name="Terminator" SID="2315">
-    <P Name="Position">[220, 535, 240, 555]</P>
+    <P Name="Position">[275, 550, 295, 570]</P>
     <P Name="ZOrder">41</P>
   </Block>
   <Block BlockType="Reference" Name="Write CM Dict" SID="2296">
@@ -14636,6 +14664,13 @@ Configuration</P>
     <P Name="Src">2314#out:1</P>
     <P Name="Dst">2313#in:2</P>
   </Line>
+  <Line>
+    <P Name="Name">steerAngle</P>
+    <P Name="ZOrder">82</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2334#out:1</P>
+    <P Name="Dst">2313#in:3</P>
+  </Line>
   <Annotation SID="704">
     <P Name="Name">Generic Car Model</P>
     <P Name="Position">[105, 34, 266, 57]</P>
@@ -14725,7 +14760,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">847b2ec0-ed31-448b-ae2a-74c72e03924e</P>
     </Object>
-    <P Name="BDUuid" Class="char">2885666c-4094-4a2c-9bad-1b66d8ecf441</P>
+    <P Name="BDUuid" Class="char">378c9911-384c-4408-9939-0aa22e682650</P>
   </Object>
 </WindowsInfo>
 
