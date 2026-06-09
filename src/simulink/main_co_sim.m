@@ -1,24 +1,24 @@
 % start controller with carMaker as co simulation
-clc; clear; restoredefaultpath;
+clc; clear
 
 %% params && settings
 parameter = struct();
 
 % pid parameter
 parameter.pid = struct( ...
-    'kp', 10, ...
-    'ki', 0, ...
+    'kp', 0.1, ...
+    'ki', 0.005, ...
     'kd', 0 ...
 );
 
 % actuator pt1 parameter
 parameter.actuator = struct( ...
-    'k', 1, ...
-    'T1', 0.001, ...
+    'k', 80, ...
+    'T1', 0.05, ...
     'ic', 1 ... % ratio for actuator angle into camber angle
 );
 
-settings = struct();
+settings.is_testmode = false;
 
 %% add paths (house keeping)
 config.base.dir = fileparts(matlab.desktop.editor.getActiveFilename);
@@ -35,11 +35,13 @@ config.carmaker.dir = fullfile(config.base.root, "carmaker");
 addpath(genpath(fullfile(config.carmaker.dir, "bmw/src_cm4sl")))
 
 %% initialise carMaker environment
-try 
-    run('cmenv.m')
-catch me
-    warning(me.message)
-    return
+if ~isappdata(0, 'cmenv_initialized')
+    try 
+        run('cmenv.m')
+    catch me
+        warning(me.message)
+        return
+    end
 end
 
 %% user selection

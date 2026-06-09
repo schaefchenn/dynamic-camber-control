@@ -1,5 +1,5 @@
 %% clean up (house keeping)
-clc; clear; restoredefaultpath;
+clc; clear;
 
 %% pid params && settings
 parameter = struct();
@@ -18,6 +18,8 @@ parameter.actuator = struct( ...
     'ic', 1 ... % ratio for actuator angle into camber angle
 );
 
+
+settings.is_testmode = true;
 settings.close_system = false;
 
 %% add paths (house keeping)

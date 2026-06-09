@@ -5,4 +5,10 @@
 .temp*
 *.asv
 
+.tmp*
+*.tmp
+
+.road_cache/
+SimOutput/
+
 !.gitkeep
