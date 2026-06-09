@@ -8,6 +8,8 @@
 .tmp*
 *.tmp
 
+*.autosave
+
 .road_cache/
 SimOutput/
 
